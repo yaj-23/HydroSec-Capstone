@@ -15,7 +15,7 @@ const userCalls = require('../backend/userCalls');
  */
 async function init() {
     try {
-        await mongoose.connect(`mongodb+srv://yajurva23:Parul_1471@capstonetestdb.x5h6b57.mongodb.net/${dbName}`);
+        await mongoose.connect(``);
         const db = mongoose.connection;
         
         console.log('Connection Successful')
