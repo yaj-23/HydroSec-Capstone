@@ -9,7 +9,6 @@ import Signin from "./pages/signin";
 import Signup from "./pages/signup";
 import Homepage from './pages/homepage';
 import Dashboard from './pages/dashboard';
-import App from './App';
 
 const router = createBrowserRouter([
     {

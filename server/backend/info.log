@@ -1,0 +1,16 @@
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-01-01T20:36:42.055Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-01-01T20:36:42.798Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: [object Object]","timestamp":"2024-01-01T20:37:03.853Z"}
+{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-01T20:37:03.910Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-01-01T20:39:35.272Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-01-01T20:39:35.863Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: {\"email\":\"yajurva@email.com\",\"password\":\"Yajurva23\"}","timestamp":"2024-01-01T20:39:57.245Z"}
+{"level":"info","message":"User with email: yajurva@email.com exists.","timestamp":"2024-01-01T20:39:57.293Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-01-01T20:41:22.963Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-01-01T20:41:25.640Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"sanj@gmail.com\"","timestamp":"2024-01-01T20:41:37.132Z"}
+{"level":"error","message":"Incorrect login information.","timestamp":"2024-01-01T20:41:37.190Z"}
+{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-01-01T20:41:37.190Z"}
+{"level":"error","message":"Error occured while signin process: Error: User does not exist","timestamp":"2024-01-01T20:41:37.190Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-01T20:41:49.916Z"}
+{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-01T20:41:49.970Z"}

@@ -4,6 +4,8 @@ const cors = require("cors");
 const authRoutes = require('../routes/AuthRoutes');
 const userRoutes = require('../routes/UserRoutes');
 
+const logger = require('./logger')
+
 require("dotenv").config({ path: "./config.env" });
 
 const port = process.env.PORT || 5000;
@@ -15,9 +17,11 @@ app.use('/', authRoutes, userRoutes );
 
 app.listen(port, () => {
   console.log("Server listening on port", port);
+  logger.testlogger.info(`Server listening on port ${port}.`);
   try {
     dbo.init();
   } catch (error) {
+      logger.testlogger.error(`Error: ${error}`);
       console.error(error);
       process.exit(1);
   }

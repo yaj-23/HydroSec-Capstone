@@ -3,15 +3,20 @@ const router = express.Router();
 
 const userCalls = require('../backend/userCalls');
 
+const logger = require('../backend/logger');
+
 
 router.post("/signup", async (req, res) => {
     try {
         // Saving using Info
         const userInfo = req.body;
+        logger.testlogger.info(`Sign Up invoked, with userinfo: ${userInfo}`);
+
         // Adding using to DB
         const userId = await userCalls.addUserToDB(userInfo);
         res.send(userId);
     } catch (error) {
+        logger.testlogger.error(`Error occured while signup process: ${error}`);
         errorFunc(res, error);
     }
     
@@ -19,9 +24,12 @@ router.post("/signup", async (req, res) => {
 router.post("/signin", async (req, res) => {
     try{
     const userInfo = req.body;
+    logger.testlogger.info(`Sign In invoked, with userinfo: ${JSON.stringify(userInfo.email)}`);
+
     const userId = await userCalls.searchUserInDB(userInfo);
     res.send(userId);
     }catch(error){
+        logger.testlogger.error(`Error occured while signin process: ${error}`);
         errorFunc(res, error);
     }
 });

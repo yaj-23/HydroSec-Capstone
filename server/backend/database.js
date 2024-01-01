@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const logger = require('./logger')
 
 const dbName = "test";
 const userCount = 5;
@@ -15,19 +16,18 @@ const userCalls = require('../backend/userCalls');
  */
 async function init() {
     try {
-        await mongoose.connect(``);
+        await mongoose.connect(`mongodb+srv://yajurva23:Parul_1471@capstonetestdb.x5h6b57.mongodb.net/${dbName}`);
         const db = mongoose.connection;
-        
         console.log('Connection Successful')
         // Add User Schema
         db.model("User", User.schema);
-
         // Add Dummy User Data
         // await addDummyUserData(userCount);
-        
+        logger.testlogger.info(`Successfully connected to DB: ${db.name}`);
         return db;
 
     } catch (error) {
+        logger.testlogger.error(`Error DB initialization: ${error}`);
         console.error(error);
     }
 }

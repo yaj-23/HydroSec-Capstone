@@ -4,6 +4,8 @@ const router = express.Router();
 const userCalls = require('../backend/userCalls'); 
 const User = require('../models/User');
 
+const logger = require('../backend/logger');
+
 const { Mongoose, default: mongoose } = require('mongoose');
 
 
