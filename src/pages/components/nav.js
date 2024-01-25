@@ -25,7 +25,6 @@ export default function Navbar() {
         <div className='navbar'>
             <div className='navbar-container-logo'>
                 <img className='logo' src={logo} onClick={handleLogoClick} alt=""/>
-                {/* <h2 className='logo-title'>HydroSec</h2> */}
             </div>
             <div className='navbar-container-links'>
                 <div className='navbar-links'> 

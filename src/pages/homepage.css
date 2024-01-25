@@ -1,0 +1,70 @@
+.homepage-layer1{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    margin-top: 8vh;
+}
+
+.homepage-text{
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter";
+    font-weight: 800;
+    color: #4D4D4D;
+    font-size: 2.4rem;
+    margin-left: 5%;
+
+}
+
+.different-color{
+    color: #4CAF4F;
+}
+
+.homepage-img{
+    margin-top: 50px;
+    /* background-color: blue; */
+    width: max-content;
+    margin-left: 15vw;
+}
+.homepic{
+    transform: scale(1.4);
+}
+
+.homepage-layer2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    width: 20%;
+}
+.homepage-buttons{
+    display: flex;
+}
+
+/* Add margin to all buttons except the last one */
+.homepage-buttons > *:not(:last-child) {
+    margin-right: 20px; /* Adjust the value as needed */
+}
+
+.homepage-layer3{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8vh;
+
+}
+.subheader-text{
+    font-family: "Inter";
+    font-weight: 600;
+    color: #4D4D4D;
+    font-size: 3rem;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cards > *:not(:last-child) {
+    margin-right: 50px; /* Adjust the value as needed */
+}
