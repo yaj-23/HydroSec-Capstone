@@ -1,0 +1,67 @@
+.signin{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+}
+.signin-form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 40px;
+    padding-left: 100px;
+}
+.sign-subheader{
+    margin: 0;
+    font-family: "Inter";
+    font-weight: 400;
+    color: #4D4D4D;
+    font-size: 2.5rem;
+}
+.sign-header{
+    margin-top: 0;
+    color: #4CAF4F;
+    font-family: "Inter";
+    font-size: 4rem;
+    font-weight: 600;
+
+}
+.signin-fields{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+.input-field{
+    margin-bottom: 20px;
+    width: 300px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    border: 1px rgba(77, 77, 77, 0.20) solid;
+    padding-left: 20px;
+    font-family: "Inter";
+
+}
+
+.input-field::placeholder {
+    font-family: "Inter";
+}
+.input-field:focus {
+    border: 1px rgba(77, 77, 77, 0.20) solid;
+}
+
+.showPass{
+    background-color: white;
+    border: none;
+    font-family: "Inter";
+    font-weight: 900;
+    color: #4D4D4D;
+    font-size: 12px;
+    margin-bottom: 50px;
+
+}
+.signup-prompt{
+    font-family: "Inter";
+    font-weight: 600;
+    color: #4D4D4D;
+    font-size: 12px;
+}
