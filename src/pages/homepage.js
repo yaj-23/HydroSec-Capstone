@@ -10,12 +10,17 @@ import inclusivity from '../images/inclusivity.svg' ;
 import security from '../images/security.svg' ;
 
 import Card  from './components/card/Card';
-
+import DailyUsageLineChart from './components/chart/chart';
+import dailyUsageData from './components/test-data/dailyUsageDaata';
+import monthCostData from './components/test-data/monthCostData';
+import MonthlyCostLineChart from './components/chart/monthlychart';
 export default function Homepage() {
 
     const {user ,setLoggedUser} = useUser();
+    const testData = dailyUsageData;
+    const test2Data = monthCostData;
 
-    return (
+  return (
     <>
       <Navbar/>
       <div className='homepage-layer1'>
@@ -64,7 +69,13 @@ export default function Homepage() {
         </div>
 
       </div>
-
+      <div className='test'>
+        <DailyUsageLineChart data={testData} />
+      </div>
+      
+      <div className='test'>
+        <MonthlyCostLineChart data={test2Data} />
+      </div>
     </>
   )
 }

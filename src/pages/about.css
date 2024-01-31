@@ -1,0 +1,38 @@
+.about{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-content{
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-right: 100px;
+}
+
+.about-header{
+    font-family: "Inter";
+    font-weight: 700;
+    color: #4D4D4D;
+    font-size: 3rem;
+}
+
+.about-para{
+    font-family: "Inter";
+    font-weight: 400;
+    color: #4D4D4D;
+    font-size: 20px;
+}
+
+.about-buttom{
+    margin-top: 50px;
+}
+.about-img{
+    margin-left: 200px;
+    margin-top: 10vh;
+}
+.aboutpic{
+    transform: scale(1.2);
+}

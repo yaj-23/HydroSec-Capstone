@@ -9,6 +9,7 @@ import Signin from "./pages/signin";
 import Signup from "./pages/signup";
 import Homepage from './pages/homepage';
 import Dashboard from './pages/dashboard';
+import About from './pages/about';
 
 const router = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       path: "/dashboard",
       element: <Dashboard />,
     },
+    {
+      path: "/about",
+      element: <About />,
+    }
   ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
