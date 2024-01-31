@@ -1,0 +1,236 @@
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+.dashboard-text{
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter";
+    font-weight: 800;
+    color: #4D4D4D;
+    font-size: 2.3rem;
+    margin-left: 5%;
+    margin-bottom: 50px;
+}
+
+.dash-layers{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.dash-layer1{
+    display: flex;
+    flex-direction: column;
+    width: 283px;
+    height: 721px;
+    background: white;
+    box-shadow: 0px 4px 29.700000762939453px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    border-radius: 30px;
+    margin-right: 60px;
+}
+
+.layer-headertext{
+    font-family: "Inter";
+    font-weight: 700;
+    color: #4D4D4D;
+    font-size: 1.5rem;
+}
+
+.id-layers{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: "Inter";
+    font-weight: 400;
+    color: #4D4D4D;
+    font-size: 1rem;
+
+}
+.id-layers p1 {
+    margin-top: 5px;
+}
+
+.personal-info{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: "Inter";
+    font-weight: 400;
+    color: #4D4D4D;
+    font-size: 1.1rem;
+}
+.personal-info p1 {
+    margin-top: 10px;
+}
+
+.usage-payments{
+    background-color: #4CAF4F;
+    border-radius: 30px;
+    margin-top: 50px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 20px;
+}
+
+.usage-payments h3{
+    margin-bottom: 0;
+    color: white;
+    font-family: "Inter";
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+.usage-payments p1{
+    color: white;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 50px;
+    margin-top: 20px;
+
+}
+
+.usage-payments p2{
+    color: white;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.usage-payments p3{
+    color: white;
+    font-family: "Inter";
+    font-weight: 200;
+    font-size: 0.7rem;
+    margin-bottom: 20px;
+}
+
+.dash-layer2{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 721px;
+    background: white;
+    box-shadow: 0px 4px 29.700000762939453px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    border-radius: 30px;
+    align-items: center;
+    margin-right: 100px;
+
+}
+.dash-layer2 h1{
+    margin-top: 20px;
+    font-family: "Inter";
+    font-weight: 700;
+    color: #4D4D4D;
+    font-size: 1.1rem;
+}
+.usage-container{
+    height: 180px;
+    width: 180px;
+    border-radius: 9999px; 
+    border: 8px #4CAF4F solid;
+}
+.usage-container h1{
+    font-family: "Inter";
+    font-weight: 700;
+    color: #4D4D4D;
+    font-size: 4rem;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+.usage-container p3{
+    font-family: "Inter";
+    color: #4CAF4F;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.avg-usage-container{
+    height: 90px;
+    width: 90px;
+    border-radius: 9999px; 
+    border: 8px #4CAF4F solid;
+}
+
+.avg-usage-container h1{
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-family: "Inter";
+    font-weight: 300;
+    color: #4D4D4D;
+    font-size: 1.6rem;
+}
+
+.avg-usage-container p3{
+    font-family: "Inter";
+    color: #4CAF4F;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.change-container{
+    margin-top: 20px;
+    background-color: #4CAF4F;
+    border-radius: 30px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 20px;
+}
+.change-container h1{
+    font-family: "Inter";
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.change-container p2{
+    color: white;
+    font-family: "Inter";
+    font-weight: 200;
+    font-size: 0.7rem;
+    margin-bottom: 20px;
+}
+
+.dash-layer3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -50px;
+}
+.dash-layer-top{
+    background: white; 
+    box-shadow: 0px 4px 29.700000762939453px 20px rgba(0, 0, 0, 0.15); 
+    border-radius: 28px; 
+    border: 1px rgba(77, 77, 77, 0.25) solid;
+    min-width: 650px;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+.dash-layer-top h1{
+    font-family: "Inter";
+    color: #4D4D4D;
+    font-size: 1.2rem;
+    font-weight: 700;
+}

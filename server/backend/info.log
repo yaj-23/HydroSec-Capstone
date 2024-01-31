@@ -14,3 +14,33 @@
 {"level":"error","message":"Error occured while signin process: Error: User does not exist","timestamp":"2024-01-01T20:41:37.190Z"}
 {"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-01T20:41:49.916Z"}
 {"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-01T20:41:49.970Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-01-28T05:42:58.008Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-01-28T05:42:58.613Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-28T05:43:56.728Z"}
+{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-28T05:43:56.772Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-01-31T05:04:23.162Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-01-31T05:04:23.698Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"","timestamp":"2024-01-31T05:05:35.560Z"}
+{"level":"error","message":"Incorrect login information.","timestamp":"2024-01-31T05:05:35.602Z"}
+{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-01-31T05:05:35.602Z"}
+{"level":"error","message":"Error occured while signin process: Error: User does not exist","timestamp":"2024-01-31T05:05:35.602Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T05:05:46.250Z"}
+{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-31T05:05:46.303Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T06:05:38.234Z"}
+{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-31T06:05:38.273Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T06:29:48.204Z"}
+{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-31T06:29:48.241Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T06:34:20.218Z"}
+{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-31T06:34:20.259Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T06:57:26.464Z"}
+{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-31T06:57:26.494Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T07:02:30.410Z"}
+{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-31T07:02:30.449Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T07:09:18.293Z"}
+{"level":"error","message":"Incorrect login information.","timestamp":"2024-01-31T07:09:18.333Z"}
+{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-01-31T07:09:18.333Z"}
+{"level":"error","message":"Error occured while signin process: Error: User does not exist","timestamp":"2024-01-31T07:09:18.334Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T07:09:22.783Z"}
+{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-31T07:09:22.823Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T07:13:47.437Z"}
+{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-31T07:13:47.476Z"}

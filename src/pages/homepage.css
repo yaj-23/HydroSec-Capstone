@@ -13,7 +13,6 @@
     color: #4D4D4D;
     font-size: 2.4rem;
     margin-left: 5%;
-
 }
 
 .different-color{
@@ -67,8 +66,4 @@
 
 .cards > *:not(:last-child) {
     margin-right: 50px; /* Adjust the value as needed */
-}
-
-.test{
-    max-width: 600px;
 }
