@@ -1,0 +1,48 @@
+/* App.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+h2 {
+    color: #333;
+}
+
+.user-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-card div {
+    margin-bottom: 10px;
+}
+
+.user-card strong {
+    font-weight: bold;
+}
+
+.user-card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.user-card button:hover {
+    background-color: #0056b3;
+}

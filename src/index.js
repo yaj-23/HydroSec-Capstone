@@ -10,6 +10,7 @@ import Signup from "./pages/signup";
 import Homepage from './pages/homepage';
 import Dashboard from './pages/dashboard';
 import About from './pages/about';
+import Admin from './pages/admin';
 
 const router = createBrowserRouter([
     {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
     {
       path: "/about",
       element: <About />,
+    },
+    {
+      path: "/admin",
+      element: <Admin />,
     }
   ]);
 
