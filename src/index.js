@@ -11,6 +11,7 @@ import Homepage from './pages/homepage';
 import Dashboard from './pages/dashboard';
 import About from './pages/about';
 import Admin from './pages/admin';
+import QRAuth from './pages/qrauth';
 
 const router = createBrowserRouter([
     {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
     {
       path: "/admin",
       element: <Admin />,
+    },
+    {
+      path: "/qrauth",
+      element: <QRAuth/>
     }
   ]);
 
