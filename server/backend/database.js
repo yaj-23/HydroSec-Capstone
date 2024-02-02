@@ -16,7 +16,7 @@ const userCalls = require('../backend/userCalls');
  */
 async function init() {
     try {
-        await mongoose.connect(`mongodb+srv://yajurva23:Parul_1471@capstonetestdb.x5h6b57.mongodb.net/${dbName}`);
+        await mongoose.connect(`mongodb+srv://yajurva23:capstone2024@capstonetestdb.x5h6b57.mongodb.net/${dbName}`);
         const db = mongoose.connection;
         console.log('Connection Successful')
         // Add User Schema
