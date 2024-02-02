@@ -69,13 +69,6 @@ export default function Homepage() {
         </div>
 
       </div>
-      <div className='test'>
-        <DailyUsageLineChart data={testData} />
-      </div>
-      
-      <div className='test'>
-        <MonthlyCostLineChart data={test2Data} />
-      </div>
     </>
   )
 }
