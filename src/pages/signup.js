@@ -113,7 +113,7 @@ export default function Signup() {
         alert("Your password is invalid");
       }
     }
-    navigate('/signin');
+    navigate('/qrauth');
   }
       
   return (

@@ -57,6 +57,21 @@ async function searchUserInDB(userInfo){
     }
 }
 
+async function updateUserInDB(userInfo, data){
+    try 
+    {   
+        User.findOneAndUpdate({ email: userInfo.email, password: userInfo.password }, {tempSecret : data}, {
+            new: true
+          });
+    }catch(error){
+        logger.testlogger.error(`Error occured while updating user data: ${error}`);
+        if (error instanceof(Error))
+            throw error
+        else
+            throw Error("Some Error Occured: ", error.toString());
+    }
+}
+
 /**
  * This function retriever User info from DB
  * @param {mongoose.ObjectId} userId 
@@ -79,5 +94,6 @@ async function getUserFromDB(userId) {
 module.exports = {
     addUserToDB,
     getUserFromDB,
-    searchUserInDB
+    searchUserInDB,
+    updateUserInDB
 }
