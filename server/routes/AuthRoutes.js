@@ -34,18 +34,19 @@ router.post("/signin", async (req, res) => {
     }
 });
 
-router.get('/qrImage', async(req, res) => {
+router.get('/qrauth', async(req, res) => {
     try {
-        const userInfo = req.body;
-        logger.testlogger.info(`QRCode invoked, with userinfo: ${JSON.stringify(userInfo.email)}`);
-        const userId = await userCalls.searchUserInDB(userInfo);
-        const qrcode = require('qrcode');
-        const {authenticator} = require('otplib');
-        const secret = authenticator.generateSecret();
-        const uri = authenticator.keyuri(userID, "HydroSec", secret);
-        const image = await qrcode.toDataURL(uri);
-        const user = await userCalls.updateUserInDB(userInfo, secret)
-        res.send(image);
+        // console.log("YO!")
+        // const userInfo = req.body;
+        // logger.testlogger.info(`QRCode invoked, with userinfo: ${JSON.stringify(userInfo.email)}`);
+        // // const userId = await userCalls.searchUserInDB(userInfo);
+        // const qrcode = require('qrcode');
+        // const {authenticator} = require('otplib');
+        // const secret = authenticator.generateSecret();
+        // const uri = authenticator.keyuri(userID, "HydroSec", secret);
+        // const image = await qrcode.toDataURL(uri);
+        // const user = await userCalls.updateUserInDB(userInfo, secret)
+        res.send("YO");
     } catch(error) {
         logger.testlogger.error(`Error occured while generating QR image: ${error}`);
         errorFunc(res, error);

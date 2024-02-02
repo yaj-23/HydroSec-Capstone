@@ -14,7 +14,7 @@ export default function Signup() {
   const [password, setpassword] = useState('');
   const [cpassword, setcpassword] = useState('');
   let currUserId = "";
-
+  let qrcode ="";
   // Keeping track of email/pass validity
   let emailIsValid = false;
   let passlIsValid = false;
@@ -73,6 +73,22 @@ export default function Signup() {
     }
   };
 
+  const fetch2FA = async (userInfo) => {
+    try{
+      const resp = await fetch("http://localhost:5000/qrauth", {
+        method: "get",
+        body: JSON.stringify(userInfo),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      console.log(resp);
+
+    } catch (error) {
+      console.log(error);
+      return null;
+    }
+  }
   
   /**
    * Handles Submit Form
@@ -96,6 +112,11 @@ export default function Signup() {
       currUserId = await fetchId(userInfo);
       if (currUserId) {
         alert(`User has been successfully added. The User Id is : ${currUserId}`);
+        
+        
+        //gen qr
+        qrcode = await fetch2FA(userInfo);
+        console.log("Tester: ", qrcode);
       }
       else {
         alert("Sign up failed");
