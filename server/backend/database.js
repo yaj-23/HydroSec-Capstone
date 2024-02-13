@@ -32,31 +32,31 @@ async function init() {
     }
 }
 
-async function addDummyUserData(size) {
+// async function addDummyUserData(size) {
 
-    const api_endpoint = `https://random-data-api.com/api/v2/users?size=${size}`;
-    await fetch(api_endpoint, {
-        method: "GET"
-    })
-        .then(response => {
-            if (response.status !== 200) {
-                return "error";
-            }
-            return response.json();
-        })
-        .then(data => {
-            data.forEach(async user => {
-                const newUser = {
-                    name: `${user.first_name} ${user.last_name}`,
-                    email: user.email,
-                    password: user.password,
-                }
-                userCalls.addUserToDB(newUser);
-            });
-        })
-        .catch(error => {
-            console.log(error);
-            throw (new Error(`Error: ${error}\nSomething went wrong with the Dummy Data API`));
-        });
-}
+//     const api_endpoint = `https://random-data-api.com/api/v2/users?size=${size}`;
+//     await fetch(api_endpoint, {
+//         method: "GET"
+//     })
+//         .then(response => {
+//             if (response.status !== 200) {
+//                 return "error";
+//             }
+//             return response.json();
+//         })
+//         .then(data => {
+//             data.forEach(async user => {
+//                 const newUser = {
+//                     name: `${user.first_name} ${user.last_name}`,
+//                     email: user.email,
+//                     password: user.password,
+//                 }
+//                 userCalls.addUserToDB(newUser);
+//             });
+//         })
+//         .catch(error => {
+//             console.log(error);
+//             throw (new Error(`Error: ${error}\nSomething went wrong with the Dummy Data API`));
+//         });
+// }
 module.exports = { init }

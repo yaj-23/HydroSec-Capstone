@@ -1,5 +1,5 @@
 .signup{
-    margin-top: 10vh;
+    margin-top: 6vh;
     display: flex;
     flex-direction: row;
 }
@@ -12,4 +12,7 @@
 }
 .signup-form-form{
     margin-bottom: 20px;
+}
+.signuppic{
+    margin-top: 70px;
 }

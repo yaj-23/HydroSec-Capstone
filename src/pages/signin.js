@@ -15,11 +15,13 @@ export default function Signin() {
   let currUserId = "";
   const {setLoggedUser, setAdminStatus} = useUser();
   const navigate = useNavigate();
+
   /**
    * 
    * @param {JSON} userInfo User info in JSON format
    * @returns User Id if success / false if fail
    */
+
   const fetchId = async (userInfo) => {
     try {
       const resp = await fetch("http://localhost:5000/signin", {
@@ -71,7 +73,6 @@ export default function Signin() {
     else {
       alert("Incorrect User Information");
     }
-        
   }
 
   const togglePasswordVisibility = () => {
