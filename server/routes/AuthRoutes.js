@@ -27,6 +27,10 @@ router.post("/signin", async (req, res) => {
     logger.testlogger.info(`Sign In invoked, with userinfo: ${JSON.stringify(userInfo.email)}`);
 
     const userId = await userCalls.searchUserInDB(userInfo);
+    if (userId){
+        const userMFA = await userCalls.getMFA(userInfo)
+        console.log('YOYOYOYYO:', userMFA);
+    }
     res.send(userId);
     }catch(error){
         logger.testlogger.error(`Error occured while signin process: ${error}`);
