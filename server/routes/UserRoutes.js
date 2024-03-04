@@ -19,8 +19,11 @@ router.get("/users/:userId/getDetails", async (req, res) => {
         // Grabbing user from database
         const user = await userCalls.getUserFromDB(userId);
         userItem = {
+            accountNumber: user._id,
             name: user.name,
-            email: user.email
+            email: user.email,
+            address: user.address,
+            phoneNumber: user.phoneNumber,
         };
         // Sending back user item list
         res.send(userItem);

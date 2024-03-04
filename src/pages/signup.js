@@ -11,6 +11,10 @@ export default function Signup() {
   // Setting user, email, password, cpassword states
   const [user, setuser] = useState('');
   const [email, setemail] = useState('');
+  
+  const [addr, setAddr] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+
   const [password, setpassword] = useState('');
   const [cpassword, setcpassword] = useState('');
   let currUserId = "";
@@ -18,6 +22,7 @@ export default function Signup() {
   // Keeping track of email/pass validity
   let emailIsValid = false;
   let passlIsValid = false;
+  let phoneIsValid = false;
 
 
   /**
@@ -43,6 +48,18 @@ export default function Signup() {
     }
     else {
       passlIsValid = false;   
+    }
+  }
+
+  /**
+   * Compares user input pass with compare pass
+   */
+  const phoneValidation = () => {    
+    if ((phoneNumber.length == 10))  {
+      phoneIsValid = true;
+    }
+    else {
+      phoneIsValid = false;   
     }
   }
 
@@ -99,13 +116,16 @@ export default function Signup() {
 
     emailValidation();
     passValidation();
+    phoneValidation();
 
     // Checking is user entry is valid
-    if (emailIsValid && passlIsValid) {      
+    if (emailIsValid && passlIsValid && phoneIsValid) {      
       const userInfo = {
         name : user, 
         email : email, 
-        password : password
+        password : password,
+        address : addr,
+        phoneNumber : phoneNumber,
       }; 
       
       // Fetchig new User ID
@@ -146,18 +166,20 @@ export default function Signup() {
         <h1 className='sign-header'>Sign Up</h1>
         <div className = "signin-fields">
           <form className='signup-form-form'>
-            <input className='input-field' type = "textbox" placeholder="Name"  required value={user} onChange={(e) => setuser(e.target.value)}/>    
-            <input className='input-field' type = "Email" placeholder="Email" required value={email} onChange={(e) => setemail(e.target.value)}/>
-            <input className='input-field' type = "password" placeholder="Password" required value={password} onChange={(e) => setpassword(e.target.value)}/>
-            <input className='input-field' type = "password" placeholder="Confirm your password" required value={cpassword} onChange={(e) => setcpassword(e.target.value)}/>        
+              <input className='input-field' type = "textbox" placeholder="Name"  required value={user} onChange={(e) => setuser(e.target.value)}/>    
+              <input className='input-field' type = "Email" placeholder="Email" required value={email} onChange={(e) => setemail(e.target.value)}/>
+              <input className='input-field' type = "password" placeholder="Password" required value={password} onChange={(e) => setpassword(e.target.value)}/>
+              <input className='input-field' type = "password" placeholder="Confirm your password" required value={cpassword} onChange={(e) => setcpassword(e.target.value)}/> 
+              <input className='input-field' type = "text" placeholder="Enter your address" required value={addr} onChange={(e) => setAddr(e.target.value)}/>        
+              <input className='input-field' type="tel" placeholder="Enter your phone number" required value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)}/>
           </form>
           <Button buttonColor='primary' buttonSize='btn-medium' buttonStyle='btn-primary' onClick={submitform}>
             Sign up
           </Button>
         </div>
       </div>
-      <div className='signin-img'>
-        <img className='signinpic' src={signin} alt=""/>
+      <div className='signup-img'>
+        <img className='signuppic' src={signin} alt=""/>
       </div>
     </div>
   </>

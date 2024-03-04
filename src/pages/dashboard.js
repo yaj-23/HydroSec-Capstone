@@ -11,6 +11,11 @@ import Navbar from "./components/nav";
 export default function Dashboard() {
     const {user ,setLoggedUser, isAdmin, setAdminStatus} = useUser();
     const navigate = useNavigate();
+    const [userName, setUsername] = useState(null);
+    const [userEmail, setUserEmail] = useState(null);
+    const [userAddr, setUserAddr] = useState(null);
+    const [userPhone, setUserPhone] = useState(null);
+    const [accountID, setAccountID] = useState(null);
 
     const testData = dailyUsageData;
     const test2Data = monthCostData;
@@ -23,7 +28,28 @@ export default function Dashboard() {
         setLoggedUser(null);
         setAdminStatus(false);
         navigate('/');
-      }
+    }
+    
+
+    const fetchUserDetails = async() => {
+        try{
+            const resp = await fetch(`http://localhost:5000/users/${user}/getDetails`);
+            const json = await resp.json();
+            setUsername(json.name);
+            setUserEmail(json.email);
+            setUserAddr(json.address);
+            setUserPhone(json.phoneNumber);
+            setAccountID(json.accountNumber);
+            console.log("Formatted Details: ", json);
+        } catch (error) {
+            console.log("error", error);
+        }
+    }
+
+    if(userName === null && userEmail === null){
+        fetchUserDetails();
+    }
+
 
     return(
     <>  
@@ -35,15 +61,15 @@ export default function Dashboard() {
                 <div className="dash-layer1">   
                     <h3 className="layer-headertext">Accounts Overview</h3>
                     <div className='id-layers'>
-                        <p1 className='layer-small'>Account ID:</p1>
-                        <p1 className='layer-small'>Premise ID:</p1>
-                        <p1 className='layer-small'>Meter ID:</p1>
+                        <p1 className='layer-small'>Account ID:{accountID}</p1>
+                        <p1 className='layer-small'>Premise ID:{accountID}</p1>
+                        <p1 className='layer-small'>Meter ID:{accountID}</p1>
                     </div>
                     <div className='personal-info'>
-                        <p1>Yajurva Trivedi</p1>
-                        <p1>123 Main St, Toronto ON</p1>
-                        <p1>yajurvatest@test.com</p1>
-                        <p1>123-456-7890</p1>
+                        <p1>{userName}</p1>
+                        <p1>{userEmail}</p1>
+                        <p1>{userAddr}</p1>
+                        <p1>{userPhone}</p1> 
                     </div>
                     <div className='usage-payments'>
                         <h3>Electricity</h3>
