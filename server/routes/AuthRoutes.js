@@ -23,17 +23,32 @@ router.post("/signin", async (req, res) => {
   try {
     const userInfo = req.body;
     logger.testlogger.info(
-      `Sign In invoked, with userinfo: ${JSON.stringify(userInfo.email)} and ${JSON.stringify(userInfo.password)}`
+      `Sign In invoked, with userinfo: ${JSON.stringify(userInfo.email)}}`
     );
 
     const userId = await userCalls.searchUserInDB(userInfo);
-    if (userId != null) {
-      const userMFA = await userCalls.getMFA(userInfo);
-      console.log("YOYOYOYYO:", userMFA);
-    }
+    // if (userId != null) {
+    //   const userMFA = await userCalls.getMFA(userInfo);
+    //   console.log("YOYOYOYYO:", userMFA);
+    // }
     res.send(userId);
   } catch (error) {
     logger.testlogger.error(`Error occured while signin process: ${error}`);
+    errorFunc(res, error);
+  }
+});
+
+router.post("/fetchMFA", async (req, res) => {
+  try{
+    const userInfo = req.body;
+    logger.testlogger.info(
+      `Fetching MFA Status = invoked, with userinfo: ${JSON.stringify(userInfo.email)}}`
+    );
+    const userMFA = await userCalls.getMFA(userInfo);
+    console.log("YOYOYOYYO:", userMFA);
+    res.send(userMFA);
+  }catch (error) {
+    logger.testlogger.error(`Error occured while fetching mfa Status : ${error}`);
     errorFunc(res, error);
   }
 });
