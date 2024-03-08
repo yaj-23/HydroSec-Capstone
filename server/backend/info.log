@@ -1,46 +1,11 @@
-{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-01-01T20:36:42.055Z"}
-{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-01-01T20:36:42.798Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: [object Object]","timestamp":"2024-01-01T20:37:03.853Z"}
-{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-01T20:37:03.910Z"}
-{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-01-01T20:39:35.272Z"}
-{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-01-01T20:39:35.863Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: {\"email\":\"yajurva@email.com\",\"password\":\"Yajurva23\"}","timestamp":"2024-01-01T20:39:57.245Z"}
-{"level":"info","message":"User with email: yajurva@email.com exists.","timestamp":"2024-01-01T20:39:57.293Z"}
-{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-01-01T20:41:22.963Z"}
-{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-01-01T20:41:25.640Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"sanj@gmail.com\"","timestamp":"2024-01-01T20:41:37.132Z"}
-{"level":"error","message":"Incorrect login information.","timestamp":"2024-01-01T20:41:37.190Z"}
-{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-01-01T20:41:37.190Z"}
-{"level":"error","message":"Error occured while signin process: Error: User does not exist","timestamp":"2024-01-01T20:41:37.190Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-01T20:41:49.916Z"}
-{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-01T20:41:49.970Z"}
-{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-01-28T05:42:58.008Z"}
-{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-01-28T05:42:58.613Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-28T05:43:56.728Z"}
-{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-28T05:43:56.772Z"}
-{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-01-31T05:04:23.162Z"}
-{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-01-31T05:04:23.698Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"","timestamp":"2024-01-31T05:05:35.560Z"}
-{"level":"error","message":"Incorrect login information.","timestamp":"2024-01-31T05:05:35.602Z"}
-{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-01-31T05:05:35.602Z"}
-{"level":"error","message":"Error occured while signin process: Error: User does not exist","timestamp":"2024-01-31T05:05:35.602Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T05:05:46.250Z"}
-{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-31T05:05:46.303Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T06:05:38.234Z"}
-{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-31T06:05:38.273Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T06:29:48.204Z"}
-{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-31T06:29:48.241Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T06:34:20.218Z"}
-{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-31T06:34:20.259Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T06:57:26.464Z"}
-{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-31T06:57:26.494Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T07:02:30.410Z"}
-{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-31T07:02:30.449Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T07:09:18.293Z"}
-{"level":"error","message":"Incorrect login information.","timestamp":"2024-01-31T07:09:18.333Z"}
-{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-01-31T07:09:18.333Z"}
-{"level":"error","message":"Error occured while signin process: Error: User does not exist","timestamp":"2024-01-31T07:09:18.334Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T07:09:22.783Z"}
-{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-31T07:09:22.823Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T07:13:47.437Z"}
-{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-31T07:13:47.476Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-08T18:35:10.177Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-08T18:35:10.759Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T18:36:23.842Z"}
+{"level":"info","message":"User with email: 123@123.com exists.","timestamp":"2024-03-08T18:36:23.898Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T18:36:23.904Z"}
+{"level":"error","message":"Error occured while fetching mfa Status : TypeError: userCalls.getMFA is not a function","timestamp":"2024-03-08T18:36:23.904Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T18:36:23.967Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T18:37:06.853Z"}
+{"level":"info","message":"User with email: 123@123.com exists.","timestamp":"2024-03-08T18:37:06.891Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T18:37:06.896Z"}
+{"level":"error","message":"Error occured while fetching mfa Status : TypeError: userCalls.getMFA is not a function","timestamp":"2024-03-08T18:37:06.897Z"}

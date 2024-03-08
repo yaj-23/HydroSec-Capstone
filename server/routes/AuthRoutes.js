@@ -55,8 +55,8 @@ router.post("/fetchMFA", async (req, res) => {
 
 router.get('/qrauth', async(req, res) => {
     try {
-        // console.log("YO!")
-        // const userInfo = req.body;
+        console.log("YO!")
+        const userInfo = req.body;
         // logger.testlogger.info(`QRCode invoked, with userinfo: ${JSON.stringify(userInfo.email)}`);
         // // const userId = await userCalls.searchUserInDB(userInfo);
         // const qrcode = require('qrcode');

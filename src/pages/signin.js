@@ -97,11 +97,15 @@ export default function Signin() {
         navigate("/admin");
         return;
       }
+      console.log(`User has successfully logged in: ${currUserId}`);
       if (currMfaStatus == false){
         console.log("I HAVE REACHED: ", currMfaStatus);
+        navigate("/qrauth");
       }
-      console.log(`User has successfully logged in: ${currUserId}`);
-      navigate("/dashboard");
+      else {
+        navigate("/dashboard");
+      }
+      
     }
     else {
       alert("Incorrect User Information");
