@@ -11,7 +11,7 @@ let userSchema = new Schema({
     phoneNumber: { type: String, require: true },
     role: { type: String, enum: ['CUSTOMER', 'EMPLOYEE', 'ADMIN'], require: false },
     mfa: { type: Boolean, require: true},
-    status: {type: Boolean, require: true}
+    tempSecret: {type: String, require: false}
 });
 
 module.exports = mongoose.model('User', userSchema);

@@ -59,13 +59,14 @@ router.get('/qrauth', async(req, res) => {
         const userInfo = req.body;
         // logger.testlogger.info(`QRCode invoked, with userinfo: ${JSON.stringify(userInfo.email)}`);
         // // const userId = await userCalls.searchUserInDB(userInfo);
-        // const qrcode = require('qrcode');
-        // const {authenticator} = require('otplib');
-        // const secret = authenticator.generateSecret();
-        // const uri = authenticator.keyuri(userID, "HydroSec", secret);
-        // const image = await qrcode.toDataURL(uri);
-        // const user = await userCalls.updateUserInDB(userInfo, secret)
-        res.send("YO");
+        const qrcode = require('qrcode');
+        const {authenticator} = require('otplib');
+        const secret = authenticator.generateSecret();
+        const uri = authenticator.keyuri(userInfo, "HydroSec", secret);
+        const image = await qrcode.toDataURL(uri);
+        const user = await userCalls.updateUserInDB(userInfo, secret)
+        console.log("***", user);
+        res.send({image});
     } catch(error) {
         logger.testlogger.error(`Error occured while generating QR image: ${error}`);
         errorFunc(res, error);

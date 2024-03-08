@@ -76,12 +76,10 @@ async function getMFA(userInfo){
     }
 }
 
-async function updateUserInDB(userInfo, data){
+async function updateUserInDB(email, data){
     try 
     {   
-        User.findOneAndUpdate({ email: userInfo.email, password: userInfo.password }, {tempSecret : data}, {
-            new: true
-          });
+        User.findOneAndUpdate({email: email}, {tempSecret : data}, {new: true});
     }catch(error){
         logger.testlogger.error(`Error occured while updating user data: ${error}`);
         if (error instanceof(Error))
@@ -113,5 +111,6 @@ async function getUserFromDB(userId) {
 module.exports = {
     addUserToDB,
     getUserFromDB,
-    searchUserInDB
+    searchUserInDB,
+    updateUserInDB
 }

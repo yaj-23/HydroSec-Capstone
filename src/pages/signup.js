@@ -127,7 +127,8 @@ export default function Signup() {
         address : addr,
         phoneNumber : phoneNumber,
         mfa: false,
-        status: false
+        status: false,
+        tempSecret: "",
       }; 
       
       // Fetchig new User ID
