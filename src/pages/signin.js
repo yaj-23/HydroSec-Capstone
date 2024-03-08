@@ -10,9 +10,12 @@ import { Button } from './components/button/Button';
 export default function Signin() {
   const [email, setemail] = useState('');
   const [password, setPassword] = useState('');
+  // const [mfa, setMfa] = useState('');
+
   const [showPassword, setShowPassword] = useState(false);
 
   let currUserId = "";
+  let currMfaStatus = false;
   const {setLoggedUser, setAdminStatus} = useUser();
   const navigate = useNavigate();
 
@@ -34,7 +37,31 @@ export default function Signin() {
   
       if (resp.ok) {
         const userId = await resp.json();
+        console.log("YO REZXA: ", userId);
         return userId;
+      } else {
+        return false;
+      }
+    } catch (error) {
+      console.log(error);
+      return null;
+    }
+  };
+
+  const fetechMfa = async (userInfo) => {
+    try {
+      const resp = await fetch("http://localhost:5000/fetchMFA", {
+        method: "post",
+        body: JSON.stringify(userInfo),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+  
+      if (resp.ok) {
+        const userMFa = await resp.json();
+        console.log("YO Dimitri: ", userMFa);
+        return userMFa;
       } else {
         return false;
       }
@@ -55,17 +82,23 @@ export default function Signin() {
     
     const userInfo = {
       email : email, 
-      password : password
+      password : password,
     }; 
     
     // Fetchig new User ID
     currUserId = await fetchId(userInfo);
+    currMfaStatus = await fetechMfa(userInfo);
+    // setMfa(currMfaStatus);
     if (currUserId) {
       setLoggedUser(currUserId);
+      console.log("CurrUSerID: ", currUserId);
       if (email == "admin@gmail.com") {
         setAdminStatus(true);
         navigate("/admin");
         return;
+      }
+      if (currMfaStatus == false){
+        console.log("I HAVE REACHED: ", currMfaStatus);
       }
       console.log(`User has successfully logged in: ${currUserId}`);
       navigate("/dashboard");

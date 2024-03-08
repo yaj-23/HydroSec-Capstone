@@ -10,8 +10,8 @@ let userSchema = new Schema({
     address: { type: String, require: true },
     phoneNumber: { type: String, require: true },
     role: { type: String, enum: ['CUSTOMER', 'EMPLOYEE', 'ADMIN'], require: false },
-    mfa: { type: Boolean, require: false},
-    tempSecret: { type: String, require: false},
+    mfa: { type: Boolean, require: true},
+    status: {type: Boolean, require: true}
 });
 
 module.exports = mongoose.model('User', userSchema);

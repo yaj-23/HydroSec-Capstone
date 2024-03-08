@@ -126,6 +126,8 @@ export default function Signup() {
         password : password,
         address : addr,
         phoneNumber : phoneNumber,
+        mfa: false,
+        status: false
       }; 
       
       // Fetchig new User ID
