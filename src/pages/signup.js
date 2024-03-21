@@ -129,14 +129,13 @@ export default function Signup() {
         mfa: false,
         status: false,
         tempSecret: "",
+        locked: false
       }; 
       
       // Fetchig new User ID
       currUserId = await fetchId(userInfo);
       if (currUserId) {
         alert(`User has been successfully added. The User Id is : ${currUserId}`);
-        
-        
         //gen qr
         qrcode = await fetch2FA(userInfo);
         console.log("Tester: ", qrcode);
@@ -144,7 +143,7 @@ export default function Signup() {
       else {
         alert("Sign up failed");
       }
-    }    
+    }
     else {      
       if (!(emailIsValid || passlIsValid)) {
         console.log(emailIsValid, passlIsValid);

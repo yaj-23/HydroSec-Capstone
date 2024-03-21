@@ -14,6 +14,8 @@ export default function QRAuth() {
 
   if (user == null) {
     navigate('/');
+  }else{
+    console.log("USer: ", user);
   }
 
   const fetchQR = async (userInfo) => {

@@ -293,3 +293,192 @@
 {"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T01:05:33.756Z"}
 {"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fb825e7f3dd3ab945328b4'),\n  name: 'test',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '13 way st',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  __v: 0\n}.","timestamp":"2024-03-21T01:05:37.373Z"}
 {"level":"info","message":"QRCode invoked, with userinfo: \"test@gmail.com\"","timestamp":"2024-03-21T01:05:37.380Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-21T04:50:21.216Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-21T04:50:21.763Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T04:50:45.804Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T04:50:45.854Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T04:50:45.860Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T04:50:45.904Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fb825e7f3dd3ab945328b4'),\n  name: 'test',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '13 way st',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'CZNVEYRDKRZGC72D',\n  __v: 0\n}.","timestamp":"2024-03-21T04:50:54.686Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: \"test@gmail.com\"","timestamp":"2024-03-21T04:50:54.692Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-21T05:56:15.378Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-21T05:56:15.940Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T05:56:18.400Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T05:56:28.643Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T06:00:18.534Z"}
+{"level":"info","message":"Sign Up invoked, with userinfo: [object Object]","timestamp":"2024-03-21T06:07:56.983Z"}
+{"level":"info","message":"Creating new user with: [object Object]","timestamp":"2024-03-21T06:07:57.024Z"}
+{"level":"info","message":"Sign Up invoked, with userinfo: [object Object]","timestamp":"2024-03-21T06:09:35.803Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com already exists.","timestamp":"2024-03-21T06:09:35.844Z"}
+{"level":"error","message":"Error occured while adding user: Error: User already exists","timestamp":"2024-03-21T06:09:35.844Z"}
+{"level":"error","message":"Error occured while signup process: Error: User already exists","timestamp":"2024-03-21T06:09:35.844Z"}
+{"level":"info","message":"Sign Up invoked, with userinfo: [object Object]","timestamp":"2024-03-21T06:10:25.604Z"}
+{"level":"info","message":"Creating new user with: [object Object]","timestamp":"2024-03-21T06:10:25.641Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-21T06:22:07.290Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-21T06:22:08.001Z"}
+{"level":"info","message":"Sign Up invoked, with userinfo: [object Object]","timestamp":"2024-03-21T06:23:59.175Z"}
+{"level":"info","message":"Creating new user with: [object Object]","timestamp":"2024-03-21T06:23:59.225Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T06:24:20.079Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T06:28:35.516Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T06:30:46.557Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T06:31:05.823Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T06:34:03.515Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T06:34:05.583Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T06:34:08.529Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T06:34:12.512Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T06:39:17.519Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T06:39:22.902Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T07:02:33.543Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T07:02:36.526Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T07:02:50.522Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T07:03:21.525Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T07:05:27.517Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T07:05:44.558Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T07:06:03.531Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T07:06:47.860Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T07:07:50.532Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T07:08:07.540Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T07:08:35.203Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T07:08:38.207Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T07:09:30.965Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T07:10:46.554Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T07:11:19.530Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T07:11:33.089Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T07:11:36.752Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T07:11:53.532Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T07:11:56.019Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T07:11:59.288Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T17:30:09.635Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T17:30:16.348Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T17:30:16.956Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T17:30:38.768Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-21T17:32:50.587Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-21T17:32:50.647Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-21T17:32:50.653Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-21T17:32:50.709Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T17:40:15.164Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-21T17:41:47.026Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-21T17:41:47.792Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T17:41:50.412Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-21T17:42:33.636Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-21T17:42:34.337Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T17:42:54.298Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T17:43:11.756Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T17:47:21.506Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T17:47:34.499Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T17:47:37.507Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T17:47:41.513Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T17:47:45.585Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T17:47:47.499Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T17:47:50.515Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T17:48:40.789Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T17:51:30.255Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T17:52:24.974Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-21T18:07:25.899Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-21T18:07:26.601Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:09:47.942Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:10:54.469Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:11:25.873Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:11:28.323Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:13:35.389Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:14:36.049Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:14:44.873Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:14:49.721Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:14:53.615Z"}
+{"level":"info","message":"User Status Change Invoked For: undefined","timestamp":"2024-03-21T18:14:58.170Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:15:14.085Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-21T18:17:28.924Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-21T18:17:29.660Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:17:31.428Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:17:42.745Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:18:01.290Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-21T18:18:16.074Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-21T18:18:16.778Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:18:26.332Z"}
+{"level":"info","message":"User Status Change Invoked For: undefined","timestamp":"2024-03-21T18:19:21.183Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:22:00.567Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:22:00.622Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:22:05.189Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:22:19.179Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:22:31.849Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:22:33.517Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:22:37.936Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:22:40.728Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:22:56.911Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:23:04.558Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:23:12.896Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-21T18:23:35.845Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-21T18:23:37.304Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:23:48.861Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T18:23:52.095Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:25:35.859Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T18:25:39.448Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:26:04.394Z"}
+{"level":"info","message":"User Status Change Invoked For: \"test@gmail.com\"","timestamp":"2024-03-21T18:26:17.858Z"}
+{"level":"info","message":"User Status Change Invoked For: \"yajurva23@gmail.com\"","timestamp":"2024-03-21T18:26:28.011Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T18:26:36.384Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:29:59.979Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:30:04.987Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:32:15.986Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:32:17.994Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T18:32:27.574Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:32:38.535Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T18:32:44.900Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:32:53.796Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:34:23.980Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T18:34:26.849Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:34:26.963Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T18:34:28.480Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:34:28.640Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:35:44.980Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T18:35:47.937Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:35:48.046Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T18:35:55.248Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:35:55.355Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T18:35:56.711Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:35:56.821Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:36:13.988Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:36:17.990Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:36:38.995Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T18:36:41.204Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:36:41.343Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:52:04.318Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T18:52:06.567Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:52:06.700Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T18:52:10.145Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:52:10.266Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:52:31.572Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T18:52:33.555Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:52:33.676Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T18:52:34.724Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:52:34.856Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T18:52:35.839Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:52:35.956Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T18:52:36.910Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T18:52:37.018Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T19:01:20.508Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T19:01:23.063Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T19:01:24.374Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T19:01:24.514Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T19:02:09.178Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T19:02:09.229Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T19:02:11.872Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T19:02:39.353Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T19:02:39.464Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-21T19:03:55.851Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-21T19:03:56.950Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T19:04:16.961Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T19:05:40.107Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T19:06:59.656Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T19:06:59.775Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T19:10:58.903Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T19:11:00.575Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T19:11:00.692Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T19:11:02.521Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T19:11:02.635Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T19:11:06.111Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T19:11:06.227Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T19:11:12.132Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T19:11:12.243Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T19:11:26.501Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T19:11:38.253Z"}

@@ -13,6 +13,7 @@ router.post("/signup", async (req, res) => {
 
     // Adding using to DB
     const userId = await userCalls.addUserToDB(userInfo);
+    console.log("Sign UP: ", userId);
     res.send(userId);
   } catch (error) {
     logger.testlogger.error(`Error occured while signup process: ${error}`);
