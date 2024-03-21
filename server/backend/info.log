@@ -285,3 +285,11 @@
 {"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T01:03:15.641Z"}
 {"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fb825e7f3dd3ab945328b4'),\n  name: 'test',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '13 way st',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  __v: 0\n}.","timestamp":"2024-03-21T01:04:22.772Z"}
 {"level":"info","message":"QRCode invoked, with userinfo: \"test@gmail.com\"","timestamp":"2024-03-21T01:04:22.777Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-21T01:05:23.570Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-21T01:05:24.144Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T01:05:33.658Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T01:05:33.705Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T01:05:33.712Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T01:05:33.756Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fb825e7f3dd3ab945328b4'),\n  name: 'test',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '13 way st',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  __v: 0\n}.","timestamp":"2024-03-21T01:05:37.373Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: \"test@gmail.com\"","timestamp":"2024-03-21T01:05:37.380Z"}
