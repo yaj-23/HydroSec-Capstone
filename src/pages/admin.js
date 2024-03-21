@@ -85,7 +85,7 @@ const AdminPage = () => {
             </div>
             <div>
               <button onClick={() => toggleUserState(user)}>
-                {user.locked ? "Unlock" : "Lock"}
+                {user.status ? "Unlock" : "Lock"}
               </button>
             </div>
           </div>

@@ -482,3 +482,17 @@
 {"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T19:11:12.243Z"}
 {"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T19:11:26.501Z"}
 {"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T19:11:38.253Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T20:13:00.650Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T20:13:26.927Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T20:13:27.036Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T20:13:59.940Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T20:14:06.647Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T20:14:06.780Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-21T20:14:26.871Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-21T20:14:26.922Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-21T20:14:26.926Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-21T20:14:26.977Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-21T20:14:36.917Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: \"yajurva23@gmail.com\"","timestamp":"2024-03-21T20:14:36.921Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'PMORMUY3CBFV4UBE',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-21T20:14:55.733Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: \"yajurva23@gmail.com\"","timestamp":"2024-03-21T20:14:55.743Z"}
