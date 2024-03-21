@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect  } from 'react'
 import Navbar from './components/nav'
 import { useUser } from '../UserSession'
 import { useNavigate } from 'react-router-dom';
@@ -32,7 +32,7 @@ export default function QRAuth() {
         return null;
       }
     } catch (error) {
-      console.log(error);
+      console.log("Got an error boss", error);
       return null;
     }
   }
@@ -42,13 +42,6 @@ export default function QRAuth() {
     try{
         const resp = await fetch(`http://localhost:5000/users/${user}/getDetails`);
         const json = await resp.json();
-        // console.log(" OK  USEREMAIL: ", json.email)
-        // console.log(" OK  AccountID: ", json.accountNumber)
-        // setUserEmail(json.email);
-        // setAccountID(json.accountNumber);
-        // console.log(" OK SO USEREMAIL: ", userEmail)
-        // console.log(" OK SO AccountID: ", accountID)
-        // console.log("FetchYUSER: ", json);
         return json;
     } catch (error) {
         console.log("error", error);
@@ -69,8 +62,13 @@ export default function QRAuth() {
     y = await fetchQR(x.email);
     console.log(" OK SO image: ", y);
 
-    setQrImage(y)
+    setQrImage(y.image);
   }
+
+  useEffect(() => {
+    console.log("Updated qrImage:", qrImage);
+  }, [qrImage]);
+
 
   return (
     <>

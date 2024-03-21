@@ -24,6 +24,8 @@ router.get("/users/:userId/getDetails", async (req, res) => {
             email: user.email,
             address: user.address,
             phoneNumber: user.phoneNumber,
+            role: user.role,
+            mfa: user.mfa
         };
         // Sending back user item list
         res.send(userItem);

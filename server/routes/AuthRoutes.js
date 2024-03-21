@@ -45,7 +45,7 @@ router.post("/fetchMFA", async (req, res) => {
       `Fetching MFA Status = invoked, with userinfo: ${JSON.stringify(userInfo.email)}}`
     );
     const userMFA = await userCalls.getMFA(userInfo);
-    console.log("YOYOYOYYO:", userMFA);
+    console.log("MFA STATUS OF USER: ", userInfo.email , "is: ",userMFA);
     res.send(userMFA);
   }catch (error) {
     logger.testlogger.error(`Error occured while fetching mfa Status : ${error}`);
@@ -55,17 +55,19 @@ router.post("/fetchMFA", async (req, res) => {
 
 router.get('/qrauth', async(req, res) => {
     try {
-        console.log("YO!")
         const userInfo = req.body;
-        // logger.testlogger.info(`QRCode invoked, with userinfo: ${JSON.stringify(userInfo.email)}`);
-        // // const userId = await userCalls.searchUserInDB(userInfo);
+        logger.testlogger.info(`QRCode invoked, with userinfo: ${JSON.stringify(userInfo.email)}`);
+        // // // const userId = await userCalls.searchUserInDB(userInfo);
         const qrcode = require('qrcode');
         const {authenticator} = require('otplib');
         const secret = authenticator.generateSecret();
         const uri = authenticator.keyuri(userInfo, "HydroSec", secret);
         const image = await qrcode.toDataURL(uri);
-        const user = await userCalls.updateUserInDB(userInfo, secret)
-        console.log("***", user);
+        // const user = await userCalls.updateUserInDB(userInfo, secret)
+        // console.log("***", user);
+        console.log("**TEST**");
+        console.log("**QR Image = ", image), " **";
+        console.log("**Test Secret ", secret , " **");
         res.send({image});
     } catch(error) {
         logger.testlogger.error(`Error occured while generating QR image: ${error}`);

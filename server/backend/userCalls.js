@@ -112,5 +112,6 @@ module.exports = {
     addUserToDB,
     getUserFromDB,
     searchUserInDB,
-    updateUserInDB
+    updateUserInDB,
+    getMFA
 }
