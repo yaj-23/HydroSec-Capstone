@@ -1,46 +1,295 @@
-{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-01-01T20:36:42.055Z"}
-{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-01-01T20:36:42.798Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: [object Object]","timestamp":"2024-01-01T20:37:03.853Z"}
-{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-01T20:37:03.910Z"}
-{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-01-01T20:39:35.272Z"}
-{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-01-01T20:39:35.863Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: {\"email\":\"yajurva@email.com\",\"password\":\"Yajurva23\"}","timestamp":"2024-01-01T20:39:57.245Z"}
-{"level":"info","message":"User with email: yajurva@email.com exists.","timestamp":"2024-01-01T20:39:57.293Z"}
-{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-01-01T20:41:22.963Z"}
-{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-01-01T20:41:25.640Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"sanj@gmail.com\"","timestamp":"2024-01-01T20:41:37.132Z"}
-{"level":"error","message":"Incorrect login information.","timestamp":"2024-01-01T20:41:37.190Z"}
-{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-01-01T20:41:37.190Z"}
-{"level":"error","message":"Error occured while signin process: Error: User does not exist","timestamp":"2024-01-01T20:41:37.190Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-01T20:41:49.916Z"}
-{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-01T20:41:49.970Z"}
-{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-01-28T05:42:58.008Z"}
-{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-01-28T05:42:58.613Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-28T05:43:56.728Z"}
-{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-28T05:43:56.772Z"}
-{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-01-31T05:04:23.162Z"}
-{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-01-31T05:04:23.698Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"","timestamp":"2024-01-31T05:05:35.560Z"}
-{"level":"error","message":"Incorrect login information.","timestamp":"2024-01-31T05:05:35.602Z"}
-{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-01-31T05:05:35.602Z"}
-{"level":"error","message":"Error occured while signin process: Error: User does not exist","timestamp":"2024-01-31T05:05:35.602Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T05:05:46.250Z"}
-{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-31T05:05:46.303Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T06:05:38.234Z"}
-{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-31T06:05:38.273Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T06:29:48.204Z"}
-{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-31T06:29:48.241Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T06:34:20.218Z"}
-{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-31T06:34:20.259Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T06:57:26.464Z"}
-{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-31T06:57:26.494Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T07:02:30.410Z"}
-{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-31T07:02:30.449Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T07:09:18.293Z"}
-{"level":"error","message":"Incorrect login information.","timestamp":"2024-01-31T07:09:18.333Z"}
-{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-01-31T07:09:18.333Z"}
-{"level":"error","message":"Error occured while signin process: Error: User does not exist","timestamp":"2024-01-31T07:09:18.334Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T07:09:22.783Z"}
-{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-31T07:09:22.823Z"}
-{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@email.com\"","timestamp":"2024-01-31T07:13:47.437Z"}
-{"level":"info","message":"User with email: yajurva23@email.com exists.","timestamp":"2024-01-31T07:13:47.476Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-08T18:35:10.177Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-08T18:35:10.759Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T18:36:23.842Z"}
+{"level":"info","message":"User with email: 123@123.com exists.","timestamp":"2024-03-08T18:36:23.898Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T18:36:23.904Z"}
+{"level":"error","message":"Error occured while fetching mfa Status : TypeError: userCalls.getMFA is not a function","timestamp":"2024-03-08T18:36:23.904Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T18:36:23.967Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T18:37:06.853Z"}
+{"level":"info","message":"User with email: 123@123.com exists.","timestamp":"2024-03-08T18:37:06.891Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T18:37:06.896Z"}
+{"level":"error","message":"Error occured while fetching mfa Status : TypeError: userCalls.getMFA is not a function","timestamp":"2024-03-08T18:37:06.897Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-08T19:04:21.651Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-08T19:04:47.084Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:05:52.265Z"}
+{"level":"info","message":"User with email: 123@123.com exists.","timestamp":"2024-03-08T19:05:54.631Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:05:54.637Z"}
+{"level":"error","message":"Error occured while fetching mfa Status : TypeError: userCalls.getMFA is not a function","timestamp":"2024-03-08T19:05:54.638Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:15:25.234Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:17:40.230Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:31:39.329Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:32:57.203Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-08T19:33:09.978Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-08T19:33:10.608Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:33:41.536Z"}
+{"level":"info","message":"User with email: 123@123.com exists.","timestamp":"2024-03-08T19:33:41.582Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:33:41.590Z"}
+{"level":"error","message":"Error occured while fetching mfa Status : TypeError: userCalls.getMFA is not a function","timestamp":"2024-03-08T19:33:41.590Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:33:41.646Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:35:08.562Z"}
+{"level":"info","message":"User with email: 123@123.com exists.","timestamp":"2024-03-08T19:35:08.601Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:35:08.606Z"}
+{"level":"error","message":"Error occured while fetching mfa Status : TypeError: userCalls.getMFA is not a function","timestamp":"2024-03-08T19:35:08.607Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:35:08.657Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:36:29.320Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:36:52.070Z"}
+{"level":"info","message":"User with email: 123@123.com exists.","timestamp":"2024-03-08T19:36:52.147Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:36:52.153Z"}
+{"level":"error","message":"Error occured while fetching mfa Status : TypeError: userCalls.getMFA is not a function","timestamp":"2024-03-08T19:36:52.154Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:36:52.210Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:38:07.232Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:38:10.232Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:38:49.174Z"}
+{"level":"info","message":"User with email: 123@123.com exists.","timestamp":"2024-03-08T19:38:49.213Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:38:49.232Z"}
+{"level":"error","message":"Error occured while fetching mfa Status : TypeError: userCalls.getMFA is not a function","timestamp":"2024-03-08T19:38:49.233Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:38:49.291Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:41:03.178Z"}
+{"level":"info","message":"User with email: 123@123.com exists.","timestamp":"2024-03-08T19:41:03.220Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:41:03.226Z"}
+{"level":"error","message":"Error occured while fetching mfa Status : TypeError: userCalls.getMFA is not a function","timestamp":"2024-03-08T19:41:03.227Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:41:03.284Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:41:32.237Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:41:32.271Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:41:32.309Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:41:32.348Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:41:41.589Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:41:41.591Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:41:41.617Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:41:41.619Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:43:32.882Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:43:37.902Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:43:38.690Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:43:39.345Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:43:39.995Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:43:40.650Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:43:41.375Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:44:37.436Z"}
+{"level":"info","message":"User with email: 123@123.com exists.","timestamp":"2024-03-08T19:44:37.475Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:44:37.480Z"}
+{"level":"error","message":"Error occured while fetching mfa Status : TypeError: userCalls.getMFA is not a function","timestamp":"2024-03-08T19:44:37.480Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:44:40.426Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:45:02.275Z"}
+{"level":"info","message":"User with email: 123@123.com exists.","timestamp":"2024-03-08T19:45:02.326Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:45:02.330Z"}
+{"level":"error","message":"Error occured while fetching mfa Status : TypeError: userCalls.getMFA is not a function","timestamp":"2024-03-08T19:45:02.330Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:45:05.152Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:47:46.981Z"}
+{"level":"info","message":"User with email: 123@123.com exists.","timestamp":"2024-03-08T19:47:47.026Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:47:47.030Z"}
+{"level":"error","message":"Error occured while fetching mfa Status : TypeError: userCalls.getMFA is not a function","timestamp":"2024-03-08T19:47:47.030Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:47:49.497Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:48:20.390Z"}
+{"level":"info","message":"User with email: 123@123.com exists.","timestamp":"2024-03-08T19:48:20.421Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:48:20.427Z"}
+{"level":"error","message":"Error occured while fetching mfa Status : TypeError: userCalls.getMFA is not a function","timestamp":"2024-03-08T19:48:20.427Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:48:22.219Z"}
+{"level":"error","message":"Error occured while generating QR image: Error: Cannot find module 'qrcode'\nRequire stack:\n- C:\\Users\\yajur\\Desktop\\Capstone\\crud-ap\\server\\routes\\AuthRoutes.js\n- C:\\Users\\yajur\\Desktop\\Capstone\\crud-ap\\server\\backend\\server.js","timestamp":"2024-03-08T19:48:22.226Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-08T19:49:31.290Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-08T19:49:31.844Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:50:35.565Z"}
+{"level":"info","message":"User with email: 123@123.com exists.","timestamp":"2024-03-08T19:50:35.608Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:50:35.613Z"}
+{"level":"error","message":"Error occured while fetching mfa Status : TypeError: userCalls.getMFA is not a function","timestamp":"2024-03-08T19:50:35.614Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:50:37.685Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:52:25.007Z"}
+{"level":"info","message":"User with email: 123@123.com exists.","timestamp":"2024-03-08T19:52:25.050Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:52:25.055Z"}
+{"level":"error","message":"Error occured while fetching mfa Status : TypeError: userCalls.getMFA is not a function","timestamp":"2024-03-08T19:52:25.055Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:52:27.302Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:52:53.963Z"}
+{"level":"info","message":"User with email: 123@123.com exists.","timestamp":"2024-03-08T19:52:54.003Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:52:54.008Z"}
+{"level":"error","message":"Error occured while fetching mfa Status : TypeError: userCalls.getMFA is not a function","timestamp":"2024-03-08T19:52:54.009Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:52:55.777Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-08T19:55:24.317Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-08T19:55:24.894Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:55:45.773Z"}
+{"level":"info","message":"User with email: 123@123.com exists.","timestamp":"2024-03-08T19:55:45.824Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:55:45.831Z"}
+{"level":"error","message":"Error occured while fetching mfa Status : TypeError: userCalls.getMFA is not a function","timestamp":"2024-03-08T19:55:45.831Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:55:49.946Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-08T19:57:31.161Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-08T19:57:31.798Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:57:48.050Z"}
+{"level":"info","message":"User with email: 123@123.com exists.","timestamp":"2024-03-08T19:57:48.096Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:57:48.103Z"}
+{"level":"error","message":"Error occured while fetching mfa Status : TypeError: userCalls.getMFA is not a function","timestamp":"2024-03-08T19:57:48.103Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:57:50.168Z"}
+{"level":"info","message":"Sign Up invoked, with userinfo: [object Object]","timestamp":"2024-03-08T20:00:57.648Z"}
+{"level":"info","message":"Creating new user with: [object Object]","timestamp":"2024-03-08T20:00:57.691Z"}
+{"level":"info","message":"Sign Up invoked, with userinfo: [object Object]","timestamp":"2024-03-08T20:02:04.401Z"}
+{"level":"info","message":"Creating new user with: [object Object]","timestamp":"2024-03-08T20:02:04.439Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T20:02:26.222Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-08T20:02:43.719Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-08T20:02:43.760Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-08T20:02:43.765Z"}
+{"level":"error","message":"Error occured while fetching mfa Status : TypeError: userCalls.getMFA is not a function","timestamp":"2024-03-08T20:02:43.765Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb6ebc9fb85967fc1b6c90'),\n  name: 'yajurva',\n  email: 'yajurva23@gmail.com',\n  password: 'yajurva23',\n  address: '1234 Queens',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  __v: 0\n}.","timestamp":"2024-03-08T20:02:51.141Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-08T20:05:18.170Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-08T20:05:18.810Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-08T20:05:45.615Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-08T20:05:45.658Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-08T20:05:45.664Z"}
+{"level":"error","message":"Error occured while fetching mfa Status : TypeError: userCalls.getMFA is not a function","timestamp":"2024-03-08T20:05:45.664Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb6ebc9fb85967fc1b6c90'),\n  name: 'yajurva',\n  email: 'yajurva23@gmail.com',\n  password: 'yajurva23',\n  address: '1234 Queens',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  __v: 0\n}.","timestamp":"2024-03-08T20:05:49.501Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-20T22:36:17.967Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-20T22:36:18.557Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-20T23:11:56.747Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-20T23:11:56.793Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-20T23:11:56.799Z"}
+{"level":"error","message":"Error occured while fetching mfa Status : TypeError: userCalls.getMFA is not a function","timestamp":"2024-03-20T23:11:56.800Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65f48cc3618a20a4b514a7da'),\n  name: 'Tester',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '123 Random Street',\n  phoneNumber: '4161234312',\n  mfa: false,\n  status: false,\n  __v: 0\n}.","timestamp":"2024-03-20T23:23:18.770Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-20T23:24:10.928Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-20T23:24:11.938Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-20T23:24:38.826Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-20T23:24:38.887Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-20T23:24:38.894Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-20T23:24:38.944Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-20T23:41:53.829Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-20T23:41:54.408Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-20T23:42:08.775Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-20T23:42:08.825Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-20T23:42:08.849Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-20T23:42:08.917Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65f48cc3618a20a4b514a7da'),\n  name: 'Tester',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '123 Random Street',\n  phoneNumber: '4161234312',\n  mfa: false,\n  status: false,\n  __v: 0\n}.","timestamp":"2024-03-20T23:47:01.906Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-20T23:47:01.911Z"}
+{"level":"error","message":"Error occured while generating QR image: ReferenceError: image is not defined","timestamp":"2024-03-20T23:47:01.911Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65f48cc3618a20a4b514a7da'),\n  name: 'Tester',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '123 Random Street',\n  phoneNumber: '4161234312',\n  mfa: false,\n  status: false,\n  __v: 0\n}.","timestamp":"2024-03-20T23:47:54.110Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-20T23:47:54.116Z"}
+{"level":"error","message":"Error occured while generating QR image: ReferenceError: image is not defined","timestamp":"2024-03-20T23:47:54.117Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65f48cc3618a20a4b514a7da'),\n  name: 'Tester',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '123 Random Street',\n  phoneNumber: '4161234312',\n  mfa: false,\n  status: false,\n  __v: 0\n}.","timestamp":"2024-03-20T23:48:51.593Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-20T23:48:51.599Z"}
+{"level":"error","message":"Error occured while generating QR image: ReferenceError: image is not defined","timestamp":"2024-03-20T23:48:51.600Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-20T23:49:22.498Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-20T23:49:23.107Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-20T23:49:38.680Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-20T23:49:38.727Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-20T23:49:38.733Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-20T23:49:38.808Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65f48cc3618a20a4b514a7da'),\n  name: 'Tester',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '123 Random Street',\n  phoneNumber: '4161234312',\n  mfa: false,\n  status: false,\n  __v: 0\n}.","timestamp":"2024-03-20T23:49:50.845Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-20T23:49:50.851Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-20T23:52:52.138Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-20T23:52:52.725Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-20T23:53:03.936Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-20T23:53:03.985Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-20T23:53:03.991Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-20T23:53:04.033Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65f48cc3618a20a4b514a7da'),\n  name: 'Tester',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '123 Random Street',\n  phoneNumber: '4161234312',\n  mfa: false,\n  status: false,\n  __v: 0\n}.","timestamp":"2024-03-20T23:53:26.452Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-20T23:53:26.458Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65f48cc3618a20a4b514a7da'),\n  name: 'Tester',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '123 Random Street',\n  phoneNumber: '4161234312',\n  mfa: false,\n  status: false,\n  __v: 0\n}.","timestamp":"2024-03-21T00:03:05.238Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T00:03:05.244Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65f48cc3618a20a4b514a7da'),\n  name: 'Tester',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '123 Random Street',\n  phoneNumber: '4161234312',\n  mfa: false,\n  status: false,\n  __v: 0\n}.","timestamp":"2024-03-21T00:05:32.226Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T00:05:32.233Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-21T00:10:35.260Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T00:10:50.875Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T00:10:50.927Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T00:10:50.934Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T00:10:50.969Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65f48cc3618a20a4b514a7da'),\n  name: 'Tester',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '123 Random Street',\n  phoneNumber: '4161234312',\n  mfa: false,\n  status: false,\n  __v: 0\n}.","timestamp":"2024-03-21T00:10:53.754Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T00:10:53.759Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-21T00:14:40.575Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-21T00:14:41.376Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T00:14:50.278Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T00:14:50.327Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T00:14:50.334Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T00:14:50.400Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65f48cc3618a20a4b514a7da'),\n  name: 'Tester',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '123 Random Street',\n  phoneNumber: '4161234312',\n  mfa: false,\n  status: false,\n  __v: 0\n}.","timestamp":"2024-03-21T00:14:55.879Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T00:14:55.884Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65f48cc3618a20a4b514a7da'),\n  name: 'Tester',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '123 Random Street',\n  phoneNumber: '4161234312',\n  mfa: false,\n  status: false,\n  __v: 0\n}.","timestamp":"2024-03-21T00:15:03.726Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T00:15:03.732Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-21T00:15:42.040Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-21T00:15:42.856Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T00:15:49.129Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T00:15:49.174Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T00:15:49.181Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T00:15:49.221Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65f48cc3618a20a4b514a7da'),\n  name: 'Tester',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '123 Random Street',\n  phoneNumber: '4161234312',\n  mfa: false,\n  status: false,\n  __v: 0\n}.","timestamp":"2024-03-21T00:15:52.262Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T00:15:52.268Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65f48cc3618a20a4b514a7da'),\n  name: 'Tester',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '123 Random Street',\n  phoneNumber: '4161234312',\n  mfa: false,\n  status: false,\n  __v: 0\n}.","timestamp":"2024-03-21T00:17:12.971Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T00:17:12.976Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65f48cc3618a20a4b514a7da'),\n  name: 'Tester',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '123 Random Street',\n  phoneNumber: '4161234312',\n  mfa: false,\n  status: false,\n  __v: 0\n}.","timestamp":"2024-03-21T00:17:15.116Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T00:17:15.120Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-21T00:17:23.883Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T00:17:34.870Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T00:17:34.928Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T00:17:34.934Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T00:17:34.972Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65f48cc3618a20a4b514a7da'),\n  name: 'Tester',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '123 Random Street',\n  phoneNumber: '4161234312',\n  mfa: false,\n  status: false,\n  __v: 0\n}.","timestamp":"2024-03-21T00:17:38.185Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T00:17:38.190Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65f48cc3618a20a4b514a7da'),\n  name: 'Tester',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '123 Random Street',\n  phoneNumber: '4161234312',\n  mfa: false,\n  status: false,\n  __v: 0\n}.","timestamp":"2024-03-21T00:18:01.192Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T00:18:01.198Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-21T00:47:40.862Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-21T00:47:41.499Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T00:47:52.990Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T00:47:53.035Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T00:47:53.042Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T00:47:53.083Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fb825e7f3dd3ab945328b4'),\n  name: 'test',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '13 way st',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  __v: 0\n}.","timestamp":"2024-03-21T00:47:55.595Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T00:47:55.600Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fb825e7f3dd3ab945328b4'),\n  name: 'test',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '13 way st',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  __v: 0\n}.","timestamp":"2024-03-21T00:48:00.332Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T00:48:00.336Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fb825e7f3dd3ab945328b4'),\n  name: 'test',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '13 way st',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  __v: 0\n}.","timestamp":"2024-03-21T00:48:01.429Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T00:48:01.434Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fb825e7f3dd3ab945328b4'),\n  name: 'test',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '13 way st',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  __v: 0\n}.","timestamp":"2024-03-21T00:48:02.212Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T00:48:02.215Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-21T00:48:42.749Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-21T00:48:43.337Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T00:48:48.899Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T00:48:48.950Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T00:48:48.957Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T00:48:48.998Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fb825e7f3dd3ab945328b4'),\n  name: 'test',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '13 way st',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  __v: 0\n}.","timestamp":"2024-03-21T00:48:51.944Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T00:48:51.949Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fb825e7f3dd3ab945328b4'),\n  name: 'test',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '13 way st',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  __v: 0\n}.","timestamp":"2024-03-21T00:53:23.030Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T00:53:23.036Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-21T00:54:23.799Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-21T00:54:24.388Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T00:54:34.865Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T00:54:34.914Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T00:54:34.921Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T00:54:34.976Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fb825e7f3dd3ab945328b4'),\n  name: 'test',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '13 way st',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  __v: 0\n}.","timestamp":"2024-03-21T00:54:41.245Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T00:54:41.250Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-21T00:55:23.949Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-21T00:55:24.686Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T00:55:30.993Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T00:55:31.060Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T00:55:31.067Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T00:55:31.109Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fb825e7f3dd3ab945328b4'),\n  name: 'test',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '13 way st',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  __v: 0\n}.","timestamp":"2024-03-21T00:55:33.835Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T00:55:33.843Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T00:58:11.892Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T00:58:11.934Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T00:58:11.939Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T00:58:11.977Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fb825e7f3dd3ab945328b4'),\n  name: 'test',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '13 way st',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  __v: 0\n}.","timestamp":"2024-03-21T00:58:19.232Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-21T01:00:15.626Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-21T01:00:16.177Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T01:00:24.984Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T01:00:25.030Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T01:00:25.037Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T01:00:25.079Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fb825e7f3dd3ab945328b4'),\n  name: 'test',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '13 way st',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  __v: 0\n}.","timestamp":"2024-03-21T01:00:27.929Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fb825e7f3dd3ab945328b4'),\n  name: 'test',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '13 way st',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  __v: 0\n}.","timestamp":"2024-03-21T01:00:40.407Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T01:00:40.413Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-21T01:01:38.197Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-21T01:01:38.839Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T01:01:47.298Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T01:01:47.368Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T01:01:47.376Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T01:01:47.429Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fb825e7f3dd3ab945328b4'),\n  name: 'test',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '13 way st',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  __v: 0\n}.","timestamp":"2024-03-21T01:01:51.354Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T01:01:51.360Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fb825e7f3dd3ab945328b4'),\n  name: 'test',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '13 way st',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  __v: 0\n}.","timestamp":"2024-03-21T01:03:15.636Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T01:03:15.641Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fb825e7f3dd3ab945328b4'),\n  name: 'test',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '13 way st',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  __v: 0\n}.","timestamp":"2024-03-21T01:04:22.772Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: \"test@gmail.com\"","timestamp":"2024-03-21T01:04:22.777Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-21T01:05:23.570Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-21T01:05:24.144Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T01:05:33.658Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T01:05:33.705Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T01:05:33.712Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T01:05:33.756Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fb825e7f3dd3ab945328b4'),\n  name: 'test',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '13 way st',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  __v: 0\n}.","timestamp":"2024-03-21T01:05:37.373Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: \"test@gmail.com\"","timestamp":"2024-03-21T01:05:37.380Z"}

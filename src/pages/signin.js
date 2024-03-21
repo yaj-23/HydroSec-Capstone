@@ -37,7 +37,7 @@ export default function Signin() {
   
       if (resp.ok) {
         const userId = await resp.json();
-        console.log("YO REZXA: ", userId);
+        console.log("UserID: ", userId);
         return userId;
       } else {
         return false;
@@ -60,7 +60,7 @@ export default function Signin() {
   
       if (resp.ok) {
         const userMFa = await resp.json();
-        console.log("YO Dimitri: ", userMFa);
+        console.log("UserMFA: ", userMFa);
         return userMFa;
       } else {
         return false;
@@ -97,11 +97,15 @@ export default function Signin() {
         navigate("/admin");
         return;
       }
-      if (currMfaStatus == false){
-        console.log("I HAVE REACHED: ", currMfaStatus);
-      }
       console.log(`User has successfully logged in: ${currUserId}`);
-      navigate("/dashboard");
+      if (currMfaStatus == false){
+        console.log("MFA STATUS IS FALSE *** Navigating to QR AUTH");
+        navigate("/qrauth");
+      }
+      else {
+        navigate("/dashboard");
+      }
+      
     }
     else {
       alert("Incorrect User Information");
