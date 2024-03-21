@@ -18,7 +18,9 @@ export default function QRAuth() {
 
   const fetchQR = async (userInfo) => {
     try {
-      const resp = await fetch("http://localhost:5000/qrauth", {
+      // Convert userInfo object to query string
+      const queryString = new URLSearchParams({ email: userInfo }).toString(); // Convert email to query string
+      const resp = await fetch(`http://localhost:5000/qrauth?${queryString}`, {
         method: "get",
         headers: {
           "Content-Type": "application/json",

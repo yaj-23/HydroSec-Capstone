@@ -79,7 +79,9 @@ async function getMFA(userInfo){
 async function updateUserInDB(email, data){
     try 
     {   
-        User.findOneAndUpdate({email: email}, {tempSecret : data}, {new: true});
+        console.log("The Email: ", email, " and TempSecret: ", data);
+        const updatedUser = await User.findOneAndUpdate({ email: email }, { tempSecret: data }, { new: true });
+        return updatedUser;
     }catch(error){
         logger.testlogger.error(`Error occured while updating user data: ${error}`);
         if (error instanceof(Error))

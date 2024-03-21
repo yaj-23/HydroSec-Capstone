@@ -157,7 +157,7 @@ export default function Signup() {
         alert("Your password is invalid");
       }
     }
-    navigate('/qrauth');
+    navigate('/signin');
   }
       
   return (

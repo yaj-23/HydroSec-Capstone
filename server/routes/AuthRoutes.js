@@ -55,7 +55,8 @@ router.post("/fetchMFA", async (req, res) => {
 
 router.get('/qrauth', async(req, res) => {
     try {
-        const userInfo = req.body;
+        const userInfo = req.query;
+        console.log("UserINFO: ", userInfo);
         logger.testlogger.info(`QRCode invoked, with userinfo: ${JSON.stringify(userInfo.email)}`);
         // // // const userId = await userCalls.searchUserInDB(userInfo);
         const qrcode = require('qrcode');
@@ -63,8 +64,8 @@ router.get('/qrauth', async(req, res) => {
         const secret = authenticator.generateSecret();
         const uri = authenticator.keyuri(userInfo, "HydroSec", secret);
         const image = await qrcode.toDataURL(uri);
-        // const user = await userCalls.updateUserInDB(userInfo, secret)
-        // console.log("***", user);
+        const user = await userCalls.updateUserInDB(userInfo.email, secret)
+        console.log("***", user);
         console.log("**TEST**");
         console.log("**QR Image = ", image), " **";
         console.log("**Test Secret ", secret , " **");
