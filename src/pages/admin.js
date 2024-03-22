@@ -14,9 +14,11 @@ const AdminPage = () => {
   useEffect(() => {
     fetchAllUsers();
     fetchLatestLog();
+    addLogToDatabase();
     // Call fetchLatestLog every 20 seconds
-    const interval = setInterval(fetchLatestLog, 20000);
-    return () => clearInterval(interval); // Cleanup function to clear the interval
+    const interval = setInterval(fetchLatestLog, 100000);
+    const interval2 = setInterval(addLogToDatabase, 200000);
+    return () => clearInterval(interval, interval2); // Cleanup function to clear the interval
   }, []);
 
   const fetchLatestLog = async () => {
@@ -121,10 +123,6 @@ const AdminPage = () => {
       console.error("Error deleting user: ", error.message);
     }
   };
-
-  
-  setInterval(addLogToDatabase, 100000);
-
 
   return (
     <>
