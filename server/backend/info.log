@@ -496,3 +496,5 @@
 {"level":"info","message":"QRCode invoked, with userinfo: \"yajurva23@gmail.com\"","timestamp":"2024-03-21T20:14:36.921Z"}
 {"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'PMORMUY3CBFV4UBE',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-21T20:14:55.733Z"}
 {"level":"info","message":"QRCode invoked, with userinfo: \"yajurva23@gmail.com\"","timestamp":"2024-03-21T20:14:55.743Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T20:25:55.371Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T20:26:06.574Z"}
