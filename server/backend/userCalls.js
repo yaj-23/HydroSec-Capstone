@@ -75,6 +75,25 @@ async function getMFA(userInfo) {
   }
 }
 
+async function getUserStatus(userInfo) {
+  try {
+    // Checking is a User Already exists
+    const userExists = await User.findOne({
+      email: userInfo.email,
+      password: userInfo.password,
+    }).exec();
+    console.log("yo:", userExists);
+    if (userExists) {
+      logger.testlogger.info(`User with email: ${userInfo.email} exists.`);
+      return userExists.locked;
+    }
+  } catch (error) {
+    logger.testlogger.error(`Error occured while searching for user: ${error}`);
+    if (error instanceof Error) throw error;
+    else throw Error("Some Error Occured: ", error.toString());
+  }
+}
+
 async function updateUserInDB(email, data) {
   try {
     console.log("The Email: ", email, " and TempSecret: ", data);
@@ -171,6 +190,7 @@ module.exports = {
   updateUserInDB,
   updateUserStatus,
   getMFA,
+  getUserStatus,
   getAllUsersFromDB,
   deleteUser
 };

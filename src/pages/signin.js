@@ -16,6 +16,7 @@ export default function Signin() {
 
   let currUserId = "";
   let currMfaStatus = false;
+  let currentUserStatus = false;
   const {setLoggedUser, setAdminStatus} = useUser();
   const navigate = useNavigate();
 
@@ -71,6 +72,29 @@ export default function Signin() {
     }
   };
 
+  const fetchUserStatus = async (userInfo) => {
+    try {
+      const resp = await fetch("http://localhost:5000/fetchUserStatus", {
+        method: "post",
+        body: JSON.stringify(userInfo),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+  
+      if (resp.ok) {
+        const userStatus = await resp.json();
+        console.log("UserSTatus: ", userStatus);
+        return userStatus;
+      } else {
+        return false;
+      }
+    } catch (error) {
+      console.log(error);
+      return null;
+    }
+  };
+
   
   /**
    * Handles Submit Form
@@ -88,6 +112,7 @@ export default function Signin() {
     // Fetchig new User ID
     currUserId = await fetchId(userInfo);
     currMfaStatus = await fetechMfa(userInfo);
+    currentUserStatus = await fetchUserStatus(userInfo);
     // setMfa(currMfaStatus);
     if (currUserId) {
       setLoggedUser(currUserId);
@@ -97,15 +122,20 @@ export default function Signin() {
         navigate("/admin");
         return;
       }
-      console.log(`User has successfully logged in: ${currUserId}`);
-      if (currMfaStatus == false){
-        console.log("MFA STATUS IS FALSE *** Navigating to QR AUTH");
-        navigate("/qrauth");
+      else if (currentUserStatus==true){
+        console.log("Your account is locked. Try Again");
+        navigate("/");
       }
-      else {
-        navigate("/dashboard");
+      else{
+        console.log(`User has successfully logged in: ${currUserId}`);
+        if (currMfaStatus == false){
+          console.log("MFA STATUS IS FALSE *** Navigating to QR AUTH");
+          navigate("/qrauth");
+        }
+        else {
+          navigate("/dashboard");
+        }
       }
-      
     }
     else {
       alert("Incorrect User Information");

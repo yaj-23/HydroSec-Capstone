@@ -580,3 +580,27 @@
 {"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-22T18:27:19.774Z"}
 {"level":"info","message":"Invoked Log To Database","timestamp":"2024-03-22T18:27:19.774Z"}
 {"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-22T18:27:19.932Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-22T21:14:11.933Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-22T21:14:14.535Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-22T21:14:14.535Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-22T21:19:59.152Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-22T21:19:59.208Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-22T21:19:59.214Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-22T21:19:59.259Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-22T21:19:59.262Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-22T21:19:59.303Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fb825e7f3dd3ab945328b4'),\n  name: 'test',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '13 way st',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'LUFD6IIQKV7CWIZX',\n  __v: 0,\n  locked: true\n}.","timestamp":"2024-03-22T21:19:59.357Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-22T21:22:31.806Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-22T21:22:32.853Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-22T21:22:32.854Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-22T21:22:38.911Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-22T21:22:39.003Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-22T21:22:39.148Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-03-22T21:22:39.149Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-22T21:22:39.207Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-22T21:23:06.810Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-22T21:23:06.861Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-22T21:23:06.866Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-22T21:23:06.909Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-22T21:23:06.913Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-22T21:23:06.954Z"}
