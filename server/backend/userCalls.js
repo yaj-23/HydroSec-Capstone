@@ -149,6 +149,21 @@ async function getAllUsersFromDB() {
   }
 }
 
+/**
+ * Deletes a user from the database.
+ * @param {string} userId - The ID of the user to be deleted.
+ * @returns {Promise<void>} A Promise that resolves once the user is deleted.
+ */
+async function deleteUser(userId) {
+  try {
+    await User.findByIdAndDelete(userId);
+    logger.testlogger.info(`User with ID ${userId} deleted successfully.`);
+  } catch (error) {
+    logger.testlogger.error(`Error deleting user with ID ${userId}: ${error}`);
+    throw error;
+  }
+}
+
 module.exports = {
   addUserToDB,
   getUserFromDB,
@@ -157,4 +172,5 @@ module.exports = {
   updateUserStatus,
   getMFA,
   getAllUsersFromDB,
+  deleteUser
 };

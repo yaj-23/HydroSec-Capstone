@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./components/nav";
 import { LazyLog } from 'react-lazylog';
 import './admin.css'
+import { Button } from "./components/button/Button";
 
 const AdminPage = () => {
   const [users, setUsers] = useState([]);
@@ -103,6 +104,24 @@ const AdminPage = () => {
     }
   };
 
+  const deleteUser = async (userId) => {
+    try {
+      const resp = await fetch(`http://localhost:5000/users/${userId}`, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      if (resp.ok) {
+        fetchAllUsers(); // Refresh the user list after deletion
+      } else {
+        throw new Error('Failed to delete user');
+      }
+    } catch (error) {
+      console.error("Error deleting user: ", error.message);
+    }
+  };
+
   
   setInterval(addLogToDatabase, 100000);
 
@@ -128,10 +147,13 @@ const AdminPage = () => {
                 <div>
                   <strong>Status:</strong> {user.status ? "Locked" : "Unlocked"}
                 </div>
-                <div>
-                  <button onClick={() => toggleUserState(user)}>
+                <div className="userCard-btns">
+                  <Button  onClick={() => toggleUserState(user)} buttonColor='primary' buttonSize='btn-small' buttonStyle='btn-primary'>
                     {user.status ? "Unlock" : "Lock"}
-                  </button>
+                  </Button>                  
+                  <Button  onClick={() => deleteUser(user._id)} buttonColor='primary' buttonSize='btn-small' buttonStyle='btn-primary'>
+                    Delete
+                  </Button>
                 </div>
               </div>
             ))}
@@ -150,7 +172,7 @@ const AdminPage = () => {
             )}
           </div>
           {log_msg ? (
-            <LazyLog text={log_msg} height={300} width={800} enableSearch />
+            <LazyLog text={log_msg} height={500} width={1450} enableSearch />
           ) : (
             <div>No log entries available</div>
           )}
