@@ -496,3 +496,87 @@
 {"level":"info","message":"QRCode invoked, with userinfo: \"yajurva23@gmail.com\"","timestamp":"2024-03-21T20:14:36.921Z"}
 {"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'PMORMUY3CBFV4UBE',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-21T20:14:55.733Z"}
 {"level":"info","message":"QRCode invoked, with userinfo: \"yajurva23@gmail.com\"","timestamp":"2024-03-21T20:14:55.743Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-21T20:25:55.371Z"}
+{"level":"info","message":"User Status Change Invoked For: \"123@123.com\"","timestamp":"2024-03-21T20:26:06.574Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-22T17:41:25.945Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-22T17:41:27.078Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-22T17:41:27.078Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-22T17:42:06.022Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-22T17:42:06.087Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-22T17:42:06.299Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-22T17:42:26.480Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-22T17:42:26.914Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-22T17:42:46.481Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-22T17:42:46.995Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-22T17:42:56.417Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-22T17:42:56.555Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-22T17:42:56.842Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-22T17:43:02.087Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-22T17:43:02.154Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-22T17:43:02.559Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-22T17:43:08.341Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-22T17:43:08.414Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-22T17:43:08.659Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-22T17:43:28.346Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-22T17:43:28.628Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-22T17:43:46.443Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-03-22T17:43:46.444Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-22T17:43:46.756Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-03-22T17:43:46.756Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-22T17:43:47.020Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-03-22T17:43:47.021Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-22T17:43:48.348Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-22T17:43:48.601Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-22T17:44:08.351Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-22T17:44:08.763Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-22T17:44:28.483Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-22T17:44:28.920Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-22T17:44:37.510Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-03-22T17:44:37.510Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-22T17:44:38.269Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-03-22T17:44:38.269Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-22T17:44:38.917Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-03-22T17:44:38.918Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-22T17:44:39.118Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-22T18:25:36.481Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-22T18:25:37.081Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-22T18:25:56.477Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-22T18:25:56.956Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-22T18:26:11.787Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-22T18:26:11.836Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-22T18:26:12.680Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-22T18:26:32.487Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-22T18:26:33.351Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-22T18:26:47.501Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-22T18:26:47.540Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-22T18:26:48.195Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-22T18:26:52.493Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-22T18:26:52.592Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-22T18:26:52.692Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-03-22T18:26:52.692Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-22T18:26:52.854Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-22T18:26:58.492Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-22T18:26:58.599Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-22T18:26:58.700Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-22T18:26:58.792Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-03-22T18:26:58.793Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-22T18:27:04.501Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-22T18:27:04.628Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-22T18:27:04.806Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-03-22T18:27:04.806Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-22T18:27:05.035Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-22T18:27:06.496Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-22T18:27:06.576Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-22T18:27:06.739Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-03-22T18:27:06.739Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-22T18:27:06.935Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-22T18:27:12.489Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-22T18:27:12.538Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-22T18:27:12.821Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-03-22T18:27:12.822Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-22T18:27:13.123Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-22T18:27:19.504Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-22T18:27:19.583Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-22T18:27:19.774Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-03-22T18:27:19.774Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-22T18:27:19.932Z"}

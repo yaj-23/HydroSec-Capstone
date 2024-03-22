@@ -67,6 +67,19 @@ router.get("/users/updateStatus", async (req, res) => {
 });
 
 
+// DELETE a user
+router.delete("/users/:userId", async (req, res) => {
+  try {
+    const userId = req.params.userId;
+    logger.testlogger.info(`User Deletion Invoked For: ${JSON.stringify(userId)}`);
+    await userCalls.deleteUser(userId);
+    res.status(200).send('User deleted successfully');
+  } catch (error) {
+    logger.testlogger.error(`Error occurred while deleting user: ${error}`);
+    res.status(500).send(error.toString());
+  }
+});
+
 module.exports = router;
 
 /**
