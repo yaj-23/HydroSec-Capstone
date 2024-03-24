@@ -166,12 +166,8 @@ export default function Signin() {
     
     // Fetchig new User ID
     currUserId = await fetchId(userInfo);
-    if (currUserId) {
-      currMfaStatus = await fetechMfa(userInfo);
-      currentUserStatus = await fetchUserStatus(userInfo);
-    }
-
-    console.log(currUserId)
+    currMfaStatus = await fetechMfa(userInfo);
+    currentUserStatus = await fetchUserStatus(userInfo);
     // setMfa(currMfaStatus);
     if (currUserId) {
       setLoggedUser(currUserId);
