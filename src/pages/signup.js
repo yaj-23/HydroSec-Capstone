@@ -106,6 +106,19 @@ export default function Signup() {
       return null;
     }
   }
+
+  const createNewUserSettings = async (userId) => {
+    try {
+      const resp = await fetch("http://localhost:5000/userSettings", {
+        method: "post",
+        body: JSON.stringify(userId),
+        headers: {"Content-Type": "application/json"},
+      });
+      console.log(resp);
+    } catch (error) {
+      console.log(error)
+    }
+  }
   
   /**
    * Handles Submit Form
@@ -136,6 +149,7 @@ export default function Signup() {
       currUserId = await fetchId(userInfo);
       if (currUserId) {
         alert(`User has been successfully added. The User Id is : ${currUserId}`);
+        createNewUserSettings(currUserId);
         //gen qr
         qrcode = await fetch2FA(userInfo);
         console.log("Tester: ", qrcode);
