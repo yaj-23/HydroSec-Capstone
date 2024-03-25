@@ -9,6 +9,7 @@ export default function QRAuth() {
   const [userEmail, setUserEmail] = useState(null);
   const [accountID, setAccountID] = useState(null);
   const [qrImage, setQrImage] = useState(null);
+  const [code, setCode] = useState('');
 
   const navigate = useNavigate();
 
@@ -73,6 +74,26 @@ export default function QRAuth() {
     console.log("Updated qrImage:", qrImage);
   }, [qrImage]);
 
+  const submitCode = async event => {
+    event.preventDefault();
+    console.log("here:", code);
+    let x;
+    x = await fetchUserDetails();
+    let y = x.accountNumber.toString()
+    console.log(x.accountNumber.toString());
+    const queryString = new URLSearchParams({code, y}).toString(); 
+    const response = await fetch(`http://localhost:5000/set2FA?${queryString}`);
+    // const json = response.json()
+    const {success} = await response.json();
+    // console.log(response.body);
+    if (success) {
+      alert("2FA has been setup");
+      navigate("/dashboard");
+    } else {
+      console.log("joever");
+    }
+  }
+
 
   return (
     <>
@@ -80,8 +101,8 @@ export default function QRAuth() {
         <div id="twoFAFormHolder" className="">
             <img id="qrImage" height="300" width="300" src={qrImage} />
             <form id="twoFAUpdateForm" className="">
-              <input type="text" name="code" placeholder='2-FA Code' className=""/>
-              <button className="btn btn-primary" type="submit">SET</button>
+              <input type="text" name="code" placeholder='2-FA Code' className="" onChange={(e) => setCode(e.target.value)}/>
+              <button className="btn btn-primary" type="submit" onClick={submitCode}>SET</button>
               <button className="btn btn-primary" type="submit" onClick={submitform}>Gen QR</button>
             </form>
         </div>

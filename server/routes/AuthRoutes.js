@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 const userCalls = require("../backend/userCalls");
+const { authenticator} = require('otplib');
 
 const logger = require("../backend/logger");
 
@@ -61,7 +62,6 @@ router.get('/qrauth', async (req, res) => {
     logger.testlogger.info(`QRCode invoked, with userinfo: ${JSON.stringify(userInfo.email)}`);
     // // // const userId = await userCalls.searchUserInDB(userInfo);
     const qrcode = require('qrcode');
-    const { authenticator } = require('otplib');
     const secret = authenticator.generateSecret();
     const uri = authenticator.keyuri(userInfo, "HydroSec", secret);
     const image = await qrcode.toDataURL(uri);
@@ -75,6 +75,27 @@ router.get('/qrauth', async (req, res) => {
     logger.testlogger.error(`Error occured while generating QR image: ${error}`);
     errorFunc(res, error);
   }
+});
+
+router.get('/set2FA', async (req, res) => {
+    try {
+      const userInfo = req.query;
+      console.log("Email: ", userInfo.y);
+      const temp = await userCalls.getUserFromDB(userInfo.y);
+      console.log(userInfo.code);
+      console.log(temp.tempSecret);
+      const verified = authenticator.check(userInfo.code, temp.tempSecret);
+      console.log(verified);
+      if (verified) {
+        return res.send({success : true});
+      } else {
+        return res.send({success : false});
+      }
+      // res.send("we good");
+    } catch (error) {
+      logger.testlogger.error(`Error occured while verifying 2FA: ${error}`);
+      errorFunc(res, error);
+    }
 });
 
 router.delete("/delete-account", (req, res) => {
