@@ -170,6 +170,7 @@ export default function Signup() {
 				          onChange={(isValid) => {passwordIsValid = isValid}}
                   style={{marginLeft: '10px'}}
                   validColor={'#4CAF4F'}
+                  iconSize={15}
 			        />
           </form>
           <Button buttonColor='primary' buttonSize='btn-medium' buttonStyle='btn-primary' onClick={submitform}>
