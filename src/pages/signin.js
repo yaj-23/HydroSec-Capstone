@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import './signin.css';
 import { useUser } from '../UserSession';
-import signin from '../images/signin.svg' ;
+import signin from '../images/signin.svg';
 import Navbar from './components/nav';
 import { Button } from './components/button/Button';
 
@@ -16,7 +16,7 @@ export default function Signin() {
 
   let currUserId = "";
   let currMfaStatus = false;
-  const {setLoggedUser, setAdminStatus} = useUser();
+  const { setLoggedUser, setAdminStatus } = useUser();
   const navigate = useNavigate();
 
   /**
@@ -34,10 +34,10 @@ export default function Signin() {
           "Content-Type": "application/json",
         },
       });
-  
+
       if (resp.ok) {
         const userId = await resp.json();
-        console.log("YO REZXA: ", userId);
+        console.log("UserID: ", userId);
         return userId;
       } else {
         return false;
@@ -57,10 +57,10 @@ export default function Signin() {
           "Content-Type": "application/json",
         },
       });
-  
+
       if (resp.ok) {
         const userMFa = await resp.json();
-        console.log("YO Dimitri: ", userMFa);
+        console.log("UserMFA: ", userMFa);
         return userMFa;
       } else {
         return false;
@@ -71,20 +71,20 @@ export default function Signin() {
     }
   };
 
-  
+
   /**
    * Handles Submit Form
    * @param {Event} event Form Data 
    */
-  const submitform = async event => { 
+  const submitform = async event => {
     event.preventDefault();
     // Checking is user entry is valid
-    
+
     const userInfo = {
-      email : email, 
-      password : password,
-    }; 
-    
+      email: email,
+      password: password,
+    };
+
     // Fetchig new User ID
     currUserId = await fetchId(userInfo);
     currMfaStatus = await fetechMfa(userInfo);
@@ -98,14 +98,14 @@ export default function Signin() {
         return;
       }
       console.log(`User has successfully logged in: ${currUserId}`);
-      if (currMfaStatus == false){
-        console.log("I HAVE REACHED: ", currMfaStatus);
+      if (currMfaStatus == false) {
+        console.log("MFA STATUS IS FALSE *** Navigating to QR AUTH");
         navigate("/qrauth");
       }
       else {
         navigate("/dashboard");
       }
-      
+
     }
     else {
       alert("Incorrect User Information");
@@ -116,15 +116,15 @@ export default function Signin() {
     setShowPassword(!showPassword);
   };
 
-  return(
-    <>  
-      <Navbar/>
-      <div className="signin" id = "signin">
+  return (
+    <>
+      <Navbar />
+      <div className="signin" id="signin">
         <div className='signin-form'>
           <h2 className='sign-subheader'>Welcome back </h2>
           <h1 className='sign-header'>Sign In</h1>
-          <div className = "signin-fields">
-            <input className='input-field' type = "email" placeholder="Email" required value={email} onChange={(e) => setemail(e.target.value)}/>          
+          <div className="signin-fields">
+            <input className='input-field' type="email" placeholder="Email" required value={email} onChange={(e) => setemail(e.target.value)} />
             <div>
               {showPassword ? (
                 <input
@@ -150,13 +150,13 @@ export default function Signin() {
               </button>
             </div>
           </div>
-          <Button buttonColor='primary' buttonSize='btn-medium' buttonStyle='btn-primary'onClick={submitform}>
-              Login
+          <Button buttonColor='primary' buttonSize='btn-medium' buttonStyle='btn-primary' onClick={submitform}>
+            Login
           </Button>
           <p className='signup-prompt'>Don't have an account? <a href="./signup"><b><span className='different-color'>Create one</span></b></a></p>
         </div>
         <div className='signin-img'>
-          <img className='signinpic' src={signin} alt=""/>
+          <img className='signinpic' src={signin} alt="" />
         </div>
       </div>
     </>

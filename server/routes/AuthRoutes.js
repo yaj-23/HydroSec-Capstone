@@ -13,6 +13,7 @@ router.post("/signup", async (req, res) => {
 
     // Adding using to DB
     const userId = await userCalls.addUserToDB(userInfo);
+    console.log("Sign UP: ", userId);
     res.send(userId);
   } catch (error) {
     logger.testlogger.error(`Error occured while signup process: ${error}`);
@@ -39,37 +40,41 @@ router.post("/signin", async (req, res) => {
 });
 
 router.post("/fetchMFA", async (req, res) => {
-  try{
+  try {
     const userInfo = req.body;
     logger.testlogger.info(
       `Fetching MFA Status = invoked, with userinfo: ${JSON.stringify(userInfo.email)}}`
     );
     const userMFA = await userCalls.getMFA(userInfo);
-    console.log("YOYOYOYYO:", userMFA);
+    console.log("MFA STATUS OF USER: ", userInfo.email, "is: ", userMFA);
     res.send(userMFA);
-  }catch (error) {
+  } catch (error) {
     logger.testlogger.error(`Error occured while fetching mfa Status : ${error}`);
     errorFunc(res, error);
   }
 });
 
-router.get('/qrauth', async(req, res) => {
-    try {
-        console.log("YO!")
-        const userInfo = req.body;
-        // logger.testlogger.info(`QRCode invoked, with userinfo: ${JSON.stringify(userInfo.email)}`);
-        // // const userId = await userCalls.searchUserInDB(userInfo);
-        // const qrcode = require('qrcode');
-        // const {authenticator} = require('otplib');
-        // const secret = authenticator.generateSecret();
-        // const uri = authenticator.keyuri(userID, "HydroSec", secret);
-        // const image = await qrcode.toDataURL(uri);
-        // const user = await userCalls.updateUserInDB(userInfo, secret)
-        res.send("YO");
-    } catch(error) {
-        logger.testlogger.error(`Error occured while generating QR image: ${error}`);
-        errorFunc(res, error);
-    }
+router.get('/qrauth', async (req, res) => {
+  try {
+    const userInfo = req.query;
+    console.log("UserINFO: ", userInfo);
+    logger.testlogger.info(`QRCode invoked, with userinfo: ${JSON.stringify(userInfo.email)}`);
+    // // // const userId = await userCalls.searchUserInDB(userInfo);
+    const qrcode = require('qrcode');
+    const { authenticator } = require('otplib');
+    const secret = authenticator.generateSecret();
+    const uri = authenticator.keyuri(userInfo, "HydroSec", secret);
+    const image = await qrcode.toDataURL(uri);
+    const user = await userCalls.updateUserInDB(userInfo.email, secret)
+    console.log("***", user);
+    console.log("**TEST**");
+    console.log("**QR Image = ", image), " **";
+    console.log("**Test Secret ", secret, " **");
+    res.send({ image });
+  } catch (error) {
+    logger.testlogger.error(`Error occured while generating QR image: ${error}`);
+    errorFunc(res, error);
+  }
 });
 
 router.delete("/delete-account", (req, res) => {
