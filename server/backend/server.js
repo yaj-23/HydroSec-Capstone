@@ -4,6 +4,7 @@ const cors = require("cors");
 const authRoutes = require('../routes/AuthRoutes');
 const userRoutes = require('../routes/UserRoutes');
 const adminRoutes = require('../routes/AdminRoutes');
+const userSettingRoutes = require('../routes/UserSettingsRoutes');
 
 const logger = require('./logger')
 
@@ -14,7 +15,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use('/', authRoutes, userRoutes, adminRoutes );
+app.use('/', authRoutes, userRoutes, adminRoutes, userSettingRoutes );
 
 app.listen(port, () => {
   console.log("Server listening on port", port);

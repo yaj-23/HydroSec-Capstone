@@ -604,3 +604,127 @@
 {"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-22T21:23:06.909Z"}
 {"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-22T21:23:06.913Z"}
 {"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-22T21:23:06.954Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-25T22:50:36.599Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-25T22:50:37.732Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-25T22:50:37.732Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-25T22:51:07.941Z"}
+{"level":"error","message":"Incorrect login information.","timestamp":"2024-03-25T22:51:07.995Z"}
+{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-03-25T22:51:07.995Z"}
+{"level":"error","message":"Error occured while signin process: Error: User does not exist","timestamp":"2024-03-25T22:51:07.995Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-25T22:51:08.001Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-25T22:51:08.074Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-25T22:51:15.618Z"}
+{"level":"error","message":"Incorrect login information.","timestamp":"2024-03-25T22:51:15.667Z"}
+{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-03-25T22:51:15.667Z"}
+{"level":"error","message":"Error occured while signin process: Error: User does not exist","timestamp":"2024-03-25T22:51:15.667Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-25T22:51:15.671Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-25T22:51:15.723Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-25T22:51:18.459Z"}
+{"level":"error","message":"Incorrect login information.","timestamp":"2024-03-25T22:51:18.509Z"}
+{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-03-25T22:51:18.509Z"}
+{"level":"error","message":"Error occured while signin process: Error: User does not exist","timestamp":"2024-03-25T22:51:18.509Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-25T22:51:18.512Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-25T22:51:18.567Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-25T22:51:28.661Z"}
+{"level":"error","message":"Incorrect login information.","timestamp":"2024-03-25T22:51:28.730Z"}
+{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-03-25T22:51:28.730Z"}
+{"level":"error","message":"Error occured while signin process: Error: User does not exist","timestamp":"2024-03-25T22:51:28.730Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-25T22:51:28.734Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-25T22:51:28.789Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-25T22:51:32.334Z"}
+{"level":"error","message":"Incorrect login information.","timestamp":"2024-03-25T22:51:32.387Z"}
+{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-03-25T22:51:32.387Z"}
+{"level":"error","message":"Error occured while signin process: Error: User does not exist","timestamp":"2024-03-25T22:51:32.387Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-25T22:51:32.392Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-25T22:51:32.446Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-25T22:51:57.542Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-25T22:51:57.595Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-25T22:51:57.599Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-25T22:51:57.652Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-25T22:51:57.656Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-25T22:51:57.717Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T22:53:49.610Z"}
+{"level":"error","message":"Incorrect login information.","timestamp":"2024-03-25T22:53:49.669Z"}
+{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-03-25T22:53:49.669Z"}
+{"level":"error","message":"Error occured while signin process: Error: User does not exist","timestamp":"2024-03-25T22:53:49.669Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T22:53:49.674Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T22:53:49.725Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T22:53:52.614Z"}
+{"level":"error","message":"Incorrect login information.","timestamp":"2024-03-25T22:53:52.665Z"}
+{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-03-25T22:53:52.665Z"}
+{"level":"error","message":"Error occured while signin process: Error: User does not exist","timestamp":"2024-03-25T22:53:52.665Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T22:53:52.669Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T22:53:52.722Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T22:53:56.236Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-25T22:53:56.290Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T22:53:56.294Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-25T22:53:56.349Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T22:53:56.354Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-25T22:53:56.407Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T22:55:57.705Z"}
+{"level":"error","message":"Incorrect login information.","timestamp":"2024-03-25T22:55:57.758Z"}
+{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-03-25T22:55:57.758Z"}
+{"level":"error","message":"Error occured while signin process: Error: User does not exist","timestamp":"2024-03-25T22:55:57.758Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T22:55:57.761Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T22:55:57.816Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T22:56:01.651Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-25T22:56:01.708Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T22:56:01.711Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-25T22:56:01.765Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T22:56:01.788Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-25T22:56:01.835Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-25T23:01:46.575Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-25T23:01:47.541Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-25T23:01:47.542Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T23:02:04.691Z"}
+{"level":"error","message":"Incorrect login information.","timestamp":"2024-03-25T23:02:04.746Z"}
+{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-03-25T23:02:04.746Z"}
+{"level":"error","message":"Error occured while signin process: Error: User does not exist","timestamp":"2024-03-25T23:02:04.747Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T23:02:04.753Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T23:02:04.796Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T23:02:29.733Z"}
+{"level":"error","message":"Incorrect login information.","timestamp":"2024-03-25T23:02:29.771Z"}
+{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-03-25T23:02:29.772Z"}
+{"level":"error","message":"Error occured while signin process: Error: User does not exist","timestamp":"2024-03-25T23:02:29.772Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T23:02:29.776Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T23:02:29.820Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T23:02:38.514Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-25T23:02:38.555Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T23:02:38.559Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-25T23:02:38.597Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T23:02:38.601Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-25T23:02:38.639Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'E4TWGZSVAJMD2STY',\n  locked: true,\n  __v: 0\n}.","timestamp":"2024-03-25T23:04:09.806Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-25T23:04:53.225Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-25T23:04:53.268Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-25T23:04:53.272Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-25T23:04:53.310Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-25T23:04:53.314Z"}
+{"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-25T23:04:53.350Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-25T23:06:52.222Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-25T23:06:53.295Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-25T23:06:53.295Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T23:07:20.322Z"}
+{"level":"error","message":"Incorrect login information.","timestamp":"2024-03-25T23:07:20.379Z"}
+{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-03-25T23:07:20.379Z"}
+{"level":"error","message":"Error occured while signin process: Error: User does not exist","timestamp":"2024-03-25T23:07:20.380Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T23:07:20.385Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T23:07:20.441Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T23:07:22.076Z"}
+{"level":"error","message":"Incorrect login information.","timestamp":"2024-03-25T23:07:22.196Z"}
+{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-03-25T23:07:22.196Z"}
+{"level":"error","message":"Error occured while signin process: Error: User does not exist","timestamp":"2024-03-25T23:07:22.196Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T23:07:22.199Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T23:07:22.249Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T23:07:26.672Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-25T23:07:26.729Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T23:07:26.733Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-25T23:07:26.784Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T23:07:26.788Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-25T23:07:26.838Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T23:10:24.444Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-25T23:10:24.495Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T23:10:24.499Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-25T23:10:24.546Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T23:10:24.549Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-25T23:10:24.604Z"}

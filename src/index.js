@@ -12,6 +12,7 @@ import Dashboard from './pages/dashboard';
 import About from './pages/about';
 import Admin from './pages/admin';
 import QRAuth from './pages/qrauth';
+import ClientSettings from './pages/settings';
 
 const router = createBrowserRouter([
     {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
     {
       path: "/qrauth",
       element: <QRAuth/>
+    },
+    {
+      path: "/settings",
+      element: <ClientSettings />
     }
   ]);
 
