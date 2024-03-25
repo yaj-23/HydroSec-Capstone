@@ -102,7 +102,8 @@ export default function Signin() {
     const response = await fetch(`https://geolocation-db.com/json/`);
     const geoLocation = await response.json();
 
-    const ipAddress = geoLocation['IPv4'];
+    // const ipAddress = geoLocation['IPv4'];
+    const ipAddress = "XX.XXX.XXX.XXX"
     const location = `${geoLocation['city']}, ${geoLocation['state']}`;
     let userAgent = navigator.userAgent.toLowerCase();
     let browsers = ['Firefox', 'Chrome', 'Safari', 'Opera', 'Edge', 'msie'];

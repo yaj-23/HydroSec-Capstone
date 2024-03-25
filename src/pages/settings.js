@@ -24,7 +24,7 @@ const ClientSettings = () => {
     return (
         <div>
             <Navbar />
-            <h2>Activity Details</h2>
+            <h2 className='activity-settings-header'>Activity Details</h2>
             <div className='activity-container'>
                 {activity.reverse().map((item, index) => (
                     <>

@@ -23,7 +23,7 @@ const ActivityCard = ({activity}) => {
         width: '80%',
         flexDirection: 'column',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
     }
 
     return(
