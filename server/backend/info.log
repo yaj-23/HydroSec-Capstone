@@ -496,3 +496,98 @@
 {"level":"info","message":"QRCode invoked, with userinfo: \"yajurva23@gmail.com\"","timestamp":"2024-03-21T20:14:36.921Z"}
 {"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'PMORMUY3CBFV4UBE',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-21T20:14:55.733Z"}
 {"level":"info","message":"QRCode invoked, with userinfo: \"yajurva23@gmail.com\"","timestamp":"2024-03-21T20:14:55.743Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-27T23:19:22.802Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-27T23:19:23.406Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-27T23:20:07.972Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-27T23:20:08.030Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-27T23:20:08.036Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-27T23:20:08.090Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: true,\n  tempSecret: 'HJPQCD3IOUYH2TTS',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:20:08.165Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-27T23:20:25.168Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-27T23:20:25.217Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-27T23:20:25.221Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-27T23:20:25.268Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'HJPQCD3IOUYH2TTS',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:20:34.401Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: \"yajurva23@gmail.com\"","timestamp":"2024-03-27T23:20:34.406Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'P4UHS4QLNJGRAOIY',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:20:47.362Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'P4UHS4QLNJGRAOIY',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:20:47.414Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'P4UHS4QLNJGRAOIY',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:20:49.509Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-27T23:38:41.140Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-27T23:38:41.846Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-27T23:39:03.023Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-27T23:39:03.084Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-27T23:39:03.090Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-27T23:39:03.141Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'P4UHS4QLNJGRAOIY',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:39:13.988Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: \"yajurva23@gmail.com\"","timestamp":"2024-03-27T23:39:13.993Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'JYVQAOBKHMOH2GDQ',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:39:22.898Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'JYVQAOBKHMOH2GDQ',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:39:22.948Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'JYVQAOBKHMOH2GDQ',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:39:24.036Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-27T23:39:35.760Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-27T23:39:35.810Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-27T23:39:35.819Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-27T23:39:35.867Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-27T23:41:41.407Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-27T23:41:42.000Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-27T23:41:51.256Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-27T23:41:51.303Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-27T23:41:51.309Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-27T23:41:51.346Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'JYVQAOBKHMOH2GDQ',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:42:00.227Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: \"yajurva23@gmail.com\"","timestamp":"2024-03-27T23:42:00.233Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'PZMCWRJ4JN2G2T3D',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:42:08.493Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-27T23:42:08.496Z"}
+{"level":"error","message":"Error occured while verifying 2FA: Error: Fetching user failed","timestamp":"2024-03-27T23:42:08.496Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"${user}\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-27T23:42:39.013Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'PZMCWRJ4JN2G2T3D',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:43:22.632Z"}
+{"level":"info","message":"Getting user: null.","timestamp":"2024-03-27T23:43:22.669Z"}
+{"level":"error","message":"Error occured while verifying 2FA: TypeError: Cannot read properties of null (reading 'tempSecret')","timestamp":"2024-03-27T23:43:22.669Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'PZMCWRJ4JN2G2T3D',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:43:25.386Z"}
+{"level":"info","message":"Getting user: null.","timestamp":"2024-03-27T23:43:25.422Z"}
+{"level":"error","message":"Error occured while verifying 2FA: TypeError: Cannot read properties of null (reading 'tempSecret')","timestamp":"2024-03-27T23:43:25.422Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'PZMCWRJ4JN2G2T3D',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:43:26.029Z"}
+{"level":"info","message":"Getting user: null.","timestamp":"2024-03-27T23:43:26.067Z"}
+{"level":"error","message":"Error occured while verifying 2FA: TypeError: Cannot read properties of null (reading 'tempSecret')","timestamp":"2024-03-27T23:43:26.067Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'PZMCWRJ4JN2G2T3D',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:43:34.330Z"}
+{"level":"info","message":"Getting user: null.","timestamp":"2024-03-27T23:43:34.369Z"}
+{"level":"error","message":"Error occured while verifying 2FA: TypeError: Cannot read properties of null (reading 'tempSecret')","timestamp":"2024-03-27T23:43:34.369Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'PZMCWRJ4JN2G2T3D',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:43:40.869Z"}
+{"level":"info","message":"Getting user: null.","timestamp":"2024-03-27T23:43:40.906Z"}
+{"level":"error","message":"Error occured while verifying 2FA: TypeError: Cannot read properties of null (reading 'tempSecret')","timestamp":"2024-03-27T23:43:40.907Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'PZMCWRJ4JN2G2T3D',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:43:45.815Z"}
+{"level":"info","message":"Getting user: null.","timestamp":"2024-03-27T23:43:45.858Z"}
+{"level":"error","message":"Error occured while verifying 2FA: TypeError: Cannot read properties of null (reading 'tempSecret')","timestamp":"2024-03-27T23:43:45.859Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-27T23:44:09.923Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-27T23:44:10.600Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'PZMCWRJ4JN2G2T3D',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:44:15.732Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"yajurva23@gmail.com\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-27T23:44:15.738Z"}
+{"level":"error","message":"Error occured while verifying 2FA: Error: Fetching user failed","timestamp":"2024-03-27T23:44:15.738Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'PZMCWRJ4JN2G2T3D',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:44:17.978Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"yajurva23@gmail.com\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-27T23:44:17.982Z"}
+{"level":"error","message":"Error occured while verifying 2FA: Error: Fetching user failed","timestamp":"2024-03-27T23:44:17.982Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'PZMCWRJ4JN2G2T3D',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:45:41.875Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"yajurva23@gmail.com\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-27T23:45:41.879Z"}
+{"level":"error","message":"Error occured while verifying 2FA: Error: Fetching user failed","timestamp":"2024-03-27T23:45:41.879Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-27T23:48:40.867Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-27T23:48:41.507Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-27T23:48:53.209Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-27T23:49:20.734Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-27T23:49:20.776Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-27T23:49:20.781Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-27T23:49:20.817Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'PZMCWRJ4JN2G2T3D',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:49:21.822Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: \"yajurva23@gmail.com\"","timestamp":"2024-03-27T23:49:21.827Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'NUZVWLR7DNPWUPKM',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:49:31.898Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'NUZVWLR7DNPWUPKM',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:49:31.937Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'NUZVWLR7DNPWUPKM',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:50:20.239Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: \"yajurva23@gmail.com\"","timestamp":"2024-03-27T23:50:20.243Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'KFIFOW22BUXSS2IR',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:50:37.955Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'KFIFOW22BUXSS2IR',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:50:37.994Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'KFIFOW22BUXSS2IR',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:50:39.857Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-27T23:51:32.284Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-27T23:51:32.319Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-27T23:51:32.323Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-27T23:51:32.359Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'KFIFOW22BUXSS2IR',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:51:42.106Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'KFIFOW22BUXSS2IR',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:51:42.145Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('65fbd27feea2d9b2e247eefe'),\n  name: 'Yajurva23',\n  email: 'yajurva23@gmail.com',\n  password: 'tester12345',\n  address: '12 tux',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'KFIFOW22BUXSS2IR',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-27T23:51:43.348Z"}
