@@ -58,7 +58,7 @@ router.post("/fetchUserStatus", async (req, res) => {
     const userStatus = await userCalls.getUserStatus(userInfo);
     res.send(userStatus);
   }catch (error) {
-    logger.testlogger.error(`Error occured while fetching mfa Status : ${error}`);
+    logger.testlogger.error(`Error occured while fetching UserStatus Status : ${error}`);
     errorFunc(res, error);
   }
 });
