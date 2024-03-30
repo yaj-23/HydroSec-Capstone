@@ -110,6 +110,22 @@ async function updateUserInDB(email, data) {
   }
 }
 
+async function updateUserMFAInDB(email, data) {
+  try {
+    console.log("The Email: ", email, " and MFA: ", data);
+    const updatedUser = await User.findOneAndUpdate(
+      { email: email },
+      { mfa: data },
+      { new: true }
+    );
+    return updatedUser;
+  } catch (error) {
+    logger.testlogger.error(`Error occured while updating user data: ${error}`);
+    if (error instanceof Error) throw error;
+    else throw Error("Some Error Occured: ", error.toString());
+  }
+}
+
 async function updateUserStatus(email, status) {
   try {
     console.log("The Email: ", email, " and status is: ", status);
@@ -188,6 +204,7 @@ module.exports = {
   getUserFromDB,
   searchUserInDB,
   updateUserInDB,
+  updateUserMFAInDB,
   updateUserStatus,
   getMFA,
   getUserStatus,
