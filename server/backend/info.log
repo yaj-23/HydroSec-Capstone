@@ -728,3 +728,46 @@
 {"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-25T23:10:24.546Z"}
 {"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-25T23:10:24.549Z"}
 {"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-25T23:10:24.604Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-30T01:04:32.832Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-30T01:04:33.684Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-30T01:04:33.684Z"}
+{"level":"info","message":"Sign Up invoked, with userinfo: [object Object]","timestamp":"2024-03-30T01:18:27.006Z"}
+{"level":"info","message":"Creating new user with: [object Object]","timestamp":"2024-03-30T01:18:27.197Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"harsh@test.com\"}","timestamp":"2024-03-30T01:18:37.846Z"}
+{"level":"info","message":"User with email: harsh@test.com exists.","timestamp":"2024-03-30T01:18:37.947Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"harsh@test.com\"}","timestamp":"2024-03-30T01:18:37.952Z"}
+{"level":"info","message":"User with email: harsh@test.com exists.","timestamp":"2024-03-30T01:18:38.043Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"harsh@test.com\"}","timestamp":"2024-03-30T01:18:38.047Z"}
+{"level":"info","message":"User with email: harsh@test.com exists.","timestamp":"2024-03-30T01:18:38.163Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('66076863b99d07d971e3c2ed'),\n  name: 'Harsh',\n  email: 'harsh@test.com',\n  password: 'Tester12345@',\n  address: '1234 test st',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-30T01:18:44.081Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: \"harsh@test.com\"","timestamp":"2024-03-30T01:18:44.087Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('66076863b99d07d971e3c2ed'),\n  name: 'Harsh',\n  email: 'harsh@test.com',\n  password: 'Tester12345@',\n  address: '1234 test st',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'A4QUEWK6DUZVIQ3M',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-30T01:19:05.798Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('66076863b99d07d971e3c2ed'),\n  name: 'Harsh',\n  email: 'harsh@test.com',\n  password: 'Tester12345@',\n  address: '1234 test st',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'A4QUEWK6DUZVIQ3M',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-30T01:19:05.989Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('66076863b99d07d971e3c2ed'),\n  name: 'Harsh',\n  email: 'harsh@test.com',\n  password: 'Tester12345@',\n  address: '1234 test st',\n  phoneNumber: '1231231234',\n  mfa: true,\n  tempSecret: 'A4QUEWK6DUZVIQ3M',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-30T01:19:07.672Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-30T01:25:14.123Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-30T01:25:14.990Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-30T01:25:14.990Z"}
+{"level":"info","message":"Sign Up invoked, with userinfo: [object Object]","timestamp":"2024-03-30T01:28:41.165Z"}
+{"level":"info","message":"Creating new user with: [object Object]","timestamp":"2024-03-30T01:28:41.236Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"sammy@test.com\"}","timestamp":"2024-03-30T01:28:58.384Z"}
+{"level":"info","message":"User with email: sammy@test.com exists.","timestamp":"2024-03-30T01:28:58.441Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"sammy@test.com\"}","timestamp":"2024-03-30T01:28:58.449Z"}
+{"level":"info","message":"User with email: sammy@test.com exists.","timestamp":"2024-03-30T01:28:58.501Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"sammy@test.com\"}","timestamp":"2024-03-30T01:28:58.508Z"}
+{"level":"info","message":"User with email: sammy@test.com exists.","timestamp":"2024-03-30T01:28:58.558Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('66076ac98719c3388faf9030'),\n  name: 'sammy',\n  email: 'sammy@test.com',\n  password: 'Test12345@',\n  address: '123 yaya',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-30T01:29:06.117Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: \"sammy@test.com\"","timestamp":"2024-03-30T01:29:06.125Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('66076ac98719c3388faf9030'),\n  name: 'sammy',\n  email: 'sammy@test.com',\n  password: 'Test12345@',\n  address: '123 yaya',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'HB4CMKSSAROXMXZG',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-30T01:29:36.251Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('66076ac98719c3388faf9030'),\n  name: 'sammy',\n  email: 'sammy@test.com',\n  password: 'Test12345@',\n  address: '123 yaya',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'HB4CMKSSAROXMXZG',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-30T01:29:36.311Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('66076ac98719c3388faf9030'),\n  name: 'sammy',\n  email: 'sammy@test.com',\n  password: 'Test12345@',\n  address: '123 yaya',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'HB4CMKSSAROXMXZG',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-30T01:29:40.001Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('66076ac98719c3388faf9030'),\n  name: 'sammy',\n  email: 'sammy@test.com',\n  password: 'Test12345@',\n  address: '123 yaya',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'HB4CMKSSAROXMXZG',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-30T01:29:40.054Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('66076ac98719c3388faf9030'),\n  name: 'sammy',\n  email: 'sammy@test.com',\n  password: 'Test12345@',\n  address: '123 yaya',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'HB4CMKSSAROXMXZG',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-30T01:29:51.267Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('66076ac98719c3388faf9030'),\n  name: 'sammy',\n  email: 'sammy@test.com',\n  password: 'Test12345@',\n  address: '123 yaya',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'HB4CMKSSAROXMXZG',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-30T01:29:51.323Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('66076ac98719c3388faf9030'),\n  name: 'sammy',\n  email: 'sammy@test.com',\n  password: 'Test12345@',\n  address: '123 yaya',\n  phoneNumber: '1231231234',\n  mfa: true,\n  tempSecret: 'HB4CMKSSAROXMXZG',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-30T01:29:54.257Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-30T01:30:05.536Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-30T01:30:05.600Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-30T01:30:05.741Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-30T01:30:06.014Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-03-30T01:30:06.014Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-30T01:31:46.150Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-30T01:31:46.290Z"}
