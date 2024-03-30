@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@patternfly/react-core": "^5.2.3",
+    "@patternfly/react-log-viewer": "^5.1.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -12,6 +14,8 @@
     "react": "^18.2.0",
     "react-chartjs-2": "latest_version",
     "react-dom": "^18.2.0",
+    "react-lazylog": "^4.5.3",
+    "react-password-checklist": "^1.5.1",
     "react-router-dom": "^6.21.3",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",

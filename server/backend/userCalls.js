@@ -75,6 +75,25 @@ async function getMFA(userInfo) {
   }
 }
 
+async function getUserStatus(userInfo) {
+  try {
+    // Checking is a User Already exists
+    const userExists = await User.findOne({
+      email: userInfo.email,
+      password: userInfo.password,
+    }).exec();
+    console.log("yo:", userExists);
+    if (userExists) {
+      logger.testlogger.info(`User with email: ${userInfo.email} exists.`);
+      return userExists.locked;
+    }
+  } catch (error) {
+    logger.testlogger.error(`Error occured while searching for user: ${error}`);
+    if (error instanceof Error) throw error;
+    else throw Error("Some Error Occured: ", error.toString());
+  }
+}
+
 async function updateUserInDB(email, data) {
   try {
     console.log("The Email: ", email, " and TempSecret: ", data);
@@ -165,6 +184,21 @@ async function getAllUsersFromDB() {
   }
 }
 
+/**
+ * Deletes a user from the database.
+ * @param {string} userId - The ID of the user to be deleted.
+ * @returns {Promise<void>} A Promise that resolves once the user is deleted.
+ */
+async function deleteUser(userId) {
+  try {
+    await User.findByIdAndDelete(userId);
+    logger.testlogger.info(`User with ID ${userId} deleted successfully.`);
+  } catch (error) {
+    logger.testlogger.error(`Error deleting user with ID ${userId}: ${error}`);
+    throw error;
+  }
+}
+
 module.exports = {
   addUserToDB,
   getUserFromDB,
@@ -173,5 +207,7 @@ module.exports = {
   updateUserMFAInDB,
   updateUserStatus,
   getMFA,
+  getUserStatus,
   getAllUsersFromDB,
+  deleteUser
 };

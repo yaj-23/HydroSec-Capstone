@@ -7,8 +7,26 @@ body {
     background-color: #f4f4f4;
 }
 
+.admin-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.admin-left {
+    flex: 1;
+    padding: 20px;
+    margin-top: 30px;
+    max-width: 400px;
+}
+
+.admin-right {
+    flex: 1;
+    padding: 20px;
+    border-left: 1px solid #ddd; /* Add border between left and right sections */
+}
+
 .container {
-    max-width: 800px;
+    max-width: 400px;
     margin: 20px auto;
 }
 
@@ -20,29 +38,22 @@ h2 {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
-    margin: 10px 0;
+    margin-bottom: 20px;
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.user-card div {
-    margin-bottom: 10px;
 }
 
 .user-card strong {
     font-weight: bold;
 }
 
-.user-card button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-    border-radius: 3px;
-    transition: background-color 0.3s ease;
+.userCard-btns{
+    display: flex;
+    flex-direction: row;
 }
 
-.user-card button:hover {
-    background-color: #0056b3;
+
+
+.log-entry {
+    margin-bottom: 20px;
 }

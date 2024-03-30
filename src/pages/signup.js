@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { Button } from './components/button/Button';
 import signin from '../images/signin.svg' ;
 import Navbar from './components/nav';
+import PasswordChecklist from "react-password-checklist"
 
 export default function Signup() {
   const navigate = useNavigate();
@@ -21,7 +22,7 @@ export default function Signup() {
   let qrcode ="";
   // Keeping track of email/pass validity
   let emailIsValid = false;
-  let passlIsValid = false;
+  let passwordIsValid = false;
   let phoneIsValid = false;
 
 
@@ -36,18 +37,6 @@ export default function Signup() {
     }
     else {
       emailIsValid = false;
-    }
-  }
-
-  /**
-   * Compares user input pass with compare pass
-   */
-  const passValidation = () => {    
-    if ((password.length > 8) && (!cpassword.localeCompare(password)))  {
-      passlIsValid = true;
-    }
-    else {
-      passlIsValid = false;   
     }
   }
 
@@ -106,6 +95,19 @@ export default function Signup() {
       return null;
     }
   }
+
+  const createNewUserSettings = async (userId) => {
+    try {
+      const resp = await fetch("http://localhost:5000/userSettings", {
+        method: "post",
+        body: JSON.stringify(userId),
+        headers: {"Content-Type": "application/json"},
+      });
+      console.log(resp);
+    } catch (error) {
+      console.log(error)
+    }
+  }
   
   /**
    * Handles Submit Form
@@ -115,11 +117,10 @@ export default function Signup() {
     event.preventDefault();
 
     emailValidation();
-    passValidation();
     phoneValidation();
 
     // Checking is user entry is valid
-    if (emailIsValid && passlIsValid && phoneIsValid) {      
+    if (emailIsValid && passwordIsValid && phoneIsValid) {      
       const userInfo = {
         name : user, 
         email : email, 
@@ -136,27 +137,28 @@ export default function Signup() {
       currUserId = await fetchId(userInfo);
       if (currUserId) {
         alert(`User has been successfully added. The User Id is : ${currUserId}`);
+        createNewUserSettings(currUserId);
         //gen qr
         qrcode = await fetch2FA(userInfo);
         console.log("Tester: ", qrcode);
+        navigate('/signin');
       }
       else {
         alert("Sign up failed");
       }
     }
     else {      
-      if (!(emailIsValid || passlIsValid)) {
-        console.log(emailIsValid, passlIsValid);
+      if (!(emailIsValid || passwordIsValid)) {
+        console.log(emailIsValid, passwordIsValid);
         alert("Your email and password is invalid");
       }
       else if (!emailIsValid) {
         alert("Your email is invalid");
       }
       else {
-        alert("Your password is invalid");
+        alert("Your password is invalid. Please make sure your password meets the requirements.");
       }
     }
-    navigate('/signin');
   }
       
   return (
@@ -174,6 +176,16 @@ export default function Signup() {
               <input className='input-field' type = "password" placeholder="Confirm your password" required value={cpassword} onChange={(e) => setcpassword(e.target.value)}/> 
               <input className='input-field' type = "text" placeholder="Enter your address" required value={addr} onChange={(e) => setAddr(e.target.value)}/>        
               <input className='input-field' type="tel" placeholder="Enter your phone number" required value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)}/>
+              <PasswordChecklist
+				          rules={["minLength", "specialChar", "number", "capital", "match"]}
+				          minLength={8}
+				          value={password}
+				          valueAgain={cpassword}
+				          onChange={(isValid) => {passwordIsValid = isValid}}
+                  style={{marginLeft: '10px'}}
+                  validColor={'#4CAF4F'}
+                  iconSize={15}
+			        />
           </form>
           <Button buttonColor='primary' buttonSize='btn-medium' buttonStyle='btn-primary' onClick={submitform}>
             Sign up

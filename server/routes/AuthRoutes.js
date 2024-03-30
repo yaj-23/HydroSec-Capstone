@@ -28,10 +28,6 @@ router.post("/signin", async (req, res) => {
     );
 
     const userId = await userCalls.searchUserInDB(userInfo);
-    // if (userId != null) {
-    //   const userMFA = await userCalls.getMFA(userInfo);
-    //   console.log("YOYOYOYYO:", userMFA);
-    // }
     res.send(userId);
   } catch (error) {
     logger.testlogger.error(`Error occured while signin process: ${error}`);
@@ -48,7 +44,6 @@ router.post("/fetchMFA", async (req, res) => {
       )}}`
     );
     const userMFA = await userCalls.getMFA(userInfo);
-    console.log("MFA STATUS OF USER: ", userInfo.email, "is: ", userMFA);
     res.send(userMFA);
   } catch (error) {
     logger.testlogger.error(
@@ -65,16 +60,15 @@ router.get("/qrauth", async (req, res) => {
     logger.testlogger.info(
       `QRCode invoked, with userinfo: ${JSON.stringify(userInfo.email)}`
     );
-    // // // const userId = await userCalls.searchUserInDB(userInfo);
     const qrcode = require("qrcode");
     const secret = authenticator.generateSecret();
     const uri = authenticator.keyuri(userInfo, "HydroSec", secret);
     const image = await qrcode.toDataURL(uri);
     const user = await userCalls.updateUserInDB(userInfo.email, secret);
-    console.log("***", user);
-    console.log("**TEST**");
-    console.log("**QR Image = ", image), " **";
-    console.log("**Test Secret ", secret, " **");
+    // console.log("***", user);
+    // console.log("**TEST**");
+    // console.log("**QR Image = ", image), " **";
+    // console.log("**Test Secret ", secret, " **");
     res.send({ image });
   } catch (error) {
     logger.testlogger.error(
@@ -119,9 +113,26 @@ router.get("/verify2FA", async (req, res) => {
       console.log("2FA code incorrect.");
       return res.send({ success: false });
     }
-    // res.send("we good");
   } catch (error) {
     logger.testlogger.error(`Error occured while verifying 2FA: ${error}`);
+    errorFunc(res, error);
+  }
+});
+
+router.post("/fetchUserStatus", async (req, res) => {
+  try {
+    const userInfo = req.body;
+    logger.testlogger.info(
+      `Fetching UserStatus = invoked, with userinfo: ${JSON.stringify(
+        userInfo.email
+      )}}`
+    );
+    const userStatus = await userCalls.getUserStatus(userInfo);
+    res.send(userStatus);
+  } catch (error) {
+    logger.testlogger.error(
+      `Error occured while fetching UserStatus Status : ${error}`
+    );
     errorFunc(res, error);
   }
 });

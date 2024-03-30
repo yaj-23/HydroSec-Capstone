@@ -13,9 +13,12 @@ export default function Signin() {
 
   const [showPassword, setShowPassword] = useState(false);
 
+  const [failedLoginAttempts, setFailedLoginAttempts] = useState(0);
+  const [failedAttemptsInfo, setFailedAttemptsInfo] = useState([]);
   let currUserId = "";
   let currMfaStatus = false;
-  const { setLoggedUser, setAdminStatus } = useUser();
+  let currentUserStatus = false;
+  const {setLoggedUser, setAdminStatus} = useUser();
   const navigate = useNavigate();
 
   /**
@@ -26,6 +29,7 @@ export default function Signin() {
 
   const fetchId = async (userInfo) => {
     try {
+      console.log(userInfo)
       const resp = await fetch("http://localhost:5000/signin", {
         method: "post",
         body: JSON.stringify(userInfo),
@@ -70,6 +74,83 @@ export default function Signin() {
     }
   };
 
+  const fetchUserStatus = async (userInfo) => {
+    try {
+      const resp = await fetch("http://localhost:5000/fetchUserStatus", {
+        method: "post",
+        body: JSON.stringify(userInfo),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+  
+      if (resp.ok) {
+        const userStatus = await resp.json();
+        console.log("UserSTatus: ", userStatus);
+        return userStatus;
+      } else {
+        return false;
+      }
+    } catch (error) {
+      console.log(error);
+      return null;
+    }
+  };
+
+  const handleUserActivity = async (userId, failedAttempt) => {
+    const response = await fetch(`https://geolocation-db.com/json/`);
+    const geoLocation = await response.json();
+
+    // const ipAddress = geoLocation['IPv4'];
+    const ipAddress = "XX.XXX.XXX.XXX"
+    const location = `${geoLocation['city']}, ${geoLocation['state']}`;
+    let userAgent = navigator.userAgent.toLowerCase();
+    let browsers = ['Firefox', 'Chrome', 'Safari', 'Opera', 'Edge', 'msie'];
+    let browserName = browsers.find(browser => userAgent.includes(browser.toLowerCase())) || 'Unknown';
+    if (browserName == 'msie') {
+      browserName = "Microsoft Internet Explorer"
+    }
+    browserName = browserName.charAt(0).toUpperCase() + browserName.slice(1);
+    const operatingSystem = navigator.platform;
+    const currentDate = new Date().toLocaleDateString('en-US');
+    const timestamp = new Date().toLocaleTimeString('en-US', {hour: 'numeric', minute: '2-digit', hour12: true});
+
+    // Creating the activity object
+    const activity = {
+      type: "SUCCESSFUL_LOGIN",
+      ip: ipAddress,
+      location: location,
+      browser: browserName,
+      os: operatingSystem,
+      date: currentDate,
+      timestamp: timestamp
+    };
+
+    if (failedAttempt) {
+      setFailedLoginAttempts(failedLoginAttempts + 1);
+      activity.type = "FAILED_LOGIN"
+      setFailedAttemptsInfo(failedAttemptsInfo => [...failedAttemptsInfo, activity])
+      console.log(failedAttemptsInfo)
+      return;
+    }
+
+    for (let i = 0; i < failedLoginAttempts; i++) {
+      const resp = await fetch(`http://localhost:5000/userSettings/${userId}/activity`, {
+        method: "post",
+        body: JSON.stringify(failedAttemptsInfo[i]),
+        headers: {"Content-Type": "application/json"},
+      });
+    }
+
+    const resp = await fetch(`http://localhost:5000/userSettings/${userId}/activity`, {
+      method: "post",
+      body: JSON.stringify(activity),
+      headers: {"Content-Type": "application/json"},
+    });
+
+    localStorage.setItem('userId', userId);
+  }
+  
   /**
    * Handles Submit Form
    * @param {Event} event Form Data
@@ -79,13 +160,14 @@ export default function Signin() {
     // Checking is user entry is valid
 
     const userInfo = {
-      email: email,
-      password: password,
+      email : email, 
+      password : password,
     };
-
+    
     // Fetchig new User ID
     currUserId = await fetchId(userInfo);
     currMfaStatus = await fetechMfa(userInfo);
+    currentUserStatus = await fetchUserStatus(userInfo);
     // setMfa(currMfaStatus);
     if (currUserId) {
       setLoggedUser(currUserId);
@@ -95,29 +177,45 @@ export default function Signin() {
         navigate("/admin");
         return;
       }
-      console.log(`User has successfully logged in: ${currUserId}`);
-      if (currMfaStatus == false) {
-        console.log("MFA STATUS IS FALSE *** Navigating to QR AUTH");
-        navigate("/qrauth");
-      } else {
-        const code = window.prompt("Please enter your 2FA code:");
-        const queryString = new URLSearchParams({
-          code,
-          currUserId,
-        }).toString();
-        const response = await fetch(
-          `http://localhost:5000/verify2FA?${queryString}`
-        );
-        const { success } = await response.json();
-        if (success) {
-          alert("2FA has been verified");
-          navigate("/dashboard");
-        } else {
-          alert("2FA code is incorrect");
+      else if (currentUserStatus==true){
+        console.log("Your account is locked. Try Again");
+        navigate("/");
+      }
+      else{
+        console.log(`User has successfully logged in: ${currUserId}`);
+        handleUserActivity(currUserId, false);
+        if (currMfaStatus == false){
+          console.log("MFA STATUS IS FALSE *** Navigating to QR AUTH");
+          navigate("/qrauth");
+        }
+        else {
+          console.log(`User has successfully logged in: ${currUserId}`);
+          if (currMfaStatus == false) {
+            console.log("MFA STATUS IS FALSE *** Navigating to QR AUTH");
+            navigate("/qrauth");
+          } else {
+            const code = window.prompt("Please enter your 2FA code:");
+            const queryString = new URLSearchParams({
+              code,
+              currUserId,
+            }).toString();
+            const response = await fetch(
+              `http://localhost:5000/verify2FA?${queryString}`
+            );
+            const { success } = await response.json();
+            if (success) {
+              alert("2FA has been verified");
+              navigate("/dashboard");
+            } else {
+              alert("2FA code is incorrect");
+            }
+          }
         }
       }
-    } else {
+    }
+    else {
       alert("Incorrect User Information");
+      handleUserActivity(currUserId, true);
     }
   };
 

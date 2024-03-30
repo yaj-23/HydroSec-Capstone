@@ -1,0 +1,15 @@
+.activity-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.activity-settings-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter";
+    color: #4D4D4D;
+    font-size: 2.3rem;
+}
