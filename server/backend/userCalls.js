@@ -2,6 +2,8 @@ const mongoose = require("mongoose");
 const User = require("../models/User");
 const logger = require("./logger");
 
+const bcrypt = require('bcrypt');
+
 /**
  * This function adds User into DB
  * @param {JSON} userInfo JSON Info of User
@@ -10,6 +12,13 @@ const logger = require("./logger");
 async function addUserToDB(userInfo) {
   try {
     // Checking is a User Already exists
+    hashedPassword =  await bcrypt.hash(userInfo.password, 10);
+
+    console.log("Tester: hashed password: ", hashedPassword);
+    const x = userInfo;
+    x.password = hashedPassword;
+    // console.log("Tester: New User Item is: ", x);
+
     const userExists = await User.findOne({ email: userInfo.email }).exec();
 
     if (userExists) {
@@ -37,17 +46,27 @@ async function searchUserInDB(userInfo) {
     // Checking is a User Already exists
     const userExists = await User.findOne({
       email: userInfo.email,
-      password: userInfo.password,
+      // password: userInfo.password,
     }).exec();
+
+    const passwordMatch = await bcrypt.compare(userInfo.password, userExists.password);
 
     if (userExists) {
       logger.testlogger.info(`User with email: ${userInfo.email} exists.`);
-      return userExists._id;
     } else {
-      logger.testlogger.error(`Incorrect login information.`);
+      logger.testlogger.error(`Incorrect email information.`);
       throw new Error("User does not exist", {
-        cause: { statusCode: 404, message: "Incorrect login info" },
+        cause: { statusCode: 404, message: "Incorrect email info" },
       });
+    }
+    if (!passwordMatch) {
+      logger.testlogger.error(`Incorrect password.`);
+      throw new Error("Passwords Mismatch", {
+        cause: { statusCode: 404, message: "Incorrect password" },
+      });
+    }else{
+      logger.testlogger.info(`User with email: ${userInfo.email} logged in.`);
+      return userExists._id;
     }
   } catch (error) {
     logger.testlogger.error(`Error occured while searching for user: ${error}`);
@@ -61,11 +80,26 @@ async function getMFA(userInfo) {
     // Checking is a User Already exists
     const userExists = await User.findOne({
       email: userInfo.email,
-      password: userInfo.password,
+      // password: userInfo.password,
     }).exec();
-    console.log("yo:", userExists);
+
+    const passwordMatch = await bcrypt.compare(userInfo.password, userExists.password);
+
     if (userExists) {
       logger.testlogger.info(`User with email: ${userInfo.email} exists.`);
+    } else {
+      logger.testlogger.error(`Incorrect email information.`);
+      throw new Error("User does not exist", {
+        cause: { statusCode: 404, message: "Incorrect email info" },
+      });
+    }
+    if (!passwordMatch) {
+      logger.testlogger.error(`Incorrect password.`);
+      throw new Error("Passwords Mismatch", {
+        cause: { statusCode: 404, message: "Incorrect password" },
+      });
+    }else{
+      logger.testlogger.info(`User with email: ${userInfo.email} logged in.`);
       return userExists.mfa;
     }
   } catch (error) {
@@ -80,11 +114,26 @@ async function getUserStatus(userInfo) {
     // Checking is a User Already exists
     const userExists = await User.findOne({
       email: userInfo.email,
-      password: userInfo.password,
+      // password: userInfo.password,
     }).exec();
-    console.log("yo:", userExists);
+
+    const passwordMatch = await bcrypt.compare(userInfo.password, userExists.password);
+
     if (userExists) {
       logger.testlogger.info(`User with email: ${userInfo.email} exists.`);
+    } else {
+      logger.testlogger.error(`Incorrect email information.`);
+      throw new Error("User does not exist", {
+        cause: { statusCode: 404, message: "Incorrect email info" },
+      });
+    }
+    if (!passwordMatch) {
+      logger.testlogger.error(`Incorrect password.`);
+      throw new Error("Passwords Mismatch", {
+        cause: { statusCode: 404, message: "Incorrect password" },
+      });
+    }else{
+      logger.testlogger.info(`User with email: ${userInfo.email} logged in.`);
       return userExists.locked;
     }
   } catch (error) {

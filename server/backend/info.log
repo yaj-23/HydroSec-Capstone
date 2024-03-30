@@ -771,3 +771,92 @@
 {"level":"info","message":"Invoked Log To Database","timestamp":"2024-03-30T01:30:06.014Z"}
 {"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-30T01:31:46.150Z"}
 {"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-30T01:31:46.290Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-30T05:25:23.825Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-30T05:25:24.846Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-30T05:25:24.846Z"}
+{"level":"info","message":"Sign Up invoked, with userinfo: [object Object]","timestamp":"2024-03-30T05:27:13.347Z"}
+{"level":"info","message":"Creating new user with: [object Object]","timestamp":"2024-03-30T05:27:13.453Z"}
+{"level":"info","message":"Sign Up invoked, with userinfo: [object Object]","timestamp":"2024-03-30T05:30:27.651Z"}
+{"level":"info","message":"Creating new user with: [object Object]","timestamp":"2024-03-30T05:30:27.748Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-30T05:35:52.814Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-30T05:35:53.767Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-30T05:35:53.767Z"}
+{"level":"info","message":"Sign Up invoked, with userinfo: [object Object]","timestamp":"2024-03-30T05:36:28.522Z"}
+{"level":"info","message":"Creating new user with: [object Object]","timestamp":"2024-03-30T05:36:28.638Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-30T05:37:17.874Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-30T05:37:18.832Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-30T05:37:18.833Z"}
+{"level":"info","message":"Sign Up invoked, with userinfo: [object Object]","timestamp":"2024-03-30T05:37:47.314Z"}
+{"level":"info","message":"Creating new user with: [object Object]","timestamp":"2024-03-30T05:37:47.416Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-30T05:38:33.193Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-30T05:38:34.068Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-30T05:38:34.068Z"}
+{"level":"info","message":"Sign Up invoked, with userinfo: [object Object]","timestamp":"2024-03-30T05:39:17.280Z"}
+{"level":"info","message":"Creating new user with: [object Object]","timestamp":"2024-03-30T05:39:17.399Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-30T05:45:15.005Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-30T05:45:16.066Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-30T05:45:16.067Z"}
+{"level":"info","message":"Sign Up invoked, with userinfo: [object Object]","timestamp":"2024-03-30T05:45:55.239Z"}
+{"level":"info","message":"Creating new user with: [object Object]","timestamp":"2024-03-30T05:45:55.301Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-30T05:52:06.481Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-30T05:52:07.392Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-30T05:52:07.393Z"}
+{"level":"info","message":"Sign Up invoked, with userinfo: [object Object]","timestamp":"2024-03-30T05:52:52.465Z"}
+{"level":"info","message":"Creating new user with: [object Object]","timestamp":"2024-03-30T05:52:52.579Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-30T05:53:12.418Z"}
+{"level":"error","message":"Incorrect login information.","timestamp":"2024-03-30T05:53:12.530Z"}
+{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-03-30T05:53:12.530Z"}
+{"level":"error","message":"Error occured while signin process: Error: User does not exist","timestamp":"2024-03-30T05:53:12.530Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-30T05:53:12.534Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-30T05:53:12.589Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-30T05:59:02.953Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-30T05:59:03.919Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-30T05:59:03.919Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-30T05:59:26.097Z"}
+{"level":"error","message":"Error occured while searching for user: ReferenceError: password is not defined","timestamp":"2024-03-30T05:59:26.212Z"}
+{"level":"error","message":"Error occured while signin process: ReferenceError: password is not defined","timestamp":"2024-03-30T05:59:26.212Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-30T05:59:26.217Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-30T05:59:26.273Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-30T06:03:42.916Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-30T06:03:44.121Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-30T06:03:44.121Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-30T06:03:57.290Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-30T06:03:57.460Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-03-30T06:03:57.460Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-30T06:03:57.465Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-30T06:03:57.520Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('6607a8b49a0aec7169f30d21'),\n  name: 'yajurva',\n  email: 'yajurva23@gmail.com',\n  password: '$2b$10$e0Za0M75sVOeI/rN1qxLy.F0TXE6jJ2Z.xC5.0/qJUlJ7xZIYMUtG',\n  address: '123 123 ',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-30T06:04:11.275Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-30T06:21:37.929Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-30T06:21:38.903Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-30T06:21:38.903Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-30T06:21:50.008Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-30T06:21:50.110Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-03-30T06:21:50.110Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-30T06:21:50.116Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-30T06:21:50.223Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-03-30T06:21:50.223Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-30T06:21:50.227Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-30T06:21:50.361Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-03-30T06:21:50.361Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('6607a8b49a0aec7169f30d21'),\n  name: 'yajurva',\n  email: 'yajurva23@gmail.com',\n  password: '$2b$10$e0Za0M75sVOeI/rN1qxLy.F0TXE6jJ2Z.xC5.0/qJUlJ7xZIYMUtG',\n  address: '123 123 ',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: '',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-30T06:22:12.588Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: \"yajurva23@gmail.com\"","timestamp":"2024-03-30T06:22:12.593Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('6607a8b49a0aec7169f30d21'),\n  name: 'yajurva',\n  email: 'yajurva23@gmail.com',\n  password: '$2b$10$e0Za0M75sVOeI/rN1qxLy.F0TXE6jJ2Z.xC5.0/qJUlJ7xZIYMUtG',\n  address: '123 123 ',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'CE4XEVJKBIRCERJA',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-30T06:22:45.710Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('6607a8b49a0aec7169f30d21'),\n  name: 'yajurva',\n  email: 'yajurva23@gmail.com',\n  password: '$2b$10$e0Za0M75sVOeI/rN1qxLy.F0TXE6jJ2Z.xC5.0/qJUlJ7xZIYMUtG',\n  address: '123 123 ',\n  phoneNumber: '1231231234',\n  mfa: false,\n  tempSecret: 'CE4XEVJKBIRCERJA',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-30T06:22:45.749Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('6607a8b49a0aec7169f30d21'),\n  name: 'yajurva',\n  email: 'yajurva23@gmail.com',\n  password: '$2b$10$e0Za0M75sVOeI/rN1qxLy.F0TXE6jJ2Z.xC5.0/qJUlJ7xZIYMUtG',\n  address: '123 123 ',\n  phoneNumber: '1231231234',\n  mfa: true,\n  tempSecret: 'CE4XEVJKBIRCERJA',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-30T06:22:48.543Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-03-30T06:23:27.664Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-30T06:23:27.718Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-03-30T06:23:27.814Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-30T06:23:28.367Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-03-30T06:23:28.367Z"}
+{"level":"info","message":"User Status Change Invoked For: \"yajurva23@gmail.com\"","timestamp":"2024-03-30T06:23:52.120Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-30T06:23:52.231Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-30T06:24:10.219Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-30T06:24:29.486Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-30T06:24:29.594Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-03-30T06:24:29.594Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-30T06:24:29.597Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-30T06:24:29.707Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-03-30T06:24:29.707Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-30T06:24:29.711Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-30T06:24:29.818Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-03-30T06:24:29.818Z"}
