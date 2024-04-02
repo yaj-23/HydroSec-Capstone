@@ -137,6 +137,24 @@ router.post("/fetchUserStatus", async (req, res) => {
   }
 });
 
+router.post("/logout", async (req, res) => {
+  try {
+    // Clear session data or destroy session
+    req.session.destroy((err) => {
+      if (err) {
+        logger.testlogger.error(`Error occurred while destroying session: ${err}`);
+        return res.status(500).send("Error occurred during logout");
+      }
+      res.clearCookie("connect.sid"); // Clear session cookie
+      res.send("Logged out successfully");
+    });
+  } catch (error) {
+    logger.testlogger.error(`Error occurred while logging out: ${error}`);
+    errorFunc(res, error);
+  }
+});
+
+
 router.delete("/delete-account", (req, res) => {
   // Delete account
   res.send("Delete account");

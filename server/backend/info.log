@@ -860,3 +860,35 @@
 {"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-30T06:24:29.711Z"}
 {"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-30T06:24:29.818Z"}
 {"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-03-30T06:24:29.818Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-30T07:31:31.150Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-03-30T07:31:32.473Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-30T07:31:32.474Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-30T07:32:13.684Z"}
+{"level":"error","message":"Incorrect login information.","timestamp":"2024-03-30T07:32:13.750Z"}
+{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-03-30T07:32:13.750Z"}
+{"level":"error","message":"Error occured while signin process: Error: User does not exist","timestamp":"2024-03-30T07:32:13.751Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-30T07:32:13.756Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-30T07:32:13.827Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"sanjeev.sritharan007@gmail.com\"}","timestamp":"2024-03-30T07:32:55.249Z"}
+{"level":"info","message":"User with email: sanjeev.sritharan007@gmail.com exists.","timestamp":"2024-03-30T07:32:55.312Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"sanjeev.sritharan007@gmail.com\"}","timestamp":"2024-03-30T07:32:55.316Z"}
+{"level":"info","message":"User with email: sanjeev.sritharan007@gmail.com exists.","timestamp":"2024-03-30T07:32:55.367Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"sanjeev.sritharan007@gmail.com\"}","timestamp":"2024-03-30T07:32:55.370Z"}
+{"level":"info","message":"User with email: sanjeev.sritharan007@gmail.com exists.","timestamp":"2024-03-30T07:32:55.428Z"}
+{"level":"info","message":"Getting user: {\n  _id: new ObjectId('6604b38fe4aa570abedf6830'),\n  name: 'Sanjeev Sritharan',\n  email: 'sanjeev.sritharan007@gmail.com',\n  password: 'test12345',\n  address: '76 Bonspiel Dr',\n  phoneNumber: '6476089630',\n  mfa: true,\n  tempSecret: 'CZLQCVLPJUAUG5SD',\n  locked: false,\n  __v: 0\n}.","timestamp":"2024-03-30T07:33:04.159Z"}
+{"level":"info","message":"Sign Up invoked, with userinfo: [object Object]","timestamp":"2024-03-30T07:33:29.735Z"}
+{"level":"info","message":"Creating new user with: [object Object]","timestamp":"2024-03-30T07:33:29.820Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"z@gmail.com\"}","timestamp":"2024-03-30T07:33:44.883Z"}
+{"level":"info","message":"User with email: z@gmail.com exists.","timestamp":"2024-03-30T07:33:44.940Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"z@gmail.com\"}","timestamp":"2024-03-30T07:33:44.944Z"}
+{"level":"info","message":"User with email: z@gmail.com exists.","timestamp":"2024-03-30T07:33:45.002Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"z@gmail.com\"}","timestamp":"2024-03-30T07:33:45.007Z"}
+{"level":"info","message":"User with email: z@gmail.com exists.","timestamp":"2024-03-30T07:33:45.070Z"}
+{"level":"error","message":"Error occurred while logging out: TypeError: Cannot read properties of undefined (reading 'destroy')","timestamp":"2024-03-30T07:33:48.187Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-30T07:34:06.920Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"z@gmail.com\"}","timestamp":"2024-03-30T07:38:04.194Z"}
+{"level":"info","message":"User with email: z@gmail.com exists.","timestamp":"2024-03-30T07:38:04.245Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"z@gmail.com\"}","timestamp":"2024-03-30T07:38:04.249Z"}
+{"level":"info","message":"User with email: z@gmail.com exists.","timestamp":"2024-03-30T07:38:04.314Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"z@gmail.com\"}","timestamp":"2024-03-30T07:38:04.318Z"}
+{"level":"info","message":"User with email: z@gmail.com exists.","timestamp":"2024-03-30T07:38:04.426Z"}
