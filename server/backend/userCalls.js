@@ -2,7 +2,24 @@ const mongoose = require("mongoose");
 const User = require("../models/User");
 const logger = require("./logger");
 
-const bcrypt = require('bcrypt');
+const bcrypt = require("bcrypt");
+const crypto = require("crypto");
+
+// Function to encrypt data using AES
+function encryptData(data, key) {
+  const cipher = crypto.createCipher("aes-256-cbc", key);
+  let encryptedData = cipher.update(data, "utf8", "hex");
+  encryptedData += cipher.final("hex");
+  return encryptedData;
+}
+
+// Function to decrypt data using AES
+function decryptData(encryptedData, key) {
+  const decipher = crypto.createDecipher("aes-256-cbc", key);
+  let decryptedData = decipher.update(encryptedData, "hex", "utf8");
+  decryptedData += decipher.final("utf8");
+  return decryptedData;
+}
 
 /**
  * This function adds User into DB
@@ -11,15 +28,27 @@ const bcrypt = require('bcrypt');
  */
 async function addUserToDB(userInfo) {
   try {
-    // Checking is a User Already exists
-    hashedPassword =  await bcrypt.hash(userInfo.password, 10);
+    hashedPassword = await bcrypt.hash(userInfo.password, 10);
 
     console.log("Tester: hashed password: ", hashedPassword);
     const x = userInfo;
     x.password = hashedPassword;
-    // console.log("Tester: New User Item is: ", x);
 
-    const userExists = await User.findOne({ email: userInfo.email }).exec();
+    const encryptedUserInfo = {
+      name: encryptData(userInfo.name, "encryptionKey"),
+      email: encryptData(userInfo.email, "encryptionKey"),
+      password: x.password,
+      address: encryptData(userInfo.address, "encryptionKey"),
+      phoneNumber: encryptData(userInfo.phoneNumber, "encryptionKey"),
+      mfa: userInfo.mfa,
+      tempSecret: userInfo.tempSecret,
+      locked: userInfo.locked,
+    };
+    console.log(encryptedUserInfo);
+
+    const userExists = await User.findOne({
+      email: encryptData(userInfo.email, "encryptionKey"),
+    }).exec();
 
     if (userExists) {
       logger.testlogger.info(
@@ -29,8 +58,8 @@ async function addUserToDB(userInfo) {
         cause: { statusCode: 404, message: "User already exists" },
       });
     } else {
-      logger.testlogger.info(`Creating new user with: ${userInfo}`);
-      const newUser = await User.create(userInfo);
+      logger.testlogger.info(`Creating new user with: ${encryptedUserInfo}`);
+      const newUser = await User.create(encryptedUserInfo);
       await newUser.save();
       return newUser._id;
     }
@@ -43,30 +72,51 @@ async function addUserToDB(userInfo) {
 
 async function searchUserInDB(userInfo) {
   try {
-    // Checking is a User Already exists
-    const userExists = await User.findOne({
-      email: userInfo.email,
-      // password: userInfo.password,
-    }).exec();
-
-    const passwordMatch = await bcrypt.compare(userInfo.password, userExists.password);
+    const encryptedEmail = encryptData(userInfo.email, "encryptionKey");
+    const userExists = await User.findOne({ email: encryptedEmail }).exec();
+    console.log(
+      "Encrypted emailL: ",
+      encryptData(userInfo.email, "encryptionKey")
+    );
+    const passwordMatch = await bcrypt.compare(
+      userInfo.password,
+      userExists.password
+    );
 
     if (userExists) {
-      logger.testlogger.info(`User with email: ${userInfo.email} exists.`);
+      const decryptedEmail = decryptData(userExists.email, "encryptionKey");
+      if (decryptedEmail === userInfo.email) {
+        const passwordMatch = await bcrypt.compare(
+          userInfo.password,
+          userExists.password
+        );
+        if (passwordMatch) {
+          logger.testlogger.info(
+            `User with email: ${userInfo.email} logged in.`
+          );
+          return userExists._id;
+        } else {
+          logger.testlogger.error(`Incorrect password.`);
+          throw new Error("Passwords Mismatch", {
+            statusCode: 404,
+            message: "Incorrect password",
+          });
+        }
+      } else {
+        logger.testlogger.error(`Incorrect email information.`);
+        throw new Error("User does not exist", {
+          statusCode: 404,
+          message: "Incorrect email info",
+        });
+      }
     } else {
-      logger.testlogger.error(`Incorrect email information.`);
+      logger.testlogger.error(
+        `User with email: ${userInfo.email} does not exist.`
+      );
       throw new Error("User does not exist", {
-        cause: { statusCode: 404, message: "Incorrect email info" },
+        statusCode: 404,
+        message: "User does not exist",
       });
-    }
-    if (!passwordMatch) {
-      logger.testlogger.error(`Incorrect password.`);
-      throw new Error("Passwords Mismatch", {
-        cause: { statusCode: 404, message: "Incorrect password" },
-      });
-    }else{
-      logger.testlogger.info(`User with email: ${userInfo.email} logged in.`);
-      return userExists._id;
     }
   } catch (error) {
     logger.testlogger.error(`Error occured while searching for user: ${error}`);
@@ -77,30 +127,43 @@ async function searchUserInDB(userInfo) {
 
 async function getMFA(userInfo) {
   try {
-    // Checking is a User Already exists
-    const userExists = await User.findOne({
-      email: userInfo.email,
-      // password: userInfo.password,
-    }).exec();
-
-    const passwordMatch = await bcrypt.compare(userInfo.password, userExists.password);
-
+    const encryptedEmail = encryptData(userInfo.email, "encryptionKey");
+    const userExists = await User.findOne({ email: encryptedEmail }).exec();
     if (userExists) {
-      logger.testlogger.info(`User with email: ${userInfo.email} exists.`);
+      const decryptedEmail = decryptData(userExists.email, "encryptionKey");
+      if (decryptedEmail === userInfo.email) {
+        const passwordMatch = await bcrypt.compare(
+          userInfo.password,
+          userExists.password
+        );
+
+        if (passwordMatch) {
+          logger.testlogger.info(
+            `User with email: ${userInfo.email} logged in.`
+          );
+          return userExists.mfa;
+        } else {
+          logger.testlogger.error(`Incorrect password.`);
+          throw new Error("Passwords Mismatch", {
+            statusCode: 404,
+            message: "Incorrect password",
+          });
+        }
+      } else {
+        logger.testlogger.error(`Incorrect email information.`);
+        throw new Error("User does not exist", {
+          statusCode: 404,
+          message: "Incorrect email info",
+        });
+      }
     } else {
-      logger.testlogger.error(`Incorrect email information.`);
+      logger.testlogger.error(
+        `User with email: ${userInfo.email} does not exist.`
+      );
       throw new Error("User does not exist", {
-        cause: { statusCode: 404, message: "Incorrect email info" },
+        statusCode: 404,
+        message: "User does not exist",
       });
-    }
-    if (!passwordMatch) {
-      logger.testlogger.error(`Incorrect password.`);
-      throw new Error("Passwords Mismatch", {
-        cause: { statusCode: 404, message: "Incorrect password" },
-      });
-    }else{
-      logger.testlogger.info(`User with email: ${userInfo.email} logged in.`);
-      return userExists.mfa;
     }
   } catch (error) {
     logger.testlogger.error(`Error occured while searching for user: ${error}`);
@@ -111,30 +174,43 @@ async function getMFA(userInfo) {
 
 async function getUserStatus(userInfo) {
   try {
-    // Checking is a User Already exists
-    const userExists = await User.findOne({
-      email: userInfo.email,
-      // password: userInfo.password,
-    }).exec();
-
-    const passwordMatch = await bcrypt.compare(userInfo.password, userExists.password);
-
+    const encryptedEmail = encryptData(userInfo.email, "encryptionKey");
+    const userExists = await User.findOne({ email: encryptedEmail }).exec();
     if (userExists) {
-      logger.testlogger.info(`User with email: ${userInfo.email} exists.`);
+      const decryptedEmail = decryptData(userExists.email, "encryptionKey");
+      if (decryptedEmail === userInfo.email) {
+        const passwordMatch = await bcrypt.compare(
+          userInfo.password,
+          userExists.password
+        );
+
+        if (passwordMatch) {
+          logger.testlogger.info(
+            `User with email: ${userInfo.email} logged in.`
+          );
+          return userExists.locked;
+        } else {
+          logger.testlogger.error(`Incorrect password.`);
+          throw new Error("Passwords Mismatch", {
+            statusCode: 404,
+            message: "Incorrect password",
+          });
+        }
+      } else {
+        logger.testlogger.error(`Incorrect email information.`);
+        throw new Error("User does not exist", {
+          statusCode: 404,
+          message: "Incorrect email info",
+        });
+      }
     } else {
-      logger.testlogger.error(`Incorrect email information.`);
+      logger.testlogger.error(
+        `User with email: ${userInfo.email} does not exist.`
+      );
       throw new Error("User does not exist", {
-        cause: { statusCode: 404, message: "Incorrect email info" },
+        statusCode: 404,
+        message: "User does not exist",
       });
-    }
-    if (!passwordMatch) {
-      logger.testlogger.error(`Incorrect password.`);
-      throw new Error("Passwords Mismatch", {
-        cause: { statusCode: 404, message: "Incorrect password" },
-      });
-    }else{
-      logger.testlogger.info(`User with email: ${userInfo.email} logged in.`);
-      return userExists.locked;
     }
   } catch (error) {
     logger.testlogger.error(`Error occured while searching for user: ${error}`);
@@ -146,8 +222,9 @@ async function getUserStatus(userInfo) {
 async function updateUserInDB(email, data) {
   try {
     console.log("The Email: ", email, " and TempSecret: ", data);
+    const encryptedEmail = encryptData(email, "encryptionKey");
     const updatedUser = await User.findOneAndUpdate(
-      { email: email },
+      { email: encryptedEmail },
       { tempSecret: data },
       { new: true }
     );
@@ -162,8 +239,9 @@ async function updateUserInDB(email, data) {
 async function updateUserMFAInDB(email, data) {
   try {
     console.log("The Email: ", email, " and MFA: ", data);
+    const encryptedEmail = encryptData(email, "encryptionKey");
     const updatedUser = await User.findOneAndUpdate(
-      { email: email },
+      { email: encryptedEmail },
       { mfa: data },
       { new: true }
     );
@@ -179,7 +257,7 @@ async function updateUserStatus(email, status) {
   try {
     console.log("The Email: ", email, " and status is: ", status);
     const updatedUser = await User.findOneAndUpdate(
-      { email: email },
+      { email: email  },
       { locked: status },
       { new: true }
     );
@@ -199,8 +277,18 @@ async function updateUserStatus(email, status) {
 async function getUserFromDB(userId) {
   try {
     const user = await User.findById(userId).exec();
-    logger.testlogger.info(`Getting user: ${user}.`);
-    return user;
+    const decryptedUser = {
+      _id: user._id,
+      name: decryptData(user.name, "encryptionKey"),
+      email: decryptData(user.email, "encryptionKey"),
+      address: decryptData(user.address, "encryptionKey"),
+      phoneNumber: decryptData(user.phoneNumber, "encryptionKey"),
+      mfa: user.mfa,
+      tempSecret: user.tempSecret,
+      locked: user.locked,
+    };
+    logger.testlogger.info(`Getting user: ${decryptedUser}.`);
+    return decryptedUser;
   } catch (error) {
     logger.testlogger.error(`Error occured while searching for user: ${error}`);
     if (error instanceof mongoose.Error.CastError)
@@ -258,5 +346,5 @@ module.exports = {
   getMFA,
   getUserStatus,
   getAllUsersFromDB,
-  deleteUser
+  deleteUser,
 };
