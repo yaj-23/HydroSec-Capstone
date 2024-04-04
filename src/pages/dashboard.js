@@ -6,6 +6,8 @@ import dailyUsageData from './components/test-data/dailyUsageDaata';
 import monthCostData from './components/test-data/monthCostData';
 import DailyUsageLineChart from "./components/chart/chart";
 import MonthlyCostLineChart from "./components/chart/monthlychart";
+import { Button } from "./components/button/Button";
+
 import Navbar from "./components/nav";
 
 export default function Dashboard() {
@@ -50,6 +52,10 @@ export default function Dashboard() {
         fetchUserDetails();
     }
 
+    const moveToSettings = () =>{
+        navigate("/settings")
+    }
+
 
     return(
     <>  
@@ -80,6 +86,16 @@ export default function Dashboard() {
                         <p2>Statement Date: 1/1/2024</p2>
                         <p2>Payment Due On: 1/18/2024</p2>
                     </div>
+                    <br/>
+                    <Button
+                        buttonColor="primary"
+                        buttonSize="btn-medium"
+                        buttonStyle="btn-primary"
+                        onClick={moveToSettings}
+                    >
+                        Settings
+                    </Button>
+                    <br/>
                 </div>
 
                 <div className="dash-layer2">

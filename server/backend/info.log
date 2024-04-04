@@ -1354,3 +1354,64 @@
 {"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-04T09:18:44.414Z"}
 {"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-04T09:20:23.912Z"}
 {"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-04T09:20:24.126Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-04T09:22:24.110Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-04T09:22:25.091Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-04T09:22:25.091Z"}
+{"level":"info","message":"Sign Up invoked, with userinfo: [object Object]","timestamp":"2024-04-04T09:22:58.609Z"}
+{"level":"info","message":"Creating new user with: [object Object]","timestamp":"2024-04-04T09:22:58.733Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"tester@gmail.com\"}","timestamp":"2024-04-04T09:23:17.184Z"}
+{"level":"info","message":"User with email: tester@gmail.com logged in.","timestamp":"2024-04-04T09:23:17.351Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"tester@gmail.com\"}","timestamp":"2024-04-04T09:23:17.356Z"}
+{"level":"info","message":"User with email: tester@gmail.com logged in.","timestamp":"2024-04-04T09:23:17.468Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"tester@gmail.com\"}","timestamp":"2024-04-04T09:23:17.474Z"}
+{"level":"info","message":"User with email: tester@gmail.com logged in.","timestamp":"2024-04-04T09:23:17.582Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-04T17:33:44.351Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-04T17:33:45.878Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-04T17:33:45.879Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"tester@gmail.com\"}","timestamp":"2024-04-04T17:34:07.680Z"}
+{"level":"info","message":"User with email: tester@gmail.com logged in.","timestamp":"2024-04-04T17:34:07.855Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"tester@gmail.com\"}","timestamp":"2024-04-04T17:34:07.861Z"}
+{"level":"info","message":"User with email: tester@gmail.com logged in.","timestamp":"2024-04-04T17:34:07.971Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"tester@gmail.com\"}","timestamp":"2024-04-04T17:34:07.975Z"}
+{"level":"info","message":"User with email: tester@gmail.com logged in.","timestamp":"2024-04-04T17:34:08.082Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-04T17:34:23.173Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-04T17:34:23.348Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-04T17:34:23.352Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-04T17:34:23.465Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-04T17:34:23.471Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-04T17:34:23.587Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-04T17:37:47.917Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-04T17:54:40.654Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-04T17:54:40.827Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-04T17:54:40.831Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-04T17:54:40.930Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-04T17:54:40.934Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-04T17:54:41.040Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-04T17:54:49.464Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-04T17:54:52.934Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-04-04T17:57:00.274Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-04T17:57:12.821Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-04T17:57:12.986Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-04T17:57:12.990Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-04T17:57:13.098Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-04T17:57:13.102Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-04T17:57:13.209Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-04T17:57:22.740Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-04T17:57:24.574Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-04T18:00:30.778Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-04T18:00:30.813Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-04T18:00:30.851Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-04T18:00:30.893Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-04T18:00:30.942Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-04-04T18:00:36.734Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-04-04T18:04:26.266Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-04-04T18:04:35.226Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-04T18:04:48.777Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-04T18:04:48.929Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-04T18:04:48.933Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-04T18:04:49.026Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-04T18:04:49.029Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-04T18:04:49.121Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-04T18:04:56.979Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-04T18:04:58.344Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-04T18:08:46.533Z"}
