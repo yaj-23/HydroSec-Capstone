@@ -4,7 +4,7 @@ from adtk.data import validate_series
 import matplotlib.pyplot as plt
 
 # Load log data
-with open('info.log', 'r') as file:
+with open('error.log', 'r') as file:
     log_lines = file.readlines()
 
 # Parse log data into DataFrame
