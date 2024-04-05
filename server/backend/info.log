@@ -17,8 +17,6 @@
 {"level":"error","message":"Error occured while fetching mfa Status : TypeError: userCalls.getMFA is not a function","timestamp":"2024-03-08T19:05:54.638Z"}
 {"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:15:25.234Z"}
 {"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:17:40.230Z"}
-{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:31:39.329Z"}
-{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:32:57.203Z"}
 {"level":"info","message":"Server listening on port 5000.","timestamp":"2024-03-08T19:33:09.978Z"}
 {"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-03-08T19:33:10.608Z"}
 {"level":"info","message":"Sign In invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:33:41.536Z"}
@@ -53,17 +51,6 @@
 {"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:41:32.271Z"}
 {"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:41:32.309Z"}
 {"level":"info","message":"Getting user: {\n  _id: new ObjectId('65eb3ce1d115ba64e18e9163'),\n  name: '123 123',\n  email: '123@123.com',\n  password: 'Turtle456!',\n  address: '123 washtub way',\n  phoneNumber: '1234567890',\n  mfa: false,\n  __v: 0\n}.","timestamp":"2024-03-08T19:41:32.348Z"}
-{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:41:41.589Z"}
-{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:41:41.591Z"}
-{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:41:41.617Z"}
-{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:41:41.619Z"}
-{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:43:32.882Z"}
-{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:43:37.902Z"}
-{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:43:38.690Z"}
-{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:43:39.345Z"}
-{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:43:39.995Z"}
-{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:43:40.650Z"}
-{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-08T19:43:41.375Z"}
 {"level":"info","message":"Sign In invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:44:37.436Z"}
 {"level":"info","message":"User with email: 123@123.com exists.","timestamp":"2024-03-08T19:44:37.475Z"}
 {"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"123@123.com\"}","timestamp":"2024-03-08T19:44:37.480Z"}
@@ -181,7 +168,6 @@
 {"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T00:03:05.244Z"}
 {"level":"info","message":"Getting user: {\n  _id: new ObjectId('65f48cc3618a20a4b514a7da'),\n  name: 'Tester',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '123 Random Street',\n  phoneNumber: '4161234312',\n  mfa: false,\n  status: false,\n  __v: 0\n}.","timestamp":"2024-03-21T00:05:32.226Z"}
 {"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T00:05:32.233Z"}
-{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-21T00:10:35.260Z"}
 {"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T00:10:50.875Z"}
 {"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T00:10:50.927Z"}
 {"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T00:10:50.934Z"}
@@ -210,7 +196,6 @@
 {"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T00:17:12.976Z"}
 {"level":"info","message":"Getting user: {\n  _id: new ObjectId('65f48cc3618a20a4b514a7da'),\n  name: 'Tester',\n  email: 'test@gmail.com',\n  password: 'test12345',\n  address: '123 Random Street',\n  phoneNumber: '4161234312',\n  mfa: false,\n  status: false,\n  __v: 0\n}.","timestamp":"2024-03-21T00:17:15.116Z"}
 {"level":"info","message":"QRCode invoked, with userinfo: undefined","timestamp":"2024-03-21T00:17:15.120Z"}
-{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-21T00:17:23.883Z"}
 {"level":"info","message":"Sign In invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T00:17:34.870Z"}
 {"level":"info","message":"User with email: test@gmail.com exists.","timestamp":"2024-03-21T00:17:34.928Z"}
 {"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"test@gmail.com\"}","timestamp":"2024-03-21T00:17:34.934Z"}
@@ -850,7 +835,6 @@
 {"level":"info","message":"Invoked Log To Database","timestamp":"2024-03-30T06:23:28.367Z"}
 {"level":"info","message":"User Status Change Invoked For: \"yajurva23@gmail.com\"","timestamp":"2024-03-30T06:23:52.120Z"}
 {"level":"info","message":"Retrieved all users from database.","timestamp":"2024-03-30T06:23:52.231Z"}
-{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-30T06:24:10.219Z"}
 {"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-03-30T06:24:29.486Z"}
 {"level":"info","message":"User with email: yajurva23@gmail.com exists.","timestamp":"2024-03-30T06:24:29.594Z"}
 {"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-03-30T06:24:29.594Z"}
@@ -885,7 +869,6 @@
 {"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"z@gmail.com\"}","timestamp":"2024-03-30T07:33:45.007Z"}
 {"level":"info","message":"User with email: z@gmail.com exists.","timestamp":"2024-03-30T07:33:45.070Z"}
 {"level":"error","message":"Error occurred while logging out: TypeError: Cannot read properties of undefined (reading 'destroy')","timestamp":"2024-03-30T07:33:48.187Z"}
-{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-03-30T07:34:06.920Z"}
 {"level":"info","message":"Sign In invoked, with userinfo: \"z@gmail.com\"}","timestamp":"2024-03-30T07:38:04.194Z"}
 {"level":"info","message":"User with email: z@gmail.com exists.","timestamp":"2024-03-30T07:38:04.245Z"}
 {"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"z@gmail.com\"}","timestamp":"2024-03-30T07:38:04.249Z"}
@@ -1389,7 +1372,6 @@
 {"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-04T17:54:41.040Z"}
 {"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-04T17:54:49.464Z"}
 {"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-04T17:54:52.934Z"}
-{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-04-04T17:57:00.274Z"}
 {"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-04T17:57:12.821Z"}
 {"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-04T17:57:12.986Z"}
 {"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-04T17:57:12.990Z"}
@@ -1403,9 +1385,6 @@
 {"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-04T18:00:30.851Z"}
 {"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-04T18:00:30.893Z"}
 {"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-04T18:00:30.942Z"}
-{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-04-04T18:00:36.734Z"}
-{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-04-04T18:04:26.266Z"}
-{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-04-04T18:04:35.226Z"}
 {"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-04T18:04:48.777Z"}
 {"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-04T18:04:48.929Z"}
 {"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-04T18:04:48.933Z"}
