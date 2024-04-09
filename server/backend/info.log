@@ -1394,3 +1394,12 @@
 {"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-04T18:04:56.979Z"}
 {"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-04T18:04:58.344Z"}
 {"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-04T18:08:46.533Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-06T17:37:01.404Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-06T17:37:01.923Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-06T17:37:01.924Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-06T17:39:09.193Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-06T17:39:09.650Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-06T17:39:09.651Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-06T17:40:25.838Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-06T17:40:26.298Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-06T17:40:26.299Z"}
