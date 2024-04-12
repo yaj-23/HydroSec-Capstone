@@ -30,7 +30,6 @@ async function addUserToDB(userInfo) {
   try {
     hashedPassword = await bcrypt.hash(userInfo.password, 10);
 
-    console.log("Tester: hashed password: ", hashedPassword);
     const x = userInfo;
     x.password = hashedPassword;
 
@@ -44,7 +43,6 @@ async function addUserToDB(userInfo) {
       tempSecret: userInfo.tempSecret,
       locked: userInfo.locked,
     };
-    console.log(encryptedUserInfo);
 
     const userExists = await User.findOne({
       email: encryptData(userInfo.email, "encryptionKey"),
@@ -74,10 +72,6 @@ async function searchUserInDB(userInfo) {
   try {
     const encryptedEmail = encryptData(userInfo.email, "encryptionKey");
     const userExists = await User.findOne({ email: encryptedEmail }).exec();
-    console.log(
-      "Encrypted emailL: ",
-      encryptData(userInfo.email, "encryptionKey")
-    );
     const passwordMatch = await bcrypt.compare(
       userInfo.password,
       userExists.password
@@ -221,7 +215,6 @@ async function getUserStatus(userInfo) {
 
 async function updateUserInDB(email, data) {
   try {
-    console.log("The Email: ", email, " and TempSecret: ", data);
     const encryptedEmail = encryptData(email, "encryptionKey");
     const updatedUser = await User.findOneAndUpdate(
       { email: encryptedEmail },
@@ -238,7 +231,6 @@ async function updateUserInDB(email, data) {
 
 async function updateUserMFAInDB(email, data) {
   try {
-    console.log("The Email: ", email, " and MFA: ", data);
     const encryptedEmail = encryptData(email, "encryptionKey");
     const updatedUser = await User.findOneAndUpdate(
       { email: encryptedEmail },
@@ -255,7 +247,6 @@ async function updateUserMFAInDB(email, data) {
 
 async function updateUserStatus(email, status) {
   try {
-    console.log("The Email: ", email, " and status is: ", status);
     const updatedUser = await User.findOneAndUpdate(
       { email: email  },
       { locked: status },
@@ -302,6 +293,7 @@ async function getUserFromDB(userId) {
   }
 }
 
+
 /**
  * This function retrieves all users from the database
  * @returns Array of User objects
@@ -309,8 +301,14 @@ async function getUserFromDB(userId) {
 async function getAllUsersFromDB() {
   try {
     const users = await User.find().exec();
+    const decryptedUsers = [];
+
+    for (let i = 1; i < users.length; i++){
+      let decryptedUser = await getUserFromDB(users[i]._id);
+      decryptedUsers.push(decryptedUser)
+    }
     logger.testlogger.info(`Retrieved all users from database.`);
-    return users;
+    return decryptedUsers;
   } catch (error) {
     logger.testlogger.error(
       `Error occurred while retrieving all users: ${error}`

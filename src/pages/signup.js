@@ -140,7 +140,7 @@ export default function Signup() {
         createNewUserSettings(currUserId);
         //gen qr
         qrcode = await fetch2FA(userInfo);
-        console.log("Tester: ", qrcode);
+        // console.log("Tester: ", qrcode);
         navigate('/signin');
       }
       else {

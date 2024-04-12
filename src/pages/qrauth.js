@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./components/nav";
 import { useUser } from "../UserSession";
 import { useNavigate } from "react-router-dom";
+import './qrauth.css';
+import { Button } from "./components/button/Button";
+
 
 export default function QRAuth() {
   const { user, setLoggedUser, isAdmin, setAdminStatus } = useUser();
@@ -15,7 +18,7 @@ export default function QRAuth() {
   if (user == null) {
     navigate("/");
   } else {
-    console.log("USer: ", user);
+    // console.log("USer: ", user);
   }
 
   const fetchQR = async (userInfo) => {
@@ -36,7 +39,7 @@ export default function QRAuth() {
         return null;
       }
     } catch (error) {
-      console.log("Got an error boss", error);
+      // console.log("Got an error boss", error);
       return null;
     }
   };
@@ -58,12 +61,12 @@ export default function QRAuth() {
     let x, y;
     if (userEmail === null) {
       x = await fetchUserDetails();
-      console.log("blah: ", x);
-      console.log(" OK SO USEREMAIL: ", x.email);
-      console.log(" OK SO AccountID: ", x.accountNumber);
+      // console.log("blah: ", x);
+      // console.log(" OK SO USEREMAIL: ", x.email);
+      // console.log(" OK SO AccountID: ", x.accountNumber);
     }
     y = await fetchQR(x.email);
-    console.log(" OK SO image: ", y);
+    // console.log(" OK SO image: ", y);
 
     setQrImage(y.image);
   };
@@ -74,12 +77,12 @@ export default function QRAuth() {
 
   const submitCode = async (event) => {
     event.preventDefault();
-    console.log("here:", code);
+    // console.log("here:", code);
     let x;
     x = await fetchUserDetails();
     let y = x.email.toString();
     let id = x.accountNumber.toString();
-    console.log(x.email.toString());
+    // console.log(x.email.toString());
     const queryString = new URLSearchParams({ code, y, id }).toString();
     const response = await fetch(`http://localhost:5000/set2FA?${queryString}`);
     // const json = response.json()
@@ -96,30 +99,37 @@ export default function QRAuth() {
   return (
     <>
       <Navbar />
-      <div id="twoFAFormHolder" className="">
+      <div id="twoFAFormHolder" className="main-comp">
         <img id="qrImage" height="300" width="300" src={qrImage} />
-        <form id="twoFAUpdateForm" className="">
+        <form id="twoFAUpdateForm" className="forms">
           <input
             type="text"
             name="code"
             placeholder="2-FA Code"
-            className=""
+            className="input-field"
             onChange={(e) => setCode(e.target.value)}
           />
-          <button
-            className="btn btn-primary"
-            type="submit"
+          <Button
+            className="set-btn"
+            buttonColor="primary"
+            buttonSize="btn-medium"
+            buttonStyle="btn-primary"
             onClick={submitCode}
           >
             SET
-          </button>
-          <button
-            className="btn btn-primary"
+          </Button>
+          <div  className="gen-btn">
+          <Button
+            buttonColor="primary"
+            buttonSize="btn-medium"
+            buttonStyle="btn-primary"
             type="submit"
             onClick={submitform}
           >
             Gen QR
-          </button>
+          </Button>
+          </div>
+          
         </form>
       </div>
     </>

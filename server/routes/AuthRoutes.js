@@ -13,7 +13,7 @@ router.post("/signup", async (req, res) => {
 
     // Adding using to DB
     const userId = await userCalls.addUserToDB(userInfo);
-    console.log("Sign UP: ", userId);
+    // console.log("Sign UP: ", userId);
     res.send(userId);
   } catch (error) {
     logger.testlogger.error(`Error occured while signup process: ${error}`);
@@ -56,7 +56,7 @@ router.post("/fetchMFA", async (req, res) => {
 router.get("/qrauth", async (req, res) => {
   try {
     const userInfo = req.query;
-    console.log("UserINFO: ", userInfo);
+    // console.log("UserINFO: ", userInfo);
     logger.testlogger.info(
       `QRCode invoked, with userinfo: ${JSON.stringify(userInfo.email)}`
     );
@@ -81,12 +81,12 @@ router.get("/qrauth", async (req, res) => {
 router.get("/set2FA", async (req, res) => {
   try {
     const userInfo = req.query;
-    console.log("Email: ", userInfo.y);
+    // console.log("Email: ", userInfo.y);
     const temp = await userCalls.getUserFromDB(userInfo.id);
-    console.log(userInfo.code);
-    console.log(temp.tempSecret);
+    // console.log(userInfo.code);
+    // console.log(temp.tempSecret);
     const verified = authenticator.check(userInfo.code, temp.tempSecret);
-    console.log(verified);
+    // console.log(verified);
     if (verified) {
       const user = await userCalls.updateUserMFAInDB(userInfo.y, true);
       return res.send({ success: true });
@@ -103,7 +103,7 @@ router.get("/set2FA", async (req, res) => {
 router.get("/verify2FA", async (req, res) => {
   try {
     const userInfo = req.query;
-    console.log("Email: ", userInfo.currUserId);
+    // console.log("Email: ", userInfo.currUserId);
     const temp = await userCalls.getUserFromDB(userInfo.currUserId);
     const verified = authenticator.check(userInfo.code, temp.tempSecret);
     if (verified) {

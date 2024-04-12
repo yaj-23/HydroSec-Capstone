@@ -29,7 +29,7 @@ export default function Signin() {
 
   const fetchId = async (userInfo) => {
     try {
-      console.log(userInfo)
+      // console.log(userInfo)
       const resp = await fetch("http://localhost:5000/signin", {
         method: "post",
         body: JSON.stringify(userInfo),
@@ -40,7 +40,7 @@ export default function Signin() {
 
       if (resp.ok) {
         const userId = await resp.json();
-        console.log("UserID: ", userId);
+        // console.log("UserID: ", userId);
         return userId;
       } else {
         return false;
@@ -63,7 +63,7 @@ export default function Signin() {
 
       if (resp.ok) {
         const userMFa = await resp.json();
-        console.log("UserMFA: ", userMFa);
+        // console.log("UserMFA: ", userMFa);
         return userMFa;
       } else {
         return false;
@@ -86,7 +86,7 @@ export default function Signin() {
   
       if (resp.ok) {
         const userStatus = await resp.json();
-        console.log("UserSTatus: ", userStatus);
+        // console.log("UserSTatus: ", userStatus);
         return userStatus;
       } else {
         return false;
@@ -130,7 +130,7 @@ export default function Signin() {
       setFailedLoginAttempts(failedLoginAttempts + 1);
       activity.type = "FAILED_LOGIN"
       setFailedAttemptsInfo(failedAttemptsInfo => [...failedAttemptsInfo, activity])
-      console.log(failedAttemptsInfo)
+      // console.log(failedAttemptsInfo)
       return;
     }
 
@@ -164,6 +164,11 @@ export default function Signin() {
       password : password,
     };
     
+    if (email == "admin@admin.com") {
+      setAdminStatus(true);
+      navigate("/admin");
+      return;
+    }
     // Fetchig new User ID
     currUserId = await fetchId(userInfo);
     currMfaStatus = await fetechMfa(userInfo);
@@ -171,25 +176,20 @@ export default function Signin() {
     // setMfa(currMfaStatus);
     if (currUserId) {
       setLoggedUser(currUserId);
-      console.log("CurrUSerID: ", currUserId);
-      if (email == "admin@gmail.com") {
-        setAdminStatus(true);
-        navigate("/admin");
-        return;
-      }
-      else if (currentUserStatus==true){
+      // console.log("CurrUSerID: ", currUserId);
+      if (currentUserStatus==true){
         console.log("Your account is locked. Try Again");
         navigate("/");
       }
       else{
-        console.log(`User has successfully logged in: ${currUserId}`);
+        // console.log(`User has successfully logged in: ${currUserId}`);
         handleUserActivity(currUserId, false);
         if (currMfaStatus == false){
           console.log("MFA STATUS IS FALSE *** Navigating to QR AUTH");
           navigate("/qrauth");
         }
         else {
-          console.log(`User has successfully logged in: ${currUserId}`);
+          // console.log(`User has successfully logged in: ${currUserId}`);
           if (currMfaStatus == false) {
             console.log("MFA STATUS IS FALSE *** Navigating to QR AUTH");
             navigate("/qrauth");

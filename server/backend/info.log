@@ -1394,3 +1394,403 @@
 {"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-04T18:04:56.979Z"}
 {"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-04T18:04:58.344Z"}
 {"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-04T18:08:46.533Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-12T18:55:43.732Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T18:55:44.902Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-12T18:55:44.902Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T18:56:57.858Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-04-12T18:56:57.898Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T18:56:58.074Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T18:56:58.074Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T18:56:58.511Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"admim@admin.com\"}","timestamp":"2024-04-12T19:02:25.019Z"}
+{"level":"error","message":"Error occured while searching for user: TypeError: Cannot read properties of null (reading 'password')","timestamp":"2024-04-12T19:02:25.074Z"}
+{"level":"error","message":"Error occured while signin process: TypeError: Cannot read properties of null (reading 'password')","timestamp":"2024-04-12T19:02:25.075Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"admim@admin.com\"}","timestamp":"2024-04-12T19:02:25.079Z"}
+{"level":"error","message":"User with email: admim@admin.com does not exist.","timestamp":"2024-04-12T19:02:25.128Z"}
+{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-04-12T19:02:25.128Z"}
+{"level":"error","message":"Error occured while fetching mfa Status : Error: User does not exist","timestamp":"2024-04-12T19:02:25.128Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"admim@admin.com\"}","timestamp":"2024-04-12T19:02:25.133Z"}
+{"level":"error","message":"User with email: admim@admin.com does not exist.","timestamp":"2024-04-12T19:02:25.182Z"}
+{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-04-12T19:02:25.182Z"}
+{"level":"error","message":"Error occured while fetching UserStatus Status : Error: User does not exist","timestamp":"2024-04-12T19:02:25.182Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"admim@admin.com\"}","timestamp":"2024-04-12T19:03:25.530Z"}
+{"level":"error","message":"Error occured while searching for user: TypeError: Cannot read properties of null (reading 'password')","timestamp":"2024-04-12T19:03:25.589Z"}
+{"level":"error","message":"Error occured while signin process: TypeError: Cannot read properties of null (reading 'password')","timestamp":"2024-04-12T19:03:25.589Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"admim@admin.com\"}","timestamp":"2024-04-12T19:03:25.592Z"}
+{"level":"error","message":"User with email: admim@admin.com does not exist.","timestamp":"2024-04-12T19:03:25.641Z"}
+{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-04-12T19:03:25.641Z"}
+{"level":"error","message":"Error occured while fetching mfa Status : Error: User does not exist","timestamp":"2024-04-12T19:03:25.641Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"admim@admin.com\"}","timestamp":"2024-04-12T19:03:25.645Z"}
+{"level":"error","message":"User with email: admim@admin.com does not exist.","timestamp":"2024-04-12T19:03:25.691Z"}
+{"level":"error","message":"Error occured while searching for user: Error: User does not exist","timestamp":"2024-04-12T19:03:25.691Z"}
+{"level":"error","message":"Error occured while fetching UserStatus Status : Error: User does not exist","timestamp":"2024-04-12T19:03:25.691Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:03:39.165Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-04-12T19:03:39.315Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:03:39.442Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:03:39.442Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:03:40.208Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:03:55.653Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-04-12T19:03:55.708Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:03:56.088Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:03:56.293Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:03:56.293Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-12T19:05:25.344Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-12T19:05:25.522Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-12T19:05:25.526Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-12T19:05:25.628Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-12T19:05:25.632Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-12T19:05:25.743Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T19:05:34.700Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T19:05:35.821Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-04-12T19:11:18.164Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-04-12T19:11:25.939Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-04-12T19:11:30.180Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-04-12T19:11:35.830Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-12T19:11:59.535Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-12T19:11:59.705Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-12T19:11:59.709Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-12T19:11:59.813Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-12T19:11:59.817Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-12T19:11:59.926Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T19:12:08.646Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T19:12:09.705Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T19:12:32.142Z"}
+{"level":"error","message":"Error occurred while logging out: TypeError: Cannot read properties of undefined (reading 'destroy')","timestamp":"2024-04-12T19:12:53.505Z"}
+{"level":"info","message":"Sign Up invoked, with userinfo: [object Object]","timestamp":"2024-04-12T19:14:54.438Z"}
+{"level":"info","message":"Creating new user with: [object Object]","timestamp":"2024-04-12T19:14:54.552Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-12T19:15:08.337Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-12T19:15:08.510Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-12T19:15:08.514Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-12T19:15:08.618Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-12T19:15:08.622Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-12T19:15:08.726Z"}
+{"level":"error","message":"Error occured while searching for user: CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"User\"","timestamp":"2024-04-12T19:23:15.306Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-12T19:24:18.113Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-12T19:24:18.282Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-12T19:24:18.285Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-12T19:24:18.386Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-12T19:24:18.389Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-12T19:24:18.493Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T19:24:36.974Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: \"yajurva23@gmail.com\"","timestamp":"2024-04-12T19:24:36.985Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T19:24:51.554Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T19:24:51.610Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T19:24:53.549Z"}
+{"level":"error","message":"Error occurred while logging out: TypeError: Cannot read properties of undefined (reading 'destroy')","timestamp":"2024-04-12T19:25:00.953Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-12T19:25:07.900Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-12T19:25:08.068Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-12T19:25:08.072Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-12T19:25:08.178Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"yajurva23@gmail.com\"}","timestamp":"2024-04-12T19:25:08.182Z"}
+{"level":"info","message":"User with email: yajurva23@gmail.com logged in.","timestamp":"2024-04-12T19:25:08.287Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T19:25:20.106Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T19:25:21.043Z"}
+{"level":"error","message":"Error occurred while logging out: TypeError: Cannot read properties of undefined (reading 'destroy')","timestamp":"2024-04-12T19:25:31.026Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:25:48.413Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-04-12T19:25:48.473Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:25:48.621Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:25:49.023Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:25:49.023Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:27:28.603Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:27:28.740Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-12T19:28:55.725Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:28:56.752Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-12T19:28:56.753Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:28:59.471Z"}
+{"level":"error","message":"Error occurred while retrieving all users: TypeError [ERR_INVALID_ARG_TYPE]: The \"data\" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Array","timestamp":"2024-04-12T19:28:59.526Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:28:59.684Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:28:59.695Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:28:59.696Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:29:44.009Z"}
+{"level":"error","message":"Error occurred while retrieving all users: TypeError [ERR_INVALID_ARG_TYPE]: The \"data\" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Array","timestamp":"2024-04-12T19:29:44.069Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:29:44.207Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:29:44.280Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:29:44.281Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-12T19:29:49.869Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:29:50.830Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-12T19:29:50.830Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:29:52.053Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-04-12T19:29:52.105Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:29:52.228Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:29:52.229Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:29:52.286Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:31:32.598Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:31:32.797Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-12T19:31:48.634Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:31:49.462Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-12T19:31:49.462Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:31:53.375Z"}
+{"level":"error","message":"Error occurred while retrieving all users: TypeError [ERR_INVALID_ARG_VALUE]: The argument 'encoding' is invalid for data of length 5. Received 'hex'","timestamp":"2024-04-12T19:31:53.423Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:31:53.551Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:31:53.592Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:31:53.593Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:31:58.723Z"}
+{"level":"error","message":"Error occurred while retrieving all users: TypeError [ERR_INVALID_ARG_VALUE]: The argument 'encoding' is invalid for data of length 5. Received 'hex'","timestamp":"2024-04-12T19:31:58.790Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:31:58.912Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:31:58.913Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:31:59.235Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:33:39.610Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:33:39.918Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-12T19:34:37.469Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:34:38.386Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-12T19:34:38.386Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:34:41.655Z"}
+{"level":"error","message":"Error occurred while retrieving all users: ReferenceError: _id is not defined","timestamp":"2024-04-12T19:34:41.722Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:34:41.812Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:34:42.241Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:34:42.241Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:36:22.605Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:36:22.748Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-12T19:36:53.119Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:36:54.123Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-12T19:36:54.123Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:36:57.212Z"}
+{"level":"error","message":"Error occurred while retrieving all users: TypeError [ERR_INVALID_ARG_VALUE]: The argument 'encoding' is invalid for data of length 5. Received 'hex'","timestamp":"2024-04-12T19:36:57.276Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:36:57.419Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:36:57.438Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:36:57.438Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-12T19:37:13.048Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:37:13.908Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-12T19:37:13.909Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:37:16.959Z"}
+{"level":"error","message":"Error occurred while retrieving all users: TypeError [ERR_INVALID_ARG_VALUE]: The argument 'encoding' is invalid for data of length 5. Received 'hex'","timestamp":"2024-04-12T19:37:17.003Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:37:17.125Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:37:17.151Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:37:17.151Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-12T19:38:06.222Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:38:07.103Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-12T19:38:07.103Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:38:09.304Z"}
+{"level":"error","message":"Error occurred while retrieving all users: TypeError [ERR_INVALID_ARG_VALUE]: The argument 'encoding' is invalid for data of length 5. Received 'hex'","timestamp":"2024-04-12T19:38:09.357Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:38:09.467Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:38:09.798Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:38:09.798Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-12T19:39:04.331Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:39:05.197Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-12T19:39:05.197Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:39:08.993Z"}
+{"level":"error","message":"Error occurred while retrieving all users: TypeError [ERR_INVALID_ARG_VALUE]: The argument 'encoding' is invalid for data of length 5. Received 'hex'","timestamp":"2024-04-12T19:39:09.044Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:39:09.180Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:39:09.189Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:39:09.190Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:40:49.602Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:40:49.782Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:42:29.601Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:42:29.769Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:42:29.795Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:42:29.795Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-12T19:43:00.243Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:43:01.163Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-12T19:43:01.163Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:43:03.066Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T19:43:03.160Z"}
+{"level":"error","message":"Error occured while searching for user: TypeError [ERR_INVALID_ARG_VALUE]: The argument 'encoding' is invalid for data of length 5. Received 'hex'","timestamp":"2024-04-12T19:43:03.173Z"}
+{"level":"error","message":"Error occurred while retrieving all users: Error: Fetching user failed","timestamp":"2024-04-12T19:43:03.173Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:43:03.237Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:43:03.277Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:43:03.277Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-12T19:43:36.901Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:43:37.886Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-12T19:43:37.887Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:43:40.430Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-04-12T19:43:40.472Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:43:40.663Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:43:41.108Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:43:41.108Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-12T19:44:55.789Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:44:56.948Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-12T19:44:56.948Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:44:58.912Z"}
+{"level":"error","message":"Error occured while searching for user: TypeError [ERR_INVALID_ARG_VALUE]: The argument 'encoding' is invalid for data of length 5. Received 'hex'","timestamp":"2024-04-12T19:44:59.058Z"}
+{"level":"error","message":"Error occurred while retrieving all users: Error: Fetching user failed","timestamp":"2024-04-12T19:44:59.058Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:44:59.144Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:44:59.144Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:44:59.164Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-12T19:46:03.901Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:46:04.803Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-12T19:46:04.804Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:46:07.433Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-04-12T19:46:07.506Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:46:07.651Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:46:08.020Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:46:08.020Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-12T19:47:24.000Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:47:24.863Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-12T19:47:24.863Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:47:27.266Z"}
+{"level":"error","message":"Error occured while searching for user: TypeError [ERR_INVALID_ARG_VALUE]: The argument 'encoding' is invalid for data of length 5. Received 'hex'","timestamp":"2024-04-12T19:47:27.365Z"}
+{"level":"error","message":"Error occurred while retrieving all users: Error: Fetching user failed","timestamp":"2024-04-12T19:47:27.365Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:47:27.469Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:47:27.472Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:47:27.473Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:49:07.611Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:49:08.169Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-12T19:49:24.739Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:49:25.809Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-12T19:49:25.809Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:49:28.205Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T19:49:28.311Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-04-12T19:49:28.313Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:49:28.425Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:49:28.443Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:49:28.443Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:51:08.600Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:51:08.802Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-12T19:51:39.040Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:51:39.944Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-12T19:51:39.945Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:51:41.473Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T19:51:41.552Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-04-12T19:51:41.554Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:51:41.566Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:51:41.566Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:51:41.681Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-12T19:52:16.163Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:52:17.056Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-12T19:52:17.056Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:52:18.056Z"}
+{"level":"error","message":"Error occured while searching for user: TypeError [ERR_INVALID_ARG_VALUE]: The argument 'encoding' is invalid for data of length 5. Received 'hex'","timestamp":"2024-04-12T19:52:18.151Z"}
+{"level":"error","message":"Error occurred while retrieving all users: Error: Fetching user failed","timestamp":"2024-04-12T19:52:18.151Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:52:18.213Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:52:18.270Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:52:18.271Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-12T19:52:34.769Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:52:35.689Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-12T19:52:35.689Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:52:36.698Z"}
+{"level":"error","message":"Error occured while searching for user: TypeError [ERR_INVALID_ARG_VALUE]: The argument 'encoding' is invalid for data of length 5. Received 'hex'","timestamp":"2024-04-12T19:52:36.805Z"}
+{"level":"error","message":"Error occurred while retrieving all users: Error: Fetching user failed","timestamp":"2024-04-12T19:52:36.805Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:52:36.885Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:52:36.885Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:52:36.907Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-12T19:53:41.898Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:53:42.868Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-12T19:53:42.868Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:53:44.588Z"}
+{"level":"error","message":"Error occured while searching for user: TypeError [ERR_INVALID_ARG_VALUE]: The argument 'encoding' is invalid for data of length 5. Received 'hex'","timestamp":"2024-04-12T19:53:44.662Z"}
+{"level":"error","message":"Error occurred while retrieving all users: Error: Fetching user failed","timestamp":"2024-04-12T19:53:44.663Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:53:44.701Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:53:44.701Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:53:44.815Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-12T19:54:09.073Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:54:10.078Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-12T19:54:10.079Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:54:12.093Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T19:54:12.166Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T19:54:12.212Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T19:54:12.286Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-04-12T19:54:12.288Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:54:12.304Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:54:12.791Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:54:12.791Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-12T19:54:27.918Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:54:28.935Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-12T19:54:28.936Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:54:32.779Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T19:54:32.882Z"}
+{"level":"error","message":"Error occurred while retrieving all users: TypeError: Cannot read properties of undefined (reading '_id')","timestamp":"2024-04-12T19:54:32.884Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:54:33.005Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:54:33.026Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:54:33.027Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:54:54.298Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T19:54:54.397Z"}
+{"level":"error","message":"Error occurred while retrieving all users: TypeError: Cannot read properties of undefined (reading '_id')","timestamp":"2024-04-12T19:54:54.398Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:54:54.537Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:54:54.538Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:54:55.071Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-12T19:55:47.138Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:55:47.966Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-12T19:55:47.966Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:55:49.589Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T19:55:49.705Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-04-12T19:55:49.707Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:55:49.829Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:55:49.973Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:55:49.973Z"}
+{"level":"info","message":"Server listening on port 5000.","timestamp":"2024-04-12T19:56:47.393Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:56:48.356Z"}
+{"level":"info","message":"Successfully connected to DB: test","timestamp":"2024-04-12T19:56:48.356Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:56:50.690Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T19:56:50.780Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-04-12T19:56:50.780Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T19:56:50.910Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T19:56:50.911Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:56:50.939Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:58:31.595Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:58:31.834Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T19:59:59.626Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T19:59:59.701Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-04-12T19:59:59.701Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T19:59:59.865Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T20:00:00.053Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T20:00:00.053Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T20:00:04.609Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T20:00:04.688Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-04-12T20:00:04.688Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T20:00:04.858Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T20:00:05.112Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T20:00:05.112Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T20:00:11.604Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T20:00:11.676Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-04-12T20:00:11.676Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T20:00:11.753Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T20:00:11.753Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T20:00:11.826Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T20:00:11.851Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T20:00:11.852Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T20:00:18.621Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T20:00:18.702Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-04-12T20:00:18.702Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T20:00:18.870Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T20:00:19.181Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T20:00:19.181Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T20:01:59.601Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T20:01:59.765Z"}
+{"level":"info","message":"Sign Up invoked, with userinfo: [object Object]","timestamp":"2024-04-12T20:03:30.042Z"}
+{"level":"info","message":"Creating new user with: [object Object]","timestamp":"2024-04-12T20:03:30.140Z"}
+{"level":"info","message":"Sign In invoked, with userinfo: \"sanjeev@gmail.com\"}","timestamp":"2024-04-12T20:03:37.641Z"}
+{"level":"info","message":"User with email: sanjeev@gmail.com logged in.","timestamp":"2024-04-12T20:03:37.793Z"}
+{"level":"info","message":"Fetching MFA Status = invoked, with userinfo: \"sanjeev@gmail.com\"}","timestamp":"2024-04-12T20:03:37.796Z"}
+{"level":"info","message":"User with email: sanjeev@gmail.com logged in.","timestamp":"2024-04-12T20:03:37.888Z"}
+{"level":"info","message":"Fetching UserStatus = invoked, with userinfo: \"sanjeev@gmail.com\"}","timestamp":"2024-04-12T20:03:37.892Z"}
+{"level":"info","message":"User with email: sanjeev@gmail.com logged in.","timestamp":"2024-04-12T20:03:37.984Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T20:03:40.725Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: \"sanjeev@gmail.com\"","timestamp":"2024-04-12T20:03:40.730Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T20:03:59.418Z"}
+{"level":"info","message":"QRCode invoked, with userinfo: \"sanjeev@gmail.com\"","timestamp":"2024-04-12T20:03:59.422Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T20:03:59.912Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T20:03:59.945Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T20:04:01.716Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T20:04:01.751Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T20:04:20.708Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T20:04:20.745Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T20:04:22.436Z"}
+{"level":"error","message":"Error occurred while logging out: TypeError: Cannot read properties of undefined (reading 'destroy')","timestamp":"2024-04-12T20:04:32.338Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T20:04:41.891Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T20:04:41.956Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T20:04:41.986Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-04-12T20:04:41.986Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T20:04:41.997Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T20:04:41.998Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T20:04:42.137Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T20:05:13.041Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T20:05:13.114Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T20:05:13.143Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-04-12T20:05:13.143Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T20:05:13.156Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T20:05:13.157Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T20:05:13.266Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T20:05:27.631Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T20:05:27.723Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T20:05:27.759Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-04-12T20:05:27.759Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T20:05:27.809Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T20:05:27.809Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T20:05:27.863Z"}
+{"level":"info","message":"Invoked Database to Fetch Logs","timestamp":"2024-04-12T20:05:44.433Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T20:05:44.512Z"}
+{"level":"info","message":"Getting user: [object Object].","timestamp":"2024-04-12T20:05:44.543Z"}
+{"level":"info","message":"Retrieved all users from database.","timestamp":"2024-04-12T20:05:44.543Z"}
+{"level":"info","message":"Latest log entry retrieved successfully.","timestamp":"2024-04-12T20:05:44.664Z"}
+{"level":"info","message":"Log data stored successfully.","timestamp":"2024-04-12T20:05:44.668Z"}
+{"level":"info","message":"Invoked Log To Database","timestamp":"2024-04-12T20:05:44.668Z"}

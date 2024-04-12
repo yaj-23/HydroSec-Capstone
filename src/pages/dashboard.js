@@ -42,7 +42,7 @@ export default function Dashboard() {
             setUserAddr(json.address);
             setUserPhone(json.phoneNumber);
             setAccountID(json.accountNumber);
-            console.log("Formatted Details: ", json);
+            // console.log("Formatted Details: ", json);
         } catch (error) {
             console.log("error", error);
         }
@@ -86,16 +86,6 @@ export default function Dashboard() {
                         <p2>Statement Date: 1/1/2024</p2>
                         <p2>Payment Due On: 1/18/2024</p2>
                     </div>
-                    <br/>
-                    <Button
-                        buttonColor="primary"
-                        buttonSize="btn-medium"
-                        buttonStyle="btn-primary"
-                        onClick={moveToSettings}
-                    >
-                        Settings
-                    </Button>
-                    <br/>
                 </div>
 
                 <div className="dash-layer2">
@@ -126,6 +116,17 @@ export default function Dashboard() {
                         <h1>Monthly Cost</h1>
                         <MonthlyCostLineChart data={test2Data} />
                     </div>
+                </div>
+                <div className="dash-layer4">
+                    <h3 className="layer-headertext">View User Activity</h3>
+                    <Button
+                        buttonColor="primary"
+                        buttonSize="btn-medium"
+                        buttonStyle="btn-primary"
+                        onClick={moveToSettings}
+                    >
+                        Settings
+                    </Button>
                 </div>
             </div>
         </div>
