@@ -16,3 +16,23 @@
 .signuppic{
     margin-top: 70px;
 }
+
+@media screen and (max-width: 812px){
+    .signup{ 
+        padding: 0;
+        margin: 0;
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .signuppic{
+        display: none;
+    }
+    .signup-form{
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+}

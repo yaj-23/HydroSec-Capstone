@@ -114,7 +114,7 @@ export default function Dashboard() {
 
                     <div className='dash-layer-top'>
                         <h1>Monthly Cost</h1>
-                        <MonthlyCostLineChart data={test2Data} />
+                        <MonthlyCostLineChart className='chat' data={test2Data} />
                     </div>
                 </div>
                 <div className="dash-layer4">

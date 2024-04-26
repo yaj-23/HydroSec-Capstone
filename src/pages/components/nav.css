@@ -77,3 +77,27 @@
     /* background-color: brown; */
     padding-right: 10px;
 }
+
+/* Media query for screens under 812px */
+@media screen and (max-width: 812px) {
+    /* Hide navbar links */
+    .navbar-links {
+        display: none;
+    }
+
+    /* Show only logo and end button */
+    .navbar-container-logo {
+        width: 10%;
+
+    }
+    .logo{
+        transform: scale(0.5);
+    }
+    .logo:hover{
+        transform: scale(0.5);
+    }
+
+    .navbar-end-button {
+        width: 30%;
+    }
+}

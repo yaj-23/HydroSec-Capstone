@@ -36,3 +36,24 @@
 .aboutpic{
     transform: scale(1.2);
 }
+
+@media screen and (max-width: 812px){
+    .aboutpic{
+        width: 0;
+        display: none;
+    }
+    .about-content{
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
