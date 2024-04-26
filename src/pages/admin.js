@@ -26,7 +26,7 @@ const AdminPage = () => {
       const resp = await fetch('http://localhost:5000/fetchLatestLog');
       if (resp.ok) {
         const latestLogData = await resp.json();
-        console.log("Latest Log Data:", latestLogData);
+        // console.log("Latest Log Data:", latestLogData);
         setLogMsg(latestLogData.logdata);
         setLogid(latestLogData._id);
       } else {
@@ -68,7 +68,7 @@ const AdminPage = () => {
 
       if (resp.ok) {
         const allUsers = await resp.json();
-        console.log("ALL USERS: ", allUsers)       
+        // console.log("ALL USERS: ", allUsers)       
         setUsers(allUsers); 
       } else {
         throw new Error("Failed to fetch users");
@@ -79,10 +79,10 @@ const AdminPage = () => {
   };
 
   const toggleUserState = async (user) => {
-    console.log(user._id);
-    console.log(user.email);
-    console.log(user.name);
-    console.log(user.status);
+    // console.log(user._id);
+    // console.log(user.email);
+    // console.log(user.name);
+    // console.log(user.status);
     try {
       // Update the status (toggle locked/unlocked)
       const updatedStatus = !user.status;
@@ -97,7 +97,7 @@ const AdminPage = () => {
       if (resp.ok) {
         // Update the state with the new user data\
         fetchAllUsers();
-        console.log("Test", resp.json());
+        // console.log("Test", resp.json());
       } else {
         throw new Error('Failed to update user status');
       }

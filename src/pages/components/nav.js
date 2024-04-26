@@ -47,9 +47,8 @@ export default function Navbar() {
             </div>
             <div className='navbar-container-links'>
                 <div className='navbar-links'> 
-                    <ul className='custom-ul'><li><Link to='/news' className='custom-link'>News</Link></li></ul>
                     <ul className='custom-ul'><li><Link to='/about' className='custom-link'>About</Link></li></ul>
-                    <ul className='custom-ul'><li><Link to='/employee' className='custom-link'>For Employees</Link></li></ul>
+                    <ul className='custom-ul'><li><Link to='/signin' className='custom-link'>For Employees</Link></li></ul>
                 </div>
                 {/* <div className='navbar-end-button'>
                     <Link to='/signup'><Button buttonColor='primary' buttonSize='btn-medium' buttonStyle='btn-primary'>sign up</Button></Link>
